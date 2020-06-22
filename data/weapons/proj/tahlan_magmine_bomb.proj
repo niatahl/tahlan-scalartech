@@ -1,0 +1,36 @@
+{
+	"id":"tahlan_magmine_bomb",
+	"specClass":"missile",
+	"missileType":"BOMB",
+	"sprite":"graphics/tahlan/missiles/tahlan_magmine.png",
+	"glowSprite":"graphics/tahlan/missiles/tahlan_magmine_glow.png",
+	"glowColor":[100,220,255,255],
+	"size":[14,14],	
+	"center":[7,7],
+	"collisionRadius":16,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[50,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"armingTime":0.1,				  
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":150,
+				  "acc":100,
+				  "dec":100},
+				  "behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":90,
+					"slowToMaxSpeed":true,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":140,
+									 "coreRadius":70, # full damage within core radius
+									 "collisionClass":MISSILE_FF,
+									 "collisionClassByFighter":MISSILE_FF,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":200,
+									 "particleColor":[0,200,255,255],
+									 "explosionColor":[50,255,255,255],
+									 "useDetailedExplosion":true,
+									 "sound":"mine_explosion"},
+					}	
+}

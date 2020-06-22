@@ -1,0 +1,13 @@
+{
+	"id":"tahlan_cycleaccel",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.scripts.shipsystems.tahlan_CycleAccelStats",
+	
+	"weaponGlowColor":[0,255,255,155],
+	"weaponTypes":[ENERGY],
+	
+	"useSound":"system_ammo_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

@@ -1,0 +1,19 @@
+{
+	"id":"tahlan_tousle_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	#"onHitEffect":"data.scripts.weapons.tahlan_StyrixOnHitEffect",
+	"length":70.0,
+	"width":6.0,
+	"fadeTime":0.15,
+	"coreColor":[255,255,255,255],
+	"fringeColor": [255,255,255,255],
+	"glowColor": [180,200,255,35],
+	"glowRadius":40,
+	"hitGlowRadius":50,	
+	"textureScrollSpeed":32.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/tahlan/missiles/tahlan_tousle_slug.png"
+}

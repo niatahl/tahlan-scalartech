@@ -1,0 +1,86 @@
+{
+  "variantId": "tahlan_gown_standard",
+  "hullId": "tahlan_gown",
+  "displayName": "Audacious",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "stabilizedshieldemitter",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "tahlan_lace",
+        "WS0017": "tahlan_lace",
+        "WS0040": "hurricane",
+        "WS0041": "hurricane"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0042": "sabotpod",
+        "WS0043": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "tahlan_ruffle",
+        "WS0008": "tahlan_ruffle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0018": "tahlan_lace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "dualflak",
+        "WS0019": "tahlan_string",
+        "WS0020": "tahlan_string",
+        "WS0021": "tahlan_string",
+        "WS0022": "tahlan_string",
+        "WS0023": "tahlan_string",
+        "WS0024": "tahlan_string",
+        "WS0025": "tahlan_string",
+        "WS0026": "tahlan_string",
+        "WS0027": "tahlan_string",
+        "WS0028": "tahlan_string",
+        "WS0029": "tahlan_string",
+        "WS0030": "tahlan_string",
+        "WS0031": "pdlaser",
+        "WS0032": "pdlaser",
+        "WS0033": "lrpdlaser",
+        "WS0034": "lrpdlaser",
+        "WS0035": "pdlaser",
+        "WS0036": "pdlaser",
+        "WS0037": "pdlaser"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0015": "tahlan_gown_ringleft_standard"
+    },
+    {
+      "WS0016": "tahlan_gown_ringright_standard"
+    }
+  ],
+  "wings": []
+}

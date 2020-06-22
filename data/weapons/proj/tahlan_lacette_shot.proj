@@ -1,0 +1,21 @@
+{
+	"id":"tahlan_lacette_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":40.0,
+	"width":4,
+	"fadeTime":0.1,
+	"fringeColor":[100,200,255,255],
+	"coreColor":[255,255,255,200],
+	"glowColor":[100,200,255,40],
+	"glowRadius":20,
+	"hitGlowRadius":10,	
+	"textureType": [
+      "graphics/tahlan/fx/tahlan_fluff_beam_fringe.png",
+      "graphics/tahlan/fx/tahlan_fluff_beam_core.png"
+    ],
+	"textureScrollSpeed":64,
+	"pixelsPerTexel":1.0,
+}

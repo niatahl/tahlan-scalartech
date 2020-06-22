@@ -1,0 +1,46 @@
+{
+  "id": "tahlan_ruffle",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_ruffle_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "everyFrameEffect": "data.scripts.weapons.tahlan_RuffleScript",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_ruffle_turret_base.png",
+  "turretGlowSprite": "graphics/tahlan/weapons/tahlan_ruffle_turret_glow.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_ruffle_hp_base.png",
+  "hardpointGlowSprite": "graphics/tahlan/weapons/tahlan_ruffle_hp_glow.png",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    16,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    18.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "glowColor":[255,0,120,255],
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 60,
+    "spread": 0,
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      255,
+      150,
+      200,
+      125
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_ruffle_fire"
+}

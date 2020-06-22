@@ -1,0 +1,73 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Splinter Group",
+    
+    "directoryUseShortName":true,
+    
+    "marketSpawnWeight":0.75,
+     
+    "startRelationships":{ 
+		"hegemony": -0.3, 
+		"luddic_church":-0.2, 
+		"diableavionics":0.5, #Dreadnought bros
+		"sylphon":0.1,
+		"tiandong":0.3
+		},
+    "maxRelationships":{},
+    "diplomacyPositiveChance":{},
+    "diplomacyNegativeChance":{},
+    "morality":"good",
+    
+    "alignments":{
+        "corporate":1,
+        "technocratic":1,
+    },
+    "diplomacyTraits":["pacifist", "helps_allies", "stalwart", "lowprofile", "neutralist"],
+    
+    "freeMarket":true,
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":0.5,	# They like to bunker up in Spindle
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
+        
+    "startShipsSolo":[["tahlan_margin_standard"]],
+    "startShipsCombatSmall":[
+      ["tahlan_brim_hunter", "tahlan_hem_hunter", "tahlan_margin_standard"]
+    ],
+    "startShipsTradeSmall":[
+      ["buffalo_Standard", "tahlan_margin_standard", "tahlan_hem_hunter"]
+    ],
+    "startShipsCombatLarge":[
+      ["tahlan_verge_standard", "tahlan_frill_guardian", "tahlan_margin_standard"]
+    ],
+    #"startShipsExplorerLarge":[],
+    #"startShipsTradeLarge":[],
+    #"startShipsCarrierSmall":[],
+    "startShipsCarrierLarge":[["tahlan_strand_strike", "tahlan_brim_hunter", "tahlan_hem_hunter"]],
+    "startShipsSuper":[["tahlan_skye_hunter"]],
+    
+    "startSpecialItems":[
+        [["tahlan_scalartech_package", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":1},
+        {"id":"aiCore_station", "count":2, "mult":0.2},
+        {"id":"aiCore_military", "mult":0.4},
+        {"id":"aiCore_heavyindustry", "count":1},
+        {"id":"aiCore_any", "mult":1.5},
+    ],
+}

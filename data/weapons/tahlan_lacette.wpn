@@ -1,0 +1,50 @@
+{
+  "id": "tahlan_lacette",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_lacette_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "everyFrameEffect": "data.scripts.weapons.tahlan_LacetteScript",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_lacette_turret_base.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_lacette_hp_base.png",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    11.5,
+    1.5,
+    11.5,
+    -1.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    1.5,
+    12,
+    -1.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 0,
+    "particleSizeMin": 3,
+    "particleSizeRange": 6,
+    "particleDuration": 0.5,
+    "particleCount": 15,
+    "particleColor": [
+      100,
+      200,
+      255,
+      200
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_lacette_fire"
+}

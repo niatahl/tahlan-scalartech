@@ -1,0 +1,114 @@
+{
+  "hullName": "hem",
+  "hullId": "tahlan_hem",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_hem.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 96,
+  "width": 82,
+  "center": [41, 52.5],
+  "collisionRadius": 74,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 69,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_scalarspecs"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [19.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36.5, 24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [36.5, -24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-28, 23],
+      "length": 34.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-28, -23],
+      "length": 34.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49.5, -0],
+      "length": 29.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49, -0],
+      "length": 15.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-27, 28],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-27, -28],
+      "length": 25,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -47, -5,
+    -35, -16.5,
+    -29, -18.5,
+    -25.5, -34,
+    -12, -38.5,
+    40.5, -38.5,
+    40.5, -15.5,
+    27.5, -10.5,
+    27.5, 10.5,
+    40.5, 15.5,
+    40.5, 38.5,
+    -12, 38.5,
+    -25.5, 34,
+    -29, 18.5,
+    -35, 16.5,
+    -47, 5
+  ]
+}

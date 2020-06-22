@@ -1,0 +1,18 @@
+{
+	"id":"tahlan_tousle_split_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"hitGlowRadius":15,
+	"length":50.0,
+	"width":3.0,
+	"fadeTime":0.1,
+	"coreColor":[255,255,255,255],
+	"fringeColor": [255,255,255,255],
+	"glowColor": [110,207,255,30],
+	"glowRadius":30,
+	"textureScrollSpeed":32.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/tahlan/missiles/tahlan_tousle_slug.png"
+}

@@ -1,0 +1,13 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Bridgehead Design,tahlan_filamentspecs,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_FilamentSpecs,"Instead of actual fighter bays, this ship instead projects a stable wormhole connected to an automated planetary aerospace facility which handles actual fighter operations. Due to the planetary facility's capacities, fighter replacement times and their decay from sustained losses are reduced by %s.",Improved fighter operations,graphics/tahlan/hullmods/tahlan_filamentspecs.png
+ScalarTech Drives,tahlan_scalarspecs,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_ScalarSpecs,"ScalarTech's sophisticated drive technology is renowned for its enhanced performance at low flux, increasing the 0-flux speed boost by %s.
+
+To ensure the ship's survival, these advanced drives are equipped with an emergency delimiter, allowing %s increase in top speed after peak performance time has passed, allowing a swift retreat from combat.
+
+Due to interfering with the necessary subsystems, %s will %s these effects and %s will disable them entirely.",Enhanced Drives,graphics/tahlan/hullmods/tahlan_scalarspecs.png
+,,,,,,,,,,,,,,,,,,
+Gown Module,tahlan_gownmodule,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.tahlan_GownModule,Mirrors certain aspects between the parent and child hulls.,,graphics/hullmods/vast_bulk.png
+Centralized Targeting Core,tahlan_centraltargeting,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CentralTargetingCore,"A centralized targeting core extends the range of ballistic and energy weapons by %s.
+
+Precludes the installation of a Dedicated Targeting Core or an Integrated Targeting Unit.",Greatly extends non-missile weapon range.,graphics/hullmods/advanced_targeting_core.png
+,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,68 @@
+{
+    "displayName": "Bridgehead",
+    "fluxCapacitors": 14,
+    "fluxVents": 50,
+    "hullId": "tahlan_filament",
+    "hullMods": [
+        "targetingunit",
+        "fluxbreakers",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_filament_bridgehead",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_ruffle",
+                "WS0002": "tahlan_ruffle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "harpoonpod",
+                "WS0006": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_tousle",
+                "WS0004": "tahlan_tousle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "tahlan_string",
+                "WS0008": "tahlan_string",
+                "WS0009": "tahlan_string",
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string",
+                "WS0012": "tahlan_string",
+                "WS0013": "tahlan_string",
+                "WS0014": "tahlan_string",
+                "WS0015": "tahlan_string",
+                "WS0016": "tahlan_string",
+                "WS0017": "tahlan_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0018": "heavyburst"}
+        }
+    ],
+    "wings": [
+        "tahlan_fiber_bomber_wing",
+        "tahlan_fiber_bomber_wing",
+        "tahlan_cord_fighter_wing",
+        "tahlan_thread_swarmer_wing"
+    ]
+}

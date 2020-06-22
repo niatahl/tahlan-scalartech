@@ -1,0 +1,247 @@
+{
+	id:"scalartech",
+	"color":[0,255,255,255],
+	"secondaryUIColor":[255,80,50,255],
+	        "secondarySegments":2,
+	"displayName":"ScalarTech",
+	"displayNameWithArticle":"ScalarTech",
+	"displayNameLong":"ScalarTech Solutions",
+	"displayNameLongWithArticle":"ScalarTech Solutions",
+	"logo":"graphics/tahlan/factions/tahlan_scalartech.png",
+	"crest":"graphics/tahlan/factions/tahlan_scalartech_crest.png",
+	"shipNamePrefix":"SDS",
+	"shipNameSources":{
+		"JAPANESE":3,
+		"SPACE":3,
+		"MERCANTILE":3,
+	},
+	"description":"No description yet.",
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "hightech_bp", "midline_bp"],
+		"hulls":[
+		],
+	},
+	"knownShips":{
+		"tags":["base_bp", "midline_bp", "hightech_bp", "scalartech_bp"],
+		"hulls":[
+			"tahlan_filament",
+			"tahlan_skye",
+			"tahlan_strand",
+			"atlas",
+			"kite_original",
+			"odyssey",
+			"prometheus",
+			"omen",
+			"medusa",
+			"tempest",
+			"eagle",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["hightech_bp", "scalartech_bp"],
+		"hulls":[
+			"tahlan_filament",
+			"tahlan_skye",
+			"tahlan_strand",
+			"odyssey",
+			"omen",
+			"medusa",
+		],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "scalartech_bp"],
+		"fighters":[
+			"xyphos_wing",
+			"thunder_wing",
+			"claw_wing",
+			"trident_wing",
+			"longbow_wing",
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "scalartech_bp"],
+		"weapons":[
+			"lightneedler",
+			"heavyneedler",
+			"multineedler",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"advancedoptics",
+			"turretgyros",
+			"augmentedengines",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"hiressensors",
+			"efficiency_overhaul",
+		],
+	},
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":3,
+		"phaseShips":1,
+		
+		"officerQuality":3,
+		"shipQuality":3,
+		"numShips":1,
+		
+		"shipSize":4,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.33,# as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"ship_design",
+			"electronic_warfare",
+			"fighter_doctrine",
+			"officer_management",
+			"coordinated_maneuvers",
+		],
+	},
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_tritach_encounter_neutral",
+		"market_neutral":"music_tritach_market_neutral",
+		"market_hostile":"music_tritach_market_hostile",
+		"market_friendly":"music_tritach_market_friendly",
+		"encounter_neutral":"music_tritach_encounter_neutral",
+		"encounter_hostile":"music_tritach_encounter_hostile",
+		"encounter_friendly":"music_tritach_encounter_friendly",
+	},
+	"internalComms":"scalartech_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_corporate01.png",
+			"graphics/portraits/portrait_corporate03.png",
+			"graphics/portraits/portrait_corporate05.png",
+			"graphics/portraits/portrait_corporate06.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait35.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_corporate02.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_corporate07.png",
+			"graphics/portraits/portrait34.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"High Admiral"},
+			"factionLeader":{"name":"ECEO"},
+		},
+		"posts":{
+			"factionLeader":{"name":"ECEO"},
+			"patrolCommander":{"name":"Captain"},
+			"fleetCommander":{"name":"Admiral"},
+			"baseCommander":{"name":"Base Commander"},
+		},
+	},
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":false,
+		"buysAICores":true,
+		"AICoreValueMult":2,
+		"AICoreRepMult":1,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},	
+	"fleetTypeNames":{
+		"trade":"STLD Trader",
+		"tradeLiner":"ScalarLines Flight",
+		"tradeSmuggler":"Expedited Trader",
+		"smallTrader":"Distribution Convoy",
+		
+		"patrolSmall":"STDF Patrol",
+		"patrolMedium":"STDF Flotilla",
+		"patrolLarge":"STDF Fleet",
+		
+		"inspectionFleet":"STID Inspector",
+		"taskForce":"STDF Task Force",
+		
+		"foodReliefFleet":"Relief Convoy",
+		
+		#"mercScout":"Contract Scout",
+		#"mercBountyHunter":"Human Recovery Contractor",
+		#"mercPrivateer":"Security Contractor",
+		#"mercPatrol":"Contracted Patrol",
+		#"mercArmada":"Contracted Armada",
+	}
+},
+

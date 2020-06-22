@@ -1,0 +1,111 @@
+{
+  "hullName": "Margin",
+  "hullId": "tahlan_margin",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_margin.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 135,
+  "width": 92,
+  "center": [46, 67.5],
+  "collisionRadius": 94,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 87.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_scalarspecs"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [58.5, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [58.5, -8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 231,
+      "angle": 68,
+      "locations": [5.5, 16]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 231,
+      "angle": -68,
+      "locations": [5.5, -16]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-45.5, -0],
+      "length": 50,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-44.5, -0],
+      "length": 20.5,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-32, 30],
+      "length": 28.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, -30],
+      "length": 28.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -43, -18.5,
+    -33, -23,
+    -27, -37,
+    -3, -37,
+    3.5, -41.5,
+    28.5, -42.5,
+    25, -37.5,
+    35, -36,
+    43, -25,
+    64.5, -24.5,
+    64.5, 24.5,
+    43, 25,
+    35, 36,
+    25, 37.5,
+    28.5, 42.5,
+    3.5, 41.5,
+    -3, 37,
+    -27, 37,
+    -33, 23,
+    -43, 18.5
+  ]
+}

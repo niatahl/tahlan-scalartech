@@ -1,0 +1,42 @@
+{
+  "variantId": "tahlan_gown_ringleft_standard",
+  "hullId": "tahlan_gown_ringleft",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "tahlan_ruffle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "tahlan_tousle",
+        "WS0002": "tahlan_tousle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "tahlan_string"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "tahlan_cord_fighter_wing",
+    "tahlan_cord_fighter_wing"
+  ]
+}

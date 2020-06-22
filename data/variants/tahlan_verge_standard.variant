@@ -1,0 +1,48 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 30,
+    "hullId": "tahlan_verge",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_verge_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "tahlan_ruffle"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "typhoon",
+                "WS0002": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_lace",
+                "WS0004": "tahlan_lace"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string",
+                "WS0008": "tahlan_string",
+                "WS0009": "tahlan_string",
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string"
+            }
+        }
+    ]
+}

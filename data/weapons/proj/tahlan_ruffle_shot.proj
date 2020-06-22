@@ -1,0 +1,26 @@
+{
+	"id":"tahlan_ruffle_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"onHitEffect":"data.scripts.weapons.tahlan_RuffleOnHitEffect",
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":120.0,
+	"hitGlowRadius":60,
+	"width":12.0,
+	"fadeTime":0.4,
+	"fringeColor":[255,0,120,255],
+	"coreColor":[255, 220, 240,205],
+	"glowColor":[255,0,120,40],
+	"glowRadius":100,
+	"pixelsPerTexel":5.0,
+	"textureType": [
+      "graphics/tahlan/fx/tahlan_fluff_beam_fringe.png",
+      "graphics/tahlan/fx/tahlan_fluff_beam_core.png"
+    ],
+	"textureScrollSpeed":-64,
+	#"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"
+}

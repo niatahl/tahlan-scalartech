@@ -1,0 +1,20 @@
+id,type,size,intensity,fadeout,color,offset,hit size,hit intensity,hit fadeout,hit color,flash size,flash intensity,flash fadeout,flash color,flash offset,chance,fighter dim
+,,,,,,,,,,,,,,,,,
+#PROJECTILES,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+tahlan_ruffle_shot,projectile,120,0.6,0.3,"[255,0,120]",,160,0.5,0.3,"[255,0,120]",100,0.6,0.2,"[255,0,120]",,1,TRUE
+tahlan_lace_shot,projectile,80,0.2,0.3,"[100,200,255]",,80,0.2,0.2,"[100,200,255]",60,0.2,0.2,"[100,200,255]",,1,TRUE
+tahlan_lacette_shot,projectile,80,0.1,0.3,"[100,200,255]",,80,0.2,0.2,"[100,200,255]",60,0.2,0.2,"[100,200,255]",,1,TRUE
+tahlan_tousle_shot,projectile,80,0.2,0.3,"[255,255,255]",,80,0.2,0.2,"[255,255,255]",60,0.2,0.2,"[255,255,255]",,1,TRUE
+tahlan_tousle_split_shot,projectile,80,0.1,0.3,"[255,255,255]",,80,0.2,0.2,"[255,255,255]",60,0.2,0.2,"[255,255,255]",,1,TRUE
+tahlan_string_shot,projectile,60,0.1,0.3,"[255,0,120]",,80,0.2,0.2,"[255,0,120]",60,0.2,0.2,"[255,0,120]",,1,TRUE
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+#MISSILES,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+#BEAMS,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,

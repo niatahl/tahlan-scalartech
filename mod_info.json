@@ -1,0 +1,10 @@
+{
+	"id":"tahlan_scalartech", # internal id
+	"name":"Tahlan Module - ScalarTech Solutions", # displayed to the player
+	"author":"Nia",
+	"version":"0.1",
+	"description":"Adds content related to ScalarTech Inc",
+	"gameVersion":"0.9.1a",
+	"jars":["jars/tahlan-scalartech.jar"],
+	"modPlugin":"data.scripts.tahlan_ScalarModPlugin"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tahlan_tousle_split",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_tousle_split_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_tousle_turret_base.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tousle_hp_base.png",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    4,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 0,
+    "particleSizeMin": 3,
+    "particleSizeRange": 6,
+    "particleDuration": 0.5,
+    "particleCount": 15,
+    "particleColor": [
+      255,
+      255,
+      255,
+      200
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_tousle_fire"
+}

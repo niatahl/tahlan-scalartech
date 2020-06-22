@@ -1,0 +1,44 @@
+{
+  "id": "tahlan_tousle",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_tousle_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_tousle_turret_base.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tousle_hp_base.png",  
+  "everyFrameEffect": "data.scripts.weapons.tahlan_TousleScript",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    4,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 0,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      255,
+      255,
+      255,
+      200
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_tousle_fire"
+}

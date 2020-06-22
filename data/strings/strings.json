@@ -1,0 +1,17 @@
+{
+	"tahlan":{
+		"%":"%",
+		"su":"su",
+		"op":"OP",
+		"/":"/",
+		"-":"-",
+		"+":"+",
+		"SO":"Safety Overrides",
+		"UI":"Unstable Injector",
+		"halve":"halve",
+		"sys_supercruise":"Power diverted to drives",
+		limit_buff:"Active - Performance enhanced",
+		limit_debuff:"Cooling down - Performance reduced",
+		
+	}
+}

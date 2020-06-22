@@ -1,0 +1,36 @@
+{
+    "displayName": "Guardian",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
+    "hullId": "tahlan_frill",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_frill_guardian",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_lace",
+                "WS0002": "tahlan_lace"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "sabotpod",
+                "WS0004": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string"
+            }
+        }
+    ]
+}

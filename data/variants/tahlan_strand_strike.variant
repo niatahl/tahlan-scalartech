@@ -1,0 +1,42 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 17,
+    "hullId": "tahlan_strand",
+    "hullMods": [],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_strand_strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_lacette",
+                "WS0004": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "pilum",
+                "WS0002": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_fiber_bomber_wing",
+        "tahlan_fiber_bomber_wing",
+        "tahlan_cord_fighter_wing"
+    ]
+}
