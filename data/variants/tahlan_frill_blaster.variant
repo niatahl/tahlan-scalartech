@@ -1,0 +1,36 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "hullId": "tahlan_frill",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_frill_blaster",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyblaster",
+                "WS0002": "heavyblaster"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "harpoonpod",
+                "WS0004": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pdlaser",
+                "WS0006": "pdlaser"
+            }
+        }
+    ]
+}

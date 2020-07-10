@@ -1,0 +1,42 @@
+{
+    "displayName": "Classic",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "tahlan_strand",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_strand_classic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lrpdlaser",
+                "WS0004": "lrpdlaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "gravitonbeam",
+                "WS0002": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lrpdlaser",
+                "WS0006": "lrpdlaser",
+                "WS0007": "pdlaser"
+            }
+        }
+    ],
+    "wings": [
+        "dagger_wing",
+        "dagger_wing",
+        "longbow_wing"
+    ]
+}

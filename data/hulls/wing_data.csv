@@ -1,4 +1,4 @@
 id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
-tahlan_thread_swarmer_wing,tahlan_thread_swarmer,"high, interceptor5, interceptor",3,0.2,3,8,CLAW,4000,500,,5,INTERCEPTOR,Drone,7,10000,,,,,,,,,,,,,227
-tahlan_fiber_bomber_wing,tahlan_fiber_bomber,"bomber10, bomber, high",3,0.2,6,20,V,4000,2000,500,3,BOMBER,Heavy Bomber,18,30000,,,,,,,,,,,,,230
-tahlan_cord_fighter_wing,tahlan_cord_fighter,"fighter15, fighter, high",3,0.2,5,12,V,4000,500,,3,FIGHTER,Heavy Fighter,12,20000,,,,,,,,,,,,,230
+tahlan_thread_swarmer_wing,tahlan_thread_swarmer,"high, interceptor5, interceptor, scalartech_bp",3,0.2,3,8,CLAW,4000,500,,5,INTERCEPTOR,Drone,7,10000,,,,,,,,,,,,,227
+tahlan_fiber_bomber_wing,tahlan_fiber_bomber,"bomber10, bomber, high, scalartech_bp",3,0.2,6,20,V,4000,2000,500,3,BOMBER,Heavy Bomber,18,30000,,,,,,,,,,,,,230
+tahlan_cord_fighter_wing,tahlan_cord_fighter,"fighter15, fighter, high, scalartech_bp",3,0.2,5,12,V,4000,500,,3,FIGHTER,Heavy Fighter,12,20000,,,,,,,,,,,,,230

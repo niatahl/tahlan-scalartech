@@ -1,5 +1,5 @@
 {
-	"tahlan":{
+	"scalartech":{
 		"%":"%",
 		"su":"su",
 		"op":"OP",
@@ -12,6 +12,8 @@
 		"sys_supercruise":"Power diverted to drives",
 		limit_buff:"Active - Performance enhanced",
 		limit_debuff:"Cooling down - Performance reduced",
-		
+		access:"%s accessibility",
+		defense:"%s ground defense strength",
+		conGateScar:"The Gate Scar",
 	}
 }

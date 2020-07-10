@@ -1,0 +1,32 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 4,
+    "fluxVents": 0,
+    "hullId": "tahlan_tress",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_tress_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0002": "tahlan_string"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "harpoonpod",
+                "WS0004": "harpoonpod"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_cord_fighter_wing",
+        "tahlan_cord_fighter_wing"
+    ]
+}

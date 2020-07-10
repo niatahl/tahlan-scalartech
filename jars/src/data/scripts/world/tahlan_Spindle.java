@@ -4,27 +4,33 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.*;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
+import com.fs.starfarer.api.impl.campaign.terrain.BaseTiledTerrain;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
+import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
 import org.lazywizard.lazylib.MathUtils;
+import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class tahlan_Spindle {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Spindle");
 
-        system.getLocation().set(22000,-10000);
+        system.getLocation().set(22000,-14000);
 
         system.setBackgroundTextureFilename("graphics/tahlan/backgrounds/tahlan_spindle.jpg");
 
@@ -35,7 +41,8 @@ public class tahlan_Spindle {
 
         system.setLightColor(new Color(255, 252, 222));
 
-        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 2, Color.gray, 400f, 1200f, 200f);
+        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 2, Color.gray, 400f, 1600f, 200f);
+        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 3, Color.gray, 400f, 1800f, 200f);
 
         PlanetAPI spindle_1 = system.addPlanet("tahlan_spindle_p01",
                 spindle_star,
@@ -43,7 +50,7 @@ public class tahlan_Spindle {
                 "lava_minor",
                 360f*(float)Math.random(),
                 140,
-                1600,
+                2600,
                 160);
 
         PlanetConditionGenerator.generateConditionsForPlanet(spindle_1, StarAge.YOUNG);
@@ -54,30 +61,37 @@ public class tahlan_Spindle {
                 "barren",
                 360f*(float)Math.random(),
                 180,
-                2400,
+                4200,
                 230);
 
         PlanetConditionGenerator.generateConditionsForPlanet(spindle_2, StarAge.YOUNG);
 
         SectorEntityToken stableLoc1 = system.addCustomEntity("tahlan_spindle_stableLoc1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(spindle_star, 360f*(float)Math.random(),3000, 400);
+        stableLoc1.setCircularOrbit(spindle_star, 360f*(float)Math.random(),3400, 400);
 
-        system.addAsteroidBelt(spindle_star, 1500, 3800, 1500, 200, 600, Terrain.ASTEROID_BELT, "The Shawl");
-        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 1, Color.gray, 300f, 3200, 220);
-        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 0, Color.gray, 300f, 3600, 400);
-        system.addRingBand(spindle_star, "misc", "rings_asteroids0", 256f, 0, Color.gray, 400, 4000, 260);
-        system.addRingBand(spindle_star, "misc", "rings_asteroids0", 256f, 1, Color.gray, 400, 4600, 320);
+        system.addAsteroidBelt(spindle_star, 1500, 5500, 1500, 200, 600, Terrain.ASTEROID_BELT, "The Shawl");
+        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 1, Color.gray, 600f, 5200, 220);
+        system.addRingBand(spindle_star, "misc", "rings_dust0", 256f, 0, Color.gray, 600f, 5800, 400);
+        system.addRingBand(spindle_star, "misc", "rings_asteroids0", 256f, 0, Color.gray, 600f, 5400, 260);
+        system.addRingBand(spindle_star, "misc", "rings_asteroids0", 256f, 1, Color.gray, 600, 5600, 320);
 
-        PlanetAPI spindle_3 = system.addPlanet("tahlan_spindle_p03",
+        float charkhaAngle = 360f*(float)Math.random();
+
+        PlanetAPI spindle_3 = system.addPlanet("tahlan_spindle_charkha",
                 spindle_star,
                 "Charkha",
                 "jungle_charkha",
-                360f*(float)Math.random(),
-                200,
-                5000,
+                charkhaAngle,
+                190,
+                8500,
                 300);
 
         spindle_3.setCustomDescriptionId("tahlan_planet_charkha");
+
+        JumpPointAPI jumpPointCharkha = Global.getFactory().createJumpPoint("tahlan_spindle_charkha_jump", "Spinner's Road");
+        jumpPointCharkha.setCircularOrbit(spindle_star, charkhaAngle+30, 8000, 300);
+        jumpPointCharkha.setRelatedPlanet(spindle_3);
+        system.addEntity(jumpPointCharkha);
 
         MarketAPI spindle_3_market = addMarketplace("scalartech", spindle_3, null,
                 "Charkha",
@@ -87,17 +101,17 @@ public class tahlan_Spindle {
                                 Conditions.POPULATION_7,
                                 Conditions.HABITABLE,
                                 Conditions.FARMLAND_ADEQUATE,
-                                Conditions.ORGANICS_ABUNDANT,
+                                Conditions.ORGANICS_COMMON,
                                 Conditions.ORE_SPARSE,
                                 Conditions.INIMICAL_BIOSPHERE,
                                 Conditions.REGIONAL_CAPITAL,
-                                Conditions.IRRADIATED
+                                "tahlan_gatescar"
                         )
                 ),
                 new ArrayList<>(
                         Arrays.asList(
                                 Submarkets.SUBMARKET_OPEN,
-                                Submarkets.SUBMARKET_OPEN,
+                                Submarkets.GENERIC_MILITARY,
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_STORAGE
                         )
@@ -112,45 +126,79 @@ public class tahlan_Spindle {
                                 Industries.STARFORTRESS_HIGH,
                                 Industries.HEAVYBATTERIES,
                                 Industries.HIGHCOMMAND,
-                                Industries.WAYSTATION
+                                "tahlan_scalartechhq"
                         )
                 ),
                 0.3f,
-                true,
+                false,
                 true);
 
+        spindle_3_market.getIndustry(Industries.HIGHCOMMAND).setAICoreId(Commodities.ALPHA_CORE);
+        spindle_3_market.getIndustry(Industries.STARFORTRESS_HIGH).setAICoreId(Commodities.ALPHA_CORE);
 
-        SectorEntityToken stableLoc2 = system.addCustomEntity("tahlan_spindle_stableLoc2", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(spindle_star, 360f*(float)Math.random(),5600, 540);
+        SectorEntityToken spindle_3_field = system.addTerrain(Terrain.MAGNETIC_FIELD,new MagneticFieldTerrainPlugin.MagneticFieldParams(200f, // terrain effect band width
+                300f, // terrain effect middle radius
+                spindle_3, // entity that it's around
+                190f, // visual band start
+                600f, // visual band end
+                new Color(22, 95, 100, 50), // base color
+                0.5f, // probability to spawn aurora sequence, checked once/day when no aurora in progress
+                new Color(73, 180, 168),
+                new Color(105, 190, 177),
+                new Color(123, 210, 225),
+                new Color(132, 198, 240),
+                new Color(25, 93, 250),
+                new Color(0, 19, 240),
+                new Color(0, 3, 150)));
+
+        spindle_3_field.setCircularOrbit(spindle_3,0f,0f,120);
+
+        PlanetAPI spindle_3_moon = system.addPlanet("tahlan_spindle_p01",
+                spindle_3,
+                "Mika",
+                "barren_mika",
+                360f*(float)Math.random(),
+                60,
+                600,
+                60);
+
+        addConditionMarket(spindle_3_moon,new ArrayList<>(
+                        Arrays.asList(Conditions.NO_ATMOSPHERE, Conditions.LOW_GRAVITY, Conditions.ORE_SPARSE))
+                );
+
+        spindle_3_moon.setCustomDescriptionId("tahlan_planet_mika");
+
+        SectorEntityToken stableLoc2 = system.addCustomEntity("tahlan_spindle_stableLoc2", "Comm Relay", "comm_relay", Factions.NEUTRAL);
+        stableLoc2.setCircularOrbit(spindle_star, 360f*(float)Math.random(),7200, 540);
 
 
-        PlanetAPI spindle_4 = system.addPlanet("tahlan_spindle_p04",
+        PlanetAPI spindle_4 = system.addPlanet("tahlan_spindle_jacquard",
                 spindle_star,
                 "Jacquard",
                 "gas_giant",
                 360f*(float)Math.random(),
-                450,
-                5600,
+                400,
+                14000,
                 420);
 
         spindle_4.setCustomDescriptionId("tahlan_planet_jacquard");
 
-        MarketAPI spindle_4_market = addMarketplace("scalartech", spindle_3, null,
-                "Charkha",
-                4,
+        MarketAPI spindle_4_market = addMarketplace("scalartech", spindle_4, null,
+                "Jacquard",
+                5,
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_4,
+                                Conditions.POPULATION_5,
                                 Conditions.VOLATILES_DIFFUSE,
+                                Conditions.ORE_SPARSE,
                                 Conditions.RARE_ORE_MODERATE,
-                                Conditions.HIGH_GRAVITY,
-                                Conditions.
+                                Conditions.HIGH_GRAVITY
                         )
                 ),
                 new ArrayList<>(
                         Arrays.asList(
                                 Submarkets.SUBMARKET_OPEN,
-                                Submarkets.SUBMARKET_OPEN,
+                                Submarkets.GENERIC_MILITARY,
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_STORAGE
                         )
@@ -161,24 +209,145 @@ public class tahlan_Spindle {
                                 Industries.MEGAPORT,
                                 Industries.MINING,
                                 Industries.LIGHTINDUSTRY,
-                                Industries.ORBITALWORKS,
-                                Industries.FARMING,
-                                Industries.STARFORTRESS_HIGH,
-                                Industries.HEAVYBATTERIES,
-                                Industries.PATROLHQ,
-                                Industries.WAYSTATION
+                                Industries.REFINING,
+                                Industries.BATTLESTATION_HIGH,
+                                Industries.GROUNDDEFENSES
                         )
                 ),
                 0.3f,
                 true,
                 true);
 
+        system.addRingBand(spindle_4, "misc", "rings_asteroids0", 256f, 0, Color.gray, 300, 500, 200);
+
+        float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, spindle_star, StarAge.YOUNG,
+                2, 3, // min/max entities to add
+                15000, // radius to start adding at
+                0, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
+                true); // whether to use custom or system-name based names
+
+        PlanetAPI spindle_5 = system.addPlanet("tahlan_spindle_ardor",
+                spindle_star,
+                "Ardor",
+                "barren",
+                360f*(float)Math.random(),
+                220,
+                radiusAfter+1500,
+                510);
+
+        spindle_5.setCustomDescriptionId("tahlan_planet_ardor");
+
+        MarketAPI spindle_5_market = addMarketplace(Factions.PIRATES, spindle_5, null,
+                "Ardor",
+                4,
+                new ArrayList<>(
+                        Arrays.asList(
+                                Conditions.POPULATION_4,
+                                Conditions.ORE_SPARSE,
+                                Conditions.NO_ATMOSPHERE,
+                                Conditions.LOW_GRAVITY,
+                                Conditions.DARK
+                        )
+                ),
+                new ArrayList<>(
+                        Arrays.asList(
+                                Submarkets.SUBMARKET_OPEN,
+                                Submarkets.SUBMARKET_BLACK,
+                                Submarkets.SUBMARKET_STORAGE
+                        )
+                ),
+                new ArrayList<>(
+                        Arrays.asList(
+                                Industries.POPULATION,
+                                Industries.SPACEPORT,
+                                Industries.MINING,
+                                Industries.ORBITALSTATION,
+                                Industries.GROUNDDEFENSES,
+                                Industries.PATROLHQ
+                        )
+                ),
+                0.3f,
+                true,
+                true);
+
+        float radiusAfter2 = StarSystemGenerator.addOrbitingEntities(system, spindle_star, StarAge.YOUNG,
+                1, 2, // min/max entities to add
+                radiusAfter+3000, // radius to start adding at
+                3, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
+                true); // whether to use custom or system-name based names
+
+        generateNebula(system, 14000);
 
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 
         //Finally cleans up hyperspace
         cleanup(system);
+    }
+
+    protected void generateNebula(StarSystemAPI system, float holeRadius)
+    {
+        Random random = new Random(getStartingSeed());
+        float w = 50000;
+        float h = 50000;
+
+        // First make a solid map-spanning nebula
+        SectorEntityToken nebulaTiles = Misc.addNebulaFromPNG("data/campaign/terrain/tahlan_nebula_spindle.png",
+                0, 0, // Center of nebula
+                system, // Location to add to
+                "terrain", "nebula", // Texture to use, uses xxx_map for map
+                4, 4, Terrain.NEBULA, StarAge.YOUNG);
+
+        nebulaTiles.getLocation().set(0, 0);
+
+        BaseTiledTerrain nebula = getNebula(system);
+        nebula.setTerrainName("Spinner's Thread");
+        NebulaEditor editor = new NebulaEditor(nebula);
+
+        // Donut hole
+        editor.clearArc(0, 0, 0, holeRadius, 0, 360);
+
+        // Do some random arcs
+        // Taken from vanilla's SectorProcGen.java
+        int numArcs = 0;
+
+        for (int i = 0; i < numArcs; i++)
+        {
+            float dist = w / 2f + w / 2f * random.nextFloat();
+            float angle = random.nextFloat() * 360f;
+
+            Vector2f dir = Misc.getUnitVectorAtDegreeAngle(angle);
+            dir.scale(dist - (w / 12f + w / 3f * random.nextFloat()));
+
+            float width = 800f * (1f + 2f * random.nextFloat());
+
+            float clearThreshold = 0f + 0.5f * random.nextFloat();
+
+            editor.clearArc(dir.x, dir.y, dist - width / 2f, dist + width / 2f, 0, 360f, clearThreshold);
+        }
+
+        // Clear planet orbit paths
+        SectorEntityToken center = system.getCenter();
+        for (PlanetAPI planet : system.getPlanets())
+        {
+            if (planet == center)
+            {
+                continue;
+            }
+            if (MathUtils.isWithinRange(center, planet, holeRadius - 3000))
+            {
+                continue;
+            }
+            float dist = MathUtils.getDistance(center, planet);
+            float width = 2000 + planet.getRadius() * 4;
+            float clearThreshold = 0f + 0.5f * random.nextFloat();
+            editor.clearArc(0, 0, dist - width / 2f, dist + width / 2f, 0, 360f, clearThreshold);
+        }
+
+        // Noise
+        editor.regenNoise();
+        editor.noisePrune(0.6f);
+        editor.regenNoise();
     }
 
 
@@ -263,5 +432,47 @@ public class tahlan_Spindle {
             SalvageSpecialAssigner.ShipRecoverySpecialCreator creator = new SalvageSpecialAssigner.ShipRecoverySpecialCreator(null, 0, 0, false, null, null);
             Misc.setSalvageSpecial(ship, creator.createSpecial(ship, null));
         }
+    }
+
+    //Shorthand for Conditions-only markets
+    public static MarketAPI addConditionMarket(SectorEntityToken entity, ArrayList<String> marketConditions)
+    {
+        String planetID = entity.getId();
+        String marketID = planetID + "_market";
+
+        MarketAPI newMarket = Global.getFactory().createMarket(marketID, entity.getName(), 0);
+        newMarket.setPrimaryEntity(entity);
+        newMarket.setPlanetConditionMarketOnly(true);
+        entity.setMarket(newMarket);
+
+        for (String condition : marketConditions)
+        {
+            newMarket.addCondition(condition);
+        }
+        return newMarket;
+    }
+
+    long getStartingSeed()
+    {
+        String seedStr = Global.getSector().getSeedString().replaceAll("[^0-9]", "");
+        return Long.parseLong(seedStr);
+    }
+
+
+    float getRandomFloat(Random random, float min, float max)
+    {
+        return min + (max - min) * random.nextFloat();
+    }
+
+    BaseTiledTerrain getNebula(StarSystemAPI system)
+    {
+        for (CampaignTerrainAPI curr : system.getTerrainCopy())
+        {
+            if (curr.getPlugin().getTerrainId().equals(Terrain.NEBULA))
+            {
+                return (BaseTiledTerrain) (curr.getPlugin());
+            }
+        }
+        return null;
     }
 }

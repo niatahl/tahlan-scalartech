@@ -1,0 +1,32 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 6,
+    "fluxVents": 0,
+    "hullId": "tahlan_tress",
+    "hullMods": [],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_tress_strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0002": "tahlan_string"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "pilum",
+                "WS0004": "pilum"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_fiber_bomber_wing",
+        "tahlan_fiber_bomber_wing"
+    ]
+}

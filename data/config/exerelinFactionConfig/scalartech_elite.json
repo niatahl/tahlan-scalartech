@@ -1,0 +1,12 @@
+{
+    "playableFaction":false,
+    "corvusCompatible":true,
+    "spawnAsFactionId":"scalartech",
+    "ngcTooltip":"Diktat start, but with high-tech ships",
+    "rebelFleetSuffix":"Rogues",
+    "startRelationships":{ "scalartech":1 },
+    
+    "responseFleetName":"Guardian Fleet",
+    
+    "morality":"amoral",
+}

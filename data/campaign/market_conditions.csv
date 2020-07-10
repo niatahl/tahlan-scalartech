@@ -1,0 +1,2 @@
+name,id,planetary,decivRemove,script,desc,icon,order
+The Gateway Scar,tahlan_gatescar,TRUE,,data.scripts.campaign.econ.tahlan_GateScar,"The failed gateway experiment has left the planet scarred, most notably wrapping it in a dense magnetic field that makes orbital navigation difficult. While problematic for general traffic and trade, it also makes any planetary assault attempts considerably harder.",graphics/tahlan/icons/markets/tahlan_gatescar.png,9203

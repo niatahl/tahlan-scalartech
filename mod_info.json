@@ -1,9 +1,9 @@
 {
 	"id":"tahlan_scalartech", # internal id
-	"name":"Tahlan Module - ScalarTech Solutions", # displayed to the player
+	"name":"ScalarTech Solutions", # displayed to the player
 	"author":"Nia",
 	"version":"0.1",
-	"description":"Adds content related to ScalarTech Inc",
+	"description":"A small faction at the edge of the core worlds with an iron will to defend their people.",
 	"gameVersion":"0.9.1a",
 	"jars":["jars/tahlan-scalartech.jar"],
 	"modPlugin":"data.scripts.tahlan_ScalarModPlugin"

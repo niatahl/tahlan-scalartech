@@ -5,12 +5,28 @@
 		
 	},
 	"combatSmall":{
+		"tahlan_hem_hunter":5,
+		"tahlan_hem_slayer":5,
+		"tahlan_margin_standard":5,	
+		"tahlan_margin_blaster":5,
+		"tahlan_curl_standard":5,
+		"tahlan_curl_escort":5,
 	},
 	"combatMedium":{
+		"tahlan_brim_hunter":5,
+		"tahlan_brim_striker":5,
+		"tahlan_frill_guardian":5,
+		"tahlan_frill_blaster":5,
 	},
 	"combatLarge":{
-		},
+		"tahlan_skye_hunter":5,
+		"tahlan_skye_killer":5,
+		"tahlan_verge_standard":5,
+		"tahlan_verge_standoff":5,
+	},
 	"combatCapital":{
+		"tahlan_gown_standard":5,
+		"tahlan_gown_illus":5,
 	},
 	
 	
@@ -27,10 +43,16 @@
 
 	# carriers
 	"carrierSmall":{
+		"tahlan_tress_support":5,
+		"tahlan_tress_strike":5,
 	},
 	"carrierMedium":{
+		"tahlan_strand_strike":5,
+		"tahlan_strand_classic":5,
 	},
 	"carrierLarge":{
+		"tahlan_filament_bridgehead":5,
+		"tahlan_filament_classic":5,
 	},
 
 	# phase ships

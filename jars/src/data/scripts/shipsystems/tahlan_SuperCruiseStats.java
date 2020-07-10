@@ -6,7 +6,7 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
 import java.awt.*;
 
-import static data.scripts.utils.tahlan_txt.txt;
+import static data.scripts.utils.tahlan_scalar_txt.txt;
 
 public class tahlan_SuperCruiseStats extends BaseShipSystemScript {
 

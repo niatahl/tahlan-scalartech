@@ -13,7 +13,7 @@
 	"flameoutTime":0.1, # total time from flameout to full fadeout
 	"fadeTime":0.1, # fadeout duration
 	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
-	"explosionColor":[50,255,255,30],  # purely visual, will get a white additively blended core on top of this color
+	"explosionColor":[0,50,50,255],  # purely visual, will get a white additively blended core on top of this color
 	"explosionRadius":200, # purely visual	
 	"engineSpec":{"turnAcc":0,
 				  "turnRate":0,
@@ -24,22 +24,22 @@
 					"slowToMaxSpeed":true,
 					"delay":2.5,
 					"pingSound":"mine_ping",
-					"pingColor":[50,255,255,255],
+					"pingColor":[50,200,200,255],
 					"pingRadius":250,
 					"pingDuration":0.25,
 					"windupSound":"mine_windup_heavy",
 					"windupDelay":1,
-					"explosionSpec":{"duration":0.1f,
+					"explosionSpec":{"duration":0.05f,
 									 "radius":250,
-									 "coreRadius":200, # full damage within core radius
+									 "coreRadius":220, # full damage within core radius
 									 "collisionClass":MISSILE_FF,
 									 "collisionClassByFighter":MISSILE_FF,
 									 "particleSizeMin":3.0,
 									 "particleSizeRange":3.0,
-									 "particleDuration":1,
-									 "particleCount":10,
-									 "particleColor":[0,200,255,30],
-									 "explosionColor":[50,255,255,30],
+									 "particleDuration":0.5,
+									 "particleCount":20,
+									 "particleColor":[0,50,50,255],
+									 "explosionColor":[0,50,50,255],
 									 "useDetailedExplosion":true,
 									 "sound":"mine_explosion"},
 					}	

@@ -17,4 +17,22 @@
 		"cloudColor":[70,115,140,235],
 		"cloudRotation":-6, # degrees/second, optional
 	},	
+	"barren_mika":{
+		"name":"Barren",	
+		"tilt":-27, # left-right (>0 tilts to the left)
+		"pitch":2, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-4, # degrees/second
+		"planetColor":[255,255,255,255],
+		"atmosphereThickness":0, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":12, #  minimum thickness in pixels
+		"atmosphereColor":[100,140,160,155],
+		"texture":"graphics/tahlan/planets/mika.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[102,103,106,255],
+		"isStar":false,
+		"lightPosition":[-2,-8,10], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+		#"glowTexture":"graphics/planets/barren_bombarded_lights.png", # omit for no glow layer
+		#"glowColor":[255,255,255,255],
+		#"useReverseLightForGlow":true,
+	},
 }

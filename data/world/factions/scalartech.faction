@@ -1,6 +1,6 @@
 {
 	id:"scalartech",
-	"color":[0,255,255,255],
+	"color":[100,255,255,255],
 	"secondaryUIColor":[255,80,50,255],
 	        "secondarySegments":2,
 	"displayName":"ScalarTech",
@@ -9,11 +9,10 @@
 	"displayNameLongWithArticle":"ScalarTech Solutions",
 	"logo":"graphics/tahlan/factions/tahlan_scalartech.png",
 	"crest":"graphics/tahlan/factions/tahlan_scalartech_crest.png",
-	"shipNamePrefix":"SDS",
+	"shipNamePrefix":"STS",
 	"shipNameSources":{
-		"JAPANESE":3,
-		"SPACE":3,
-		"MERCANTILE":3,
+		"SCALARTECH_NAMES":1,
+		"BRITISH_NAVY":1,
 	},
 	"description":"No description yet.",
 	"names":{
@@ -28,8 +27,10 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
+			"scalartech_bp":1.2
 		},
 		"hulls":{
+			"tahlan_strand":1.1
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -82,7 +83,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "scalartech_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "scalartech_wep_bp"],
 		"weapons":[
 			"lightneedler",
 			"heavyneedler",
@@ -163,6 +164,8 @@
 		],
 	},
 	"illegalCommodities":[
+		"drugs",
+		"organs",
 	],
 	"music":{
 		"theme":"music_tritach_encounter_neutral",
@@ -223,17 +226,17 @@
 		},
 	},	
 	"fleetTypeNames":{
-		"trade":"STLD Trader",
+		"trade":"Trader",
 		"tradeLiner":"ScalarLines Flight",
 		"tradeSmuggler":"Expedited Trader",
 		"smallTrader":"Distribution Convoy",
 		
-		"patrolSmall":"STDF Patrol",
-		"patrolMedium":"STDF Flotilla",
-		"patrolLarge":"STDF Fleet",
+		"patrolSmall":"Patrol",
+		"patrolMedium":"Flotilla",
+		"patrolLarge":"Fleet",
 		
-		"inspectionFleet":"STID Inspector",
-		"taskForce":"STDF Task Force",
+		"inspectionFleet":"Inspector",
+		"taskForce":"Task Force",
 		
 		"foodReliefFleet":"Relief Convoy",
 		

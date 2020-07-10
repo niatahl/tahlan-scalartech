@@ -1,0 +1,78 @@
+{
+    "displayName": "Illustrious",
+    "fluxCapacitors": 36,
+    "fluxVents": 50,
+    "hullId": "tahlan_gown",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "fluxbreakers",
+        "missleracks"
+    ],
+    "modules": [
+        {"WS0015": "tahlan_gown_ringleft_illus"},
+        {"WS0016": "tahlan_gown_ringright_illus"}
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_gown_illus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0040": "squall",
+                "WS0041": "squall"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0042": "typhoon",
+                "WS0043": "typhoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "plasma",
+                "WS0008": "plasma"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "dualflak",
+                "WS0017": "pulselaser",
+                "WS0018": "pulselaser",
+                "WS0019": "lrpdlaser",
+                "WS0020": "lrpdlaser",
+                "WS0021": "lrpdlaser",
+                "WS0022": "lrpdlaser",
+                "WS0023": "lrpdlaser",
+                "WS0024": "lrpdlaser",
+                "WS0025": "lrpdlaser",
+                "WS0026": "lrpdlaser",
+                "WS0027": "lrpdlaser",
+                "WS0028": "lrpdlaser",
+                "WS0029": "lrpdlaser",
+                "WS0030": "lrpdlaser",
+                "WS0031": "lrpdlaser",
+                "WS0032": "lrpdlaser",
+                "WS0033": "lrpdlaser",
+                "WS0034": "lrpdlaser",
+                "WS0035": "lrpdlaser",
+                "WS0036": "lrpdlaser",
+                "WS0037": "lrpdlaser"
+            }
+        }
+    ],
+    "wings": []
+}

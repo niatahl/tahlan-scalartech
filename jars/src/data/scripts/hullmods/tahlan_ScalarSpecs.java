@@ -4,14 +4,15 @@ import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.impl.campaign.ids.Stats;
 
-import static data.scripts.utils.tahlan_txt.txt;
+import static data.scripts.utils.tahlan_scalar_txt.txt;
 
 public class tahlan_ScalarSpecs extends BaseHullMod {
 
-	private static final float ZERO_FLUX_BOOST = 20f;
+	private static final float ZERO_FLUX_BOOST = 10f;
+	private static final float ZERO_FLUX_BOOST_UI = 5f;
 	private static final float EMERGENCY_BOOST = 1.1f;
+	private static final float ENGINE_DAMAGE_MULT = 0.2f;
 
 	private static final String ID = "ScalarDrivesID";
 
@@ -21,6 +22,7 @@ public class tahlan_ScalarSpecs extends BaseHullMod {
 	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
 
         stats.getZeroFluxSpeedBoost().modifyFlat(id,ZERO_FLUX_BOOST);
+        stats.getEngineDamageTakenMult().modifyMult(id,1f-ENGINE_DAMAGE_MULT);
 
 	}
 
@@ -28,7 +30,7 @@ public class tahlan_ScalarSpecs extends BaseHullMod {
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         ship.getShield().setRadius(ship.getShieldRadiusEvenIfNoShield(), INNERLARGE, OUTERLARGE);
         if (ship.getVariant().hasHullMod("unstable_injector")) {
-            ship.getMutableStats().getZeroFluxSpeedBoost().modifyFlat(id,ZERO_FLUX_BOOST/2);
+            ship.getMutableStats().getZeroFluxSpeedBoost().modifyFlat(id,ZERO_FLUX_BOOST_UI);
         }
         if (ship.getVariant().hasHullMod("safetyoverrides")) {
             ship.getMutableStats().getZeroFluxSpeedBoost().unmodify(id);
@@ -58,6 +60,7 @@ public class tahlan_ScalarSpecs extends BaseHullMod {
 		if (index == 2) return txt("UI");
 		if (index == 3) return txt("halve");
 		if (index == 4) return txt("SO");
+		if (index == 5) return "" + (int)(100f*ENGINE_DAMAGE_MULT) + txt("%");
 		return null;
 	}
 	

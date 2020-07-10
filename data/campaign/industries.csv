@@ -1,0 +1,2 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+tahlan_scalartechhq,STDF Headquarters,90,60,,6,,,"military, unraidable, tactical_bombardment, structure",,graphics/tahlan/icons/industry/tahlan_scalartechhq.png,data.scripts.campaign.econ.industries.tahlan_ScalarTechHQ,"Headquarters of the ScalarTech Defense Forces, the now highly experienced defenders of the Spindle system. Equipped with the best equipment ScalarTech Solutions can provide, they have ensured the safety of Spindle for decades.",2650

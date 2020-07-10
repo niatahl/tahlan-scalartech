@@ -7,13 +7,16 @@
     "directoryUseShortName":true,
     
     "marketSpawnWeight":0.75,
+	
+	"factionIdForHqResponse":"scalartech_elite",
      
     "startRelationships":{ 
 		"hegemony": -0.3, 
 		"luddic_church":-0.2, 
 		"diableavionics":0.5, #Dreadnought bros
 		"sylphon":0.1,
-		"tiandong":0.3
+		"tiandong":0.3,
+		"pirates":-0.6,
 		},
     "maxRelationships":{},
     "diplomacyPositiveChance":{},
@@ -34,7 +37,9 @@
     
     "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
         
-    "startShipsSolo":[["tahlan_margin_standard"]],
+    "startShipsSolo":[
+		["tahlan_margin_standard"]
+	],
     "startShipsCombatSmall":[
       ["tahlan_brim_hunter", "tahlan_hem_hunter", "tahlan_margin_standard"]
     ],
@@ -46,12 +51,18 @@
     ],
     #"startShipsExplorerLarge":[],
     #"startShipsTradeLarge":[],
-    #"startShipsCarrierSmall":[],
-    "startShipsCarrierLarge":[["tahlan_strand_strike", "tahlan_brim_hunter", "tahlan_hem_hunter"]],
-    "startShipsSuper":[["tahlan_skye_hunter"]],
+    "startShipsCarrierSmall":[
+		["tahlan_tress_support", "tahlan_curl_standard"]
+	],
+    "startShipsCarrierLarge":[
+		["tahlan_strand_strike", "tahlan_brim_hunter", "tahlan_curl_standard"]
+	],
+    "startShipsSuper":[
+		["tahlan_skye_hunter"]
+	],
     
     "startSpecialItems":[
-        [["tahlan_scalartech_package", ""]],
+        [["tahlan_scalartech_hull_package", "tahlan_scalartech_weapon_package", ""]],
     ],
     
     "defenceStations":[

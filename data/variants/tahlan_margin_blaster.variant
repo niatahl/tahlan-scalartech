@@ -1,0 +1,28 @@
+{
+    "displayName": "Blaster",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "tahlan_margin",
+    "hullMods": ["magazines"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_margin_blaster",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "amblaster",
+                "WS0002": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "pdburst",
+                "WS0004": "pdburst"
+            }
+        }
+    ]
+}

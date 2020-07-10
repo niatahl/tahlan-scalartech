@@ -4,10 +4,15 @@ ScalarTech Drives,tahlan_scalarspecs,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.
 
 To ensure the ship's survival, these advanced drives are equipped with an emergency delimiter, allowing %s increase in top speed after peak performance time has passed, allowing a swift retreat from combat.
 
-Due to interfering with the necessary subsystems, %s will %s these effects and %s will disable them entirely.",Enhanced Drives,graphics/tahlan/hullmods/tahlan_scalarspecs.png
+Due to interfering with the necessary subsystems, %s will %s these effects and %s will disable them entirely.
+
+Enhanced engine shielding also reduces engine damage taken by %s.",Enhanced Drives,graphics/tahlan/hullmods/tahlan_scalarspecs.png
 ,,,,,,,,,,,,,,,,,,
 Gown Module,tahlan_gownmodule,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.tahlan_GownModule,Mirrors certain aspects between the parent and child hulls.,,graphics/hullmods/vast_bulk.png
 Centralized Targeting Core,tahlan_centraltargeting,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CentralTargetingCore,"A centralized targeting core extends the range of ballistic and energy weapons by %s.
 
 Precludes the installation of a Dedicated Targeting Core or an Integrated Targeting Unit.",Greatly extends non-missile weapon range.,graphics/hullmods/advanced_targeting_core.png
 ,,,,,,,,,,,,,,,,,,
+ScalarTech Logistics,tahlan_chmscalartech,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CHMScalartech,"ScalarTech Crews have not forgotten their corporation's roots in the logistics sector and know how to run a fleet efficiently. Capable of optimizing storage capacity, they can increase the fuel and cargo capacity of ships by %s and streamlined ship operations reduce monthly maintenance and fuel use by %s.
+
+Additionally, the corporation's vast experience with drive systems allows their engineers to tickle a bit of extra performance out of ship engines while under low system stress, increasing top speed by %s of base speed while the ship's flux level remains below %s.",Efficiency,graphics/tahlan/hullmods/tahlan_chmscalar.png
