@@ -3,7 +3,7 @@ Second Wave,tahlan_secondwave,,,,,,0.25,,,,0.5,,10,30,,,,,,,,,,,graphics/icons/h
 Cycle Accelerator,tahlan_cycleaccel,,,,,,,,,,2,1,2,10,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
 Chain Skimmer,tahlan_chainskimmer,,,,,,,,9,0.3,0.1,,0.1,0,,TRUE,,TRUE,,,,,,,graphics/icons/hullsys/displacer.png
 Pulsedrive,tahlan_pulsedrive,1,,,,,,,3,0.15,0.3,0.3,0.3,,,,,,,,TRUE,TRUE,,,graphics/icons/hullsys/burn_drive.png
-Supercruise Mode,tahlan_supercruise,,,,,,,,,,2,,2,5,TRUE,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
+Supercruise Mode,tahlan_supercruise,,,,,,,,,,1.5,,1.5,5,TRUE,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
 Swarmer Deployment,tahlan_swarmerstrike,,,,,,0.2,,,,0,20,0.6,20,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
 Magmine Strike,tahlan_magminestrike,,,,,,0.1,,3,0.1,0.25,,0.25,0,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 Limit Release,tahlan_limitrelease,,,,,,,,,,0.5,5.5,3,15,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png

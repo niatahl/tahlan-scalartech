@@ -5,6 +5,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
+import data.scripts.tahlan_ScalarModPlugin;
 import data.scripts.util.MagicLensFlare;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -14,6 +15,7 @@ import java.util.*;
 import java.util.List;
 
 import static com.fs.starfarer.api.util.Misc.ZERO;
+import static data.scripts.utils.tahlan_graphicLibEffects.CustomRippleDistortion;
 
 /**
  * Causes fighters to seemingly "teleport" in and out of fighter bays
@@ -111,6 +113,9 @@ public class tahlan_FilamentPortalBays implements EveryFrameWeaponEffectPlugin {
             engine.addSmoothParticle(fighter.getLocation(), ZERO, 150f, 0.7f, 1f, BASIC_GLOW_COLOR);
             engine.addHitParticle(fighter.getLocation(), ZERO, 200f, 1f, 0.05f, Color.white);
 
+            if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
+                CustomRippleDistortion(fighter.getLocation(),ZERO,60,2f,false,0f,360f,0.5f,0f,0.2f,0.2f,0.4f,0f);
+            }
 
         }
     }

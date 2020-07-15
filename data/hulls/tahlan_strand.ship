@@ -14,8 +14,8 @@
   "builtInMods": [
     "tahlan_scalarspecs",
     "tahlan_filamentspecs",
-	"surveying_equipment",
-	"hiressensors"
+    "surveying_equipment",
+    "hiressensors"
   ],
   "builtInWeapons": {
     "WS0008": "tahlan_filamentengine",
@@ -94,7 +94,7 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": -156,
-      "locations": [-97, -86.5]
+      "locations": [-98.5, -87.5]
     },
     {
       "id": "WS0009",
@@ -103,7 +103,7 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": 156,
-      "locations": [-97, 86.5]
+      "locations": [-98.5, 87.5]
     },
     {
       "id": "LB 1",
@@ -196,7 +196,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-98, 87],
+      "location": [-99.5, 88],
       "length": 24.625362,
       "width": 9.816615,
       "angle": 156,
@@ -204,7 +204,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-98, -87],
+      "location": [-99.5, -88],
       "length": 24.625362,
       "width": 9.816615,
       "angle": -156,
@@ -212,7 +212,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-97, 86.5],
+      "location": [-98.5, 87.5],
       "length": 46.610161,
       "width": 17.605995,
       "angle": 156,
@@ -220,7 +220,7 @@
       "style": "TAHLAN_RED_ENGINE"
     },
     {
-      "location": [-97, -86.5],
+      "location": [-98.5, -87.5],
       "length": 46.610161,
       "width": 17.605995,
       "angle": -156,

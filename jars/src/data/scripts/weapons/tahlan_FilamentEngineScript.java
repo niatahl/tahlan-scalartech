@@ -111,13 +111,13 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
             float sizeScale = 1f;
             switch (ship.getHullSize()) {
                 case FRIGATE:
-                    sizeScale = 0.4f;
+                    sizeScale = 0.3f;
                     break;
                 case DESTROYER:
-                    sizeScale = 0.6f;
+                    sizeScale = 0.5f;
                     break;
                 case CRUISER:
-                    sizeScale = 0.8f;
+                    sizeScale = 0.7f;
             }
             if (weapon.getShip().getHullSpec().getHullId().contains("tahlan_gown") || weapon.getShip().getHullSpec().getHullId().contains("tahlan_skye")) {
                 sizeScale = 0.7f;

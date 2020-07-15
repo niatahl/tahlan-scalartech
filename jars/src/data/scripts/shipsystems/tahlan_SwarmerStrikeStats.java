@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.mission.FleetSide;
+import data.scripts.tahlan_ScalarModPlugin;
 import data.scripts.util.MagicLensFlare;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.fs.starfarer.api.util.Misc.ZERO;
+import static data.scripts.utils.tahlan_graphicLibEffects.CustomRippleDistortion;
 
 public class tahlan_SwarmerStrikeStats extends BaseShipSystemScript {
     private final static int    WINGS_TO_DEPLOY = 2;
@@ -182,7 +184,9 @@ public class tahlan_SwarmerStrikeStats extends BaseShipSystemScript {
             engine.addSmoothParticle(fighter.getLocation(), ZERO, 150f, 0.7f, 1f, BASIC_GLOW_COLOR);
             engine.addHitParticle(fighter.getLocation(), ZERO, 200f, 1f, 0.05f, Color.white);
 
-
+            if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
+                CustomRippleDistortion(fighter.getLocation(),ZERO,60,2f,false,0f,360f,0.5f,0f,0.2f,0.2f,0.4f,0f);
+            }
         }
     }
 }

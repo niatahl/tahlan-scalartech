@@ -3,6 +3,7 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.AsteroidAPI;
 import com.fs.starfarer.api.combat.*;
+import data.scripts.tahlan_ScalarModPlugin;
 import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
@@ -12,6 +13,9 @@ import org.lwjgl.util.vector.Vector2f;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.fs.starfarer.api.util.Misc.ZERO;
+import static data.scripts.utils.tahlan_graphicLibEffects.CustomRippleDistortion;
 
 public class tahlan_RuffleOnHitEffect implements OnHitEffectPlugin {
     private static final Color CORE_EXPLOSION_COLOR = new Color(216, 156, 255, 255);
@@ -84,6 +88,9 @@ public class tahlan_RuffleOnHitEffect implements OnHitEffectPlugin {
                     0.2f
             );
 
+            if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
+                CustomRippleDistortion(point,ZERO,100,3f,false,0f,360f,0.5f,0f,0.15f,0.15f,0.3f,0f);
+            }
         }
     }
 }

@@ -48,7 +48,7 @@ public class tahlan_GownModule extends BaseHullMod {
                 ShipSystemAPI system = parent.getSystem();
                 if (system.getId().contains("supercruise") && system.isActive()) {
                     child.getEngineController().extendFlame("tahlan_supercruise_module", 1.2f, 1f, 1f);
-                    child.getEngineController().fadeToOtherColor("tahlan_supercruise_module", new Color(255,0,100), null, system.getEffectLevel(), 0.7f);
+                    child.getEngineController().fadeToOtherColor("tahlan_supercruise_module", new Color(255, 0, 100), null, system.getEffectLevel(), 0.7f);
                 }
             }
 
@@ -62,7 +62,7 @@ public class tahlan_GownModule extends BaseHullMod {
 
         }
 
-        if (parent.getVariant().hasHullMod("unstableinjector")){
+        if (parent.getVariant().hasHullMod("unstableinjector")) {
             child.getMutableStats().getBallisticWeaponRangeBonus().modifyMult("tahlan_module_ui", 0.85f);
             child.getMutableStats().getEnergyWeaponRangeBonus().modifyMult("tahlan_module_ui", 0.85f);
             child.getMutableStats().getFighterRefitTimeMult().modifyPercent("tahlan_module_ui", 25f);
@@ -119,6 +119,12 @@ public class tahlan_GownModule extends BaseHullMod {
             }
         }
 
+        if (parent.getFluxLevel() > parent.getMutableStats().getZeroFluxMinimumFluxLevel().getModifiedValue()) {
+            child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("zerofluxmirror", -2f);
+        } else {
+            child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("zerofluxmirror", 2f);
+        }
+
     }
 
     private static void advanceParent(ShipAPI parent, List<ShipAPI> children) {
@@ -153,7 +159,7 @@ public class tahlan_GownModule extends BaseHullMod {
             }
 
             float thrust = workingEngines * thrustPerEngine;
-            float enginePerformance =  thrust / Math.max(1f,parent.getMassWithModules());
+            float enginePerformance = thrust / Math.max(1f, parent.getMassWithModules());
             parent.getMutableStats().getAcceleration().modifyMult("tahlan_gownmodule", enginePerformance);
             parent.getMutableStats().getDeceleration().modifyMult("tahlan_gownmodule", enginePerformance);
             parent.getMutableStats().getTurnAcceleration().modifyMult("tahlan_gownmodule", enginePerformance);
@@ -222,7 +228,7 @@ public class tahlan_GownModule extends BaseHullMod {
             case "tahlan_gown_ringright":
                 for (String tmp : BLOCKED_FRONT) {
                     if (ship.getVariant().getHullMods().contains(tmp)) {
-                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(),tmp,"tahlan_gownmodule");
+                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "tahlan_gownmodule");
                     }
                 }
                 break;
@@ -234,7 +240,7 @@ public class tahlan_GownModule extends BaseHullMod {
             case "tahlan_gown_ringright":
                 for (String tmp : BLOCKED_OTHER) {
                     if (ship.getVariant().getHullMods().contains(tmp)) {
-                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(),tmp,"tahlan_gownmodule");
+                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "tahlan_gownmodule");
                     }
                 }
                 break;
@@ -246,7 +252,7 @@ public class tahlan_GownModule extends BaseHullMod {
             case "tahlan_gown_ringright":
                 for (String tmp : BLOCKED_OTHER_PLAYER_ONLY) {
                     if (ship.getVariant().getHullMods().contains(tmp)) {
-                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(),tmp,"tahlan_gownmodule");
+                        MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(), tmp, "tahlan_gownmodule");
                     }
                 }
                 break;

@@ -137,48 +137,48 @@
   "engineSlots": [
     {
       "location": [-150, 73.5],
-      "length": 30,
-      "width": 10,
+      "length": 35,
+      "width": 12,
       "angle": 140,
       "contrailSize": 30,
       "style": "HIGH_TECH"
     },
     {
       "location": [-174, 43],
-      "length": 30,
-      "width": 10,
+      "length": 35,
+      "width": 12,
       "angle": 153,
       "contrailSize": 30,
       "style": "HIGH_TECH"
     },
     {
       "location": [-192, 7],
-      "length": 30,
-      "width": 10,
+      "length": 35,
+      "width": 12,
       "angle": 166,
       "contrailSize": 30,
       "style": "HIGH_TECH"
     },
     {
       "location": [-148.5, 72.5],
-      "length": 54.004517,
-      "width": 19.673593,
+      "length": 65,
+      "width": 22,
       "angle": 140,
       "contrailSize": 19.673593,
       "style": "TAHLAN_RED_ENGINE"
     },
     {
       "location": [-173, 42.5],
-      "length": 54.004517,
-      "width": 19.673593,
+      "length": 65,
+      "width": 22,
       "angle": 153,
       "contrailSize": 19.673593,
       "style": "TAHLAN_RED_ENGINE"
     },
     {
       "location": [-190.5, 6.5],
-      "length": 54.004517,
-      "width": 19.673593,
+      "length": 65,
+      "width": 22,
       "angle": 166,
       "contrailSize": 19.673593,
       "style": "TAHLAN_RED_ENGINE"

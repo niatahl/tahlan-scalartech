@@ -1,7 +1,8 @@
 {
 	"id":"tahlan_supercruise",
 	"type":"ENGINE_MOD",
-	"aiType":"MANEUVERING_JETS",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystems.ai.tahlan_SupercruiseAI",
 	
 	"statsScript":"data.scripts.shipsystems.tahlan_SuperCruiseStats",
 	
@@ -14,7 +15,8 @@
 	"flameoutOnImpactChance":0,
 
 	"clampTurnRateAfter":true,
-	"clampMaxSpeedAfter":true,
+	"clampMaxSpeedAfter":true,	
+	"alwaysAccelerate":true,
 
 	"useSound":"system_burn_drive_activate",
 	"loopSound":"system_burn_drive_loop",
@@ -22,8 +24,8 @@
 	"outOfUsesSound":"engine_disabled",
 	
 	"aiHints":{
-		"activeSpeedIncrease":30,
+		"activeSpeedIncrease":50,
 		"burstMovementPotential":0,
-		"averageSpeedIncrease":30,
+		"averageSpeedIncrease":50,
 	}
 }
