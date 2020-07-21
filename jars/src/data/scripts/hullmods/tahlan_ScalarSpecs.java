@@ -28,7 +28,9 @@ public class tahlan_ScalarSpecs extends BaseHullMod {
 
     @Override
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
-        ship.getShield().setRadius(ship.getShieldRadiusEvenIfNoShield(), INNERLARGE, OUTERLARGE);
+		if (ship.getShield() != null) {
+			ship.getShield().setRadius(ship.getShieldRadiusEvenIfNoShield(), INNERLARGE, OUTERLARGE);
+		}
         if (ship.getVariant().hasHullMod("unstable_injector")) {
             ship.getMutableStats().getZeroFluxSpeedBoost().modifyFlat(id,ZERO_FLUX_BOOST_UI);
         }

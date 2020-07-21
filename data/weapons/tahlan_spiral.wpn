@@ -1,0 +1,45 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "tahlan_spiral_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "tahlan_spiral",
+  "projectileSpecId": "tahlan_spiral_torp",
+  "size": "MEDIUM",
+  #"renderHints":[RENDER_LOADED_MISSILES],
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 20,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 5,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 5,
+    "particleColor": [
+      205,
+      210,
+      220,
+      255
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "",
+  "type": "MISSILE"
+}

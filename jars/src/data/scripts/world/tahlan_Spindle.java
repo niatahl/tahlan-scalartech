@@ -112,6 +112,7 @@ public class tahlan_Spindle {
                         Arrays.asList(
                                 Submarkets.SUBMARKET_OPEN,
                                 Submarkets.GENERIC_MILITARY,
+                                "tahlan_stdfmarket",
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_STORAGE
                         )

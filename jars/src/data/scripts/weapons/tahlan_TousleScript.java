@@ -125,7 +125,7 @@ public class tahlan_TousleScript implements EveryFrameWeaponEffectPlugin {
             }
 
                 //Split once our duration has passed; spawn a bunch of shots
-            if (proj.getElapsed() > splitDuration) {
+            if (proj.getElapsed() > splitDuration && !proj.didDamage()) {
                 //Hide the explosion with some muzzle flash
                 engine.addSmoothParticle(loc, ZERO, 100f, 0.5f, 0.1f, PARTICLE_COLOR);
                 engine.addHitParticle(loc, ZERO, 50f, 0.5f, 0.25f, FLASH_COLOR);

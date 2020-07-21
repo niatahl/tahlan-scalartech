@@ -40,7 +40,7 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
             stats.getEnergyRoFMult().modifyMult(id,1f/ROF_MULT);
             stats.getBallisticRoFMult().modifyMult(id,1f/ROF_MULT);
             stats.getBallisticWeaponFluxCostMod().unmodify(id);
-            stats.getMaxSpeed().modifyFlat(id,SPEED_BOOST/2);
+            stats.getMaxSpeed().modifyFlat(id,-SPEED_BOOST/2);
             stats.getAcceleration().unmodify(id);
             stats.getFluxDissipation().modifyMult(id,1f-FLUX_MULT/2);
             stats.getHardFluxDissipationFraction().unmodify(id);
@@ -62,6 +62,10 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
             ship.setJitterUnder(id, OVERDRIVE_COLOR, 0.5f*effectLevel, 10, 10f);
             ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
             ship.getEngineController().fadeToOtherColor(id, ENGINE_COLOR, null, effectLevel, 0.7f);
+
+            if(Math.random()>0.25f){
+                ship.addAfterimage(new Color(0, 255, 250,20), 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 5f, 0, 0, 1.2f*effectLevel, false, false, false);
+            }
 
 
         }

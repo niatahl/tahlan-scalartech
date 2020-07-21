@@ -1,6 +1,6 @@
 id,type,text1,text2,text3,notes
 #Ships,,,,,
-tahlan_filament,SHIP,"Representing a wholly unique approach to carrier design, the Filament-class Bridgehead Battlecarrier was the first ship class to carry a Renham-Bergenson-Device. Capable of maintaining a stable stable wormhole connection with an STDF Blacksite equipped for fighter operations, it acts as the de-facto hangar facility of the ship. While the device is large in size, it ultimately occupies far less space than normal fighter bays would and the larger facility it is linked to facilitates superior fighter maintenance. The saved space has been used to equip the ship with heavy armaments and powerful shielding, making it capable of going toe-to-toe with battleships in direct combat.
+tahlan_filament,SHIP,"Representing a wholly unique approach to carrier design, the Filament-class Bridgehead Battlecarrier was the first ship class to carry a Renham-Bergenson-Device. Capable of maintaining a stable wormhole connection with an STDF Blacksite equipped for fighter operations, it acts as the de-facto hangar facility of the ship. While the device is large in size, it ultimately occupies far less space than normal fighter bays would and the larger facility it is linked to facilitates superior fighter maintenance. The saved space has been used to equip the ship with heavy armaments and powerful shielding, making it capable of going toe-to-toe with battleships in direct combat.
 
 At the time of its inception, the idea of using a ship-scale Renham-Bergenson-Device instead of hangars was regarded as the keystone for ScalarTech Solutions to break into the market for Domain military contracts. Complex as the design is, its advantages can't be denied. With extensive trials having proven the stability of the wormhole connection under combat conditions, the Filament was going to be the poster child for the ScalarTech MilTec Division, offering a combat carrier with fighting power close to a normal battleship without sacrificing fighter capacity. Sadly the ship design was still undergoing trials with a number of Domain Battlegroups at the time of the Collapse, making it now impossible to know whether the ship would've lived up to expectations.
 
@@ -49,9 +49,10 @@ tahlan_lace,WEAPON,"In need of a high-output energy weapon, but discontent with 
 tahlan_lacette,WEAPON,"The little sister of the Lace, the Lacette is a downscaled variant that achieves the same rates of fire as the larger model, but sacrifices individual shot performance.",,,
 tahlan_string,WEAPON,A small diffuse particle pulse gun designed for point defense. Quite effective as long as the capacitors last.,,,
 tahlan_tousle,WEAPON,"Adapting the design principle of the Sabot SRM to a gun platform, the Tousle fires a splitting warhead that can effectively suppress shields.",,,
+tahlan_stitch,WEAPON,An array of supercharged ion beam emitters. Capable of dealing considerable damage in addition to the disabling effects of conventional ion weaponry.,,,
 ,,,,,
 #Ship Systems,,,,,
-tahlan_cycleaccel,SHIP_SYSTEM,Briefly triples cycle rate of energy weapons. Less effective with sustained beam weapons.,Weapons,,
+tahlan_cycleaccel,SHIP_SYSTEM,Briefly triples cycle rate of energy weapons and reduces flux generation accordingly. Does not affect beam dps.,Weapons,,
 tahlan_secondwave,SHIP_SYSTEM,Replaces all lost fighters and launches additional fighters. All fighters gain increased speed for a short while after system activation.,Fighters,,
 tahlan_chainskimmer,SHIP_SYSTEM,"Teleports a very short distance. Less range than a phase skimmer, but can be chained in rapid succession.",Mobility,,
 tahlan_supercruise,SHIP_SYSTEM,"Switches all systems to supercruise mode, diverting power to the drive systems. Accelerates forward, increasing top speed by 50 and improving maneuverability, but reduces weapon ranges by 1/3.",Mobility,,
@@ -59,6 +60,8 @@ tahlan_swarmerstrike,SHIP_SYSTEM,Teleports in two squadrons of swarmers near the
 tahlan_magminestrike,SHIP_SYSTEM,Teleports a cluster of 5 emp mines to the target location.,Fighters,,
 tahlan_limitrelease,SHIP_SYSTEM,"Boosts weapon rate of fire, top speed and dissipation for 6 seconds, but reduces them for 3 seconds afterwards. Allows some dissipation of hard flux with deployed shields during boost period.",Fighters,,
 tahlan_pulsedrive,SHIP_SYSTEM,Swiftly boost forward. Can hold multiple charges.,Mobility,,
+tahlan_overboost,SHIP_SYSTEM,"Supercharges drive systems, greatly boosting speed and discharging emp arcs at nearby targets.",Mobility,,
+tahlan_berserk,SHIP_SYSTEM,"Switches all systems to berserk assault mode. Reduces damage taken by 2/3, increases top speed and boosts energy and ballistic weapon damage. Disables shields while active, reduces weapon ranges and high system stress results in a short overload upon system shutdown.",Mobility,,
 ,,,,,
 #Campaign,,,,,
 tahlan_planet_jacquard,CUSTOM,"Having caught the remains of a planetary collision many millenia ago, Jacquard has formed an unusual ring of what could best be described as floating continents at the upper edge of its atmosphere. Rich in ores, they now supply the industries of ScalarTech and even house numerous industrial centers on their surfaces themselves.",,,

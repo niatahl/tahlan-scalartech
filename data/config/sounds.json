@@ -1,18 +1,18 @@
 {
 	"tahlan_ruffle_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.8,"volume":0.7},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.82,"volume":0.7},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.84,"volume":0.7},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.7},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.8,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.82,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.84,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.5},
 	],
 	
 	"tahlan_lace_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.0,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.02,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.04,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.06,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.0,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.02,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.04,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.06,"volume":0.4},
 	],
 	
 	"tahlan_lacette_fire":
@@ -23,7 +23,7 @@
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.36,"volume":0.3},
 	],	
 	
-		"tahlan_string_fire":
+	"tahlan_string_fire":
 	[
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.7,"volume":0.2},
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.72,"volume":0.2},
@@ -39,9 +39,19 @@
 		{"file":"sounds/tahlan/weapons/tahlan_tousle_fire.ogg","pitch":1.26,"volume":1.2},
 	],
 	
+	"tahlan_stitch_fire":
+	[
+		{"file":"sounds/tahlan/weapons/tahlan_stitch_fire.ogg","pitch":0.9,"volume":1.2},
+	],
+	
+	"tahlan_spiral_fire":
+	[
+		{"file":"sounds/tahlan/weapons/tahlan_spiral_fire.ogg","pitch":1.0,"volume":1.0},
+	],
+	
 	"tahlan_limit_release_end":
 	[
-		{"file":"sounds/tahlan/systems/tahlan_limit_release_end.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/tahlan/systems/tahlan_limit_release_end.ogg","pitch":1.0,"volume":1.2},
 	],
 	"tahlan_limit_release_start":
 	[

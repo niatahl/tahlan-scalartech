@@ -4,9 +4,9 @@
   "hullSize": "DESTROYER",
   "spriteName": "graphics/tahlan/ships/tahlan_brim.png",
   "style": "TAHLAN_FILAMENT_TECH",
-  "height": 175,
+  "height": 176,
   "width": 134,
-  "center": [67, 81.5],
+  "center": [67, 83],
   "collisionRadius": 139.5,
   "shieldCenter": [0, -0],
   "shieldRadius": 127.5,
@@ -22,7 +22,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [59.5, -0]
+      "locations": [59, -0]
     },
     {
       "id": "WS0002",
@@ -31,7 +31,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [72.5, 24]
+      "locations": [72, 24]
     },
     {
       "id": "WS0003",
@@ -40,7 +40,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": -0,
-      "locations": [72.5, -24]
+      "locations": [72, -24]
     },
     {
       "id": "WS0004",
@@ -49,7 +49,7 @@
       "mount": "TURRET",
       "arc": 225,
       "angle": 39,
-      "locations": [55.5, 26]
+      "locations": [55, 26]
     },
     {
       "id": "WS0005",
@@ -58,7 +58,7 @@
       "mount": "TURRET",
       "arc": 225,
       "angle": -39,
-      "locations": [55.5, -26]
+      "locations": [55, -26]
     },
     {
       "id": "WS0006",
@@ -67,7 +67,7 @@
       "mount": "TURRET",
       "arc": 219,
       "angle": 82,
-      "locations": [-30.5, 37]
+      "locations": [-31, 37]
     },
     {
       "id": "WS0007",
@@ -76,12 +76,12 @@
       "mount": "TURRET",
       "arc": 219,
       "angle": -82,
-      "locations": [-30.5, -37]
+      "locations": [-31, -37]
     }
   ],
   "engineSlots": [
     {
-      "location": [-81, 21.5],
+      "location": [-82.5, 21.5],
       "length": 44,
       "width": 14,
       "angle": 180,
@@ -89,7 +89,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-81, -21.5],
+      "location": [-82.5, -21.5],
       "length": 44,
       "width": 14,
       "angle": -180,
@@ -97,7 +97,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-81, 28],
+      "location": [-82.5, 28],
       "length": 35.5,
       "width": 10,
       "angle": 180,
@@ -105,7 +105,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-81, -28],
+      "location": [-82.5, -28],
       "length": 35.5,
       "width": 10,
       "angle": -180,
@@ -113,7 +113,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-69, 47],
+      "location": [-70.5, 47],
       "length": 34,
       "width": 14,
       "angle": 180,
@@ -121,7 +121,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-69, -47],
+      "location": [-70.5, -47],
       "length": 34,
       "width": 14,
       "angle": -180,
@@ -129,7 +129,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-22, -0],
+      "location": [-23.5, -0],
       "length": 61.5,
       "width": 16,
       "angle": 180,
@@ -137,7 +137,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-23, -0],
+      "location": [-24.5, -0],
       "length": 31,
       "width": 19,
       "angle": 180,
@@ -146,37 +146,37 @@
     }
   ],
   "bounds": [
-    -21.5, -6.5,
-    -64.5, -10,
-    -80.5, -18.5,
-    -78.5, -40.5,
-    -70, -41,
-    -61.5, -58,
-    -39, -58.5,
-    -33, -63.5,
-    -6.5, -64,
-    -11.5, -58.5,
-    -1, -56,
-    8, -42,
-    32.5, -42,
-    50.5, -47.5,
-    57.5, -40.5,
-    75, -39.5,
-    75, 39.5,
-    57.5, 40.5,
-    50.5, 47.5,
-    32.5, 42,
-    8, 42,
-    -1, 56,
-    -11.5, 58.5,
-    -6.5, 64,
-    -33, 63.5,
-    -39, 58.5,
-    -61.5, 58,
-    -70, 41,
-    -78.5, 40.5,
-    -80.5, 18.5,
-    -64.5, 10,
-    -21.5, 6.5
+    -23, -6.5,
+    -66, -10,
+    -82, -18.5,
+    -80, -40.5,
+    -71.5, -41,
+    -63, -58,
+    -40.5, -58.5,
+    -34.5, -63.5,
+    -8, -64,
+    -13, -58.5,
+    -2.5, -56,
+    6.5, -42,
+    31, -42,
+    49, -47.5,
+    56, -40.5,
+    73.5, -39.5,
+    73.5, 39.5,
+    56, 40.5,
+    49, 47.5,
+    31, 42,
+    6.5, 42,
+    -2.5, 56,
+    -13, 58.5,
+    -8, 64,
+    -34.5, 63.5,
+    -40.5, 58.5,
+    -63, 58,
+    -71.5, 41,
+    -80, 40.5,
+    -82, 18.5,
+    -66, 10,
+    -23, 6.5
   ]
 }

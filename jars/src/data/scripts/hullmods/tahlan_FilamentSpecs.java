@@ -10,12 +10,13 @@ import static data.scripts.utils.tahlan_scalar_txt.txt;
 
 public class tahlan_FilamentSpecs extends BaseHullMod {
 
-	private static final float FIGHTER_RATE = -15f;
+	private static final float REFIT_BONUS = 15f;
+	private static final float RATE_DECREASE_MODIFIER = 15f;
 
 	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-		
-		stats.getFighterRefitTimeMult().modifyPercent(id, FIGHTER_RATE);
-        stats.getDynamic().getStat(Stats.REPLACEMENT_RATE_DECREASE_MULT).modifyPercent(id, FIGHTER_RATE);
+
+		stats.getFighterRefitTimeMult().modifyMult(id, 1-(REFIT_BONUS/100));
+		stats.getDynamic().getStat(Stats.REPLACEMENT_RATE_DECREASE_MULT).modifyMult(id, 1f - RATE_DECREASE_MODIFIER / 100f);
 
 	}
 
@@ -24,7 +25,7 @@ public class tahlan_FilamentSpecs extends BaseHullMod {
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int)-FIGHTER_RATE + txt("%");
+		if (index == 0) return "" + (int)-REFIT_BONUS + txt("%");
 		return null;
 	}
 	

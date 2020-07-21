@@ -9,9 +9,9 @@ import static data.scripts.utils.tahlan_scalar_txt.txt;
 public class tahlan_CHMScalartech extends BaseHullMod {
 
     private static final float EFFICIENCY_MULT = 0.05f;
-    private static final float CAPACITY_MULT = 0.1f;
+    private static final float CAPACITY_MULT = 0.05f;
     private static final float SPEED_BONUS = 10f;
-    private static final float SPEED_THRESHOLD = 0.25f;
+    private static final float SPEED_THRESHOLD = 0.10f;
 
     @Override
     public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {

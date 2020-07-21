@@ -1,0 +1,46 @@
+{
+  "hullName": "Plaid",
+  "hullId": "tahlan_plaid",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/tahlan/ships/fighters/tahlan_plaid.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 24,
+  "width": 24,
+  "center": [12, 12],
+  "collisionRadius": 19.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 17.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "terminator_core"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 50,
+      "angle": 0,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-5.5, -0],
+      "length": 10.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -6.5, -8,
+    -1, -10.5,
+    5.5, -6.5,
+    5.5, 6.5,
+    -1, 10.5,
+    -6.5, 8
+  ]
+}

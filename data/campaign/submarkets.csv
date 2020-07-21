@@ -1,0 +1,3 @@
+id,name,faction,desc,script,icon,order
+tahlan_stdfmarket,"STDF
+Requisitions",scalartech_elite,"To facilitate strong alliances, the STDF offers access to some of its stock to its closest allies.",data.scripts.campaign.submarkets.tahlan_STDFMarketPlugin,,800.05

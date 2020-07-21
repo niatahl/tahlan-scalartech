@@ -6,9 +6,9 @@ import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
-import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Skills;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 
 import data.scripts.world.tahlan_ScalarRelationPlugin;
@@ -82,6 +82,9 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             tahlan_ScalarRelationPlugin.initFactionRelationships(sector);
         }
 
+        //Adding ScalarTech to bounty system
+        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("scalartech");
+
     }
 
     @Override
@@ -114,6 +117,9 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
 
     @Override
     public void onGameLoad(boolean newGame) {
+        if (!SharedData.getData().getPersonBountyEventData().isParticipating("scalartech")) {
+            SharedData.getData().getPersonBountyEventData().addParticipatingFaction("scalartech");
+        }
     }
 
     private static void loadTahlanSettings() throws IOException, JSONException {

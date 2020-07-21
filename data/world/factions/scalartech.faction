@@ -30,7 +30,9 @@
 			"scalartech_bp":1.2
 		},
 		"hulls":{
-			"tahlan_strand":1.1
+			"tahlan_strand":1.1,
+			"gremlin":0, #fuck off
+			"tahlan_skirt":0.5,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -45,6 +47,7 @@
 			"tahlan_filament",
 			"tahlan_skye",
 			"tahlan_strand",
+			"tahlan_skirt",
 			"atlas",
 			"kite_original",
 			"odyssey",
@@ -212,7 +215,7 @@
 	},
 	"custom":{
 		"offersCommissions":true,
-		"engagesInHostilities":false,
+		"engagesInHostilities":true,
 		"buysAICores":true,
 		"AICoreValueMult":2,
 		"AICoreRepMult":1,

@@ -1,0 +1,43 @@
+{
+	"numSuffixes":{
+		"st":"st",	# "twenty-first"
+		"nd":"nd",	# "twenty-second"
+		"rd":"rd",	# "twenty-third"
+		"th":"th",	# "twenty-forth" (but also "eleventh"), etc.
+	},
+	
+	"scalartech_nameFormat":"$one $preposition $two",
+	
+	# commented out all the silly ones
+	"scalartech_names1":[
+		"Blade",
+		"Spear",
+		"Lance",
+		"Sword",
+		"Saber",
+		"Rapier"
+	],
+	"scalartech_names2":[
+		"Justice",
+		"Deliverance",
+		"Vengeance",
+		"Authority",
+		"Determination",
+		"Glory",
+		"Majesty",
+		"Dawn",
+		"Resurgence",
+		"Refulgence",
+		"Fortitude",
+		"Destiny",
+		"Brilliance",
+		"Temperance",
+		"Dignity",
+		"Prosperity",
+		"Light",
+		"Hope"
+	],
+	"scalartech_prepositions":[
+		"of",
+	],
+}

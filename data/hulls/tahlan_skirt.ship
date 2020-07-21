@@ -1,0 +1,139 @@
+{
+  "hullName": "Skirt",
+  "hullId": "tahlan_skirt",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/tahlan/ships/tahlan_skirt.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 124,
+  "width": 100,
+  "center": [50, 54.5],
+  "collisionRadius": 97,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 90.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_scalarspecs",
+    "tahlan_cycleboost"
+  ],
+  "builtInWings": [
+    "tahlan_plaid_drone_wing"
+  ],
+  "builtInWeapons": {
+    "WS0003": "tahlan_spiral",
+    "WS0004": "tahlan_spiral"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [22.5, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [22.5, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [41.5, 7]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [41.5, -7]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-35.5, 33.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35.5, -33.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35.5, -27],
+      "length": 21.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-35.5, 27],
+      "length": 21.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39.5, -0],
+      "length": 17.5,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-40, 0],
+      "length": 41,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -40.5, -5,
+    -50.5, -15,
+    -43.5, -24.5,
+    -34, -25.5,
+    -33.5, -36.5,
+    -16.5, -47,
+    5.5, -47,
+    22, -39.5,
+    26, -27.5,
+    33, -27.5,
+    65, -17.5,
+    49, -13,
+    49, 13,
+    65, 17.5,
+    33, 27.5,
+    26, 27.5,
+    22, 39.5,
+    5.5, 47,
+    -16.5, 47,
+    -33.5, 36.5,
+    -34, 25.5,
+    -43.5, 24.5,
+    -50.5, 15,
+    -40.5, 5
+  ]
+}

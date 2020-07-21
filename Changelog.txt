@@ -1,0 +1,45 @@
+0.1.4a
+- Actually added the frigate to the faction
+
+
+0.1.4
+- Added Skirt-class superfrigate
+- Added HVB Hanakaze
+- Added new STDF HQ industry icon
+
+
+0.1.3b
+- Fixed Stitch Beamlance flux cost being way too high
+- Fixed ScalarTech not handing out bounties
+
+
+0.1.3a
+- Crash hotfix
+
+
+0.1.3
+- Fixed some inconsistent acceleration values
+- Increased Gown's targeting core range bonus from 60% to 80%
+- Fixed special forces naming in Nexerelin
+- Cycle Accelerator cooldown increased from 10s to 15s
+- Stitch Beamlance
+	- Halved beam damage
+	- Doubled maximum charges
+	- Doubled charge regen
+	- Buffed power of emp arcs relative to the beam
+- Fixed Limit Release not properly applying speed debuff in cooldown phase
+- Tweaked weapon sound volumes
+- Spiced up Limit Release visuals
+
+
+0.1.2
+- Removed Gremlin from STS fleets
+- Added STDF Requisitions market so you can actually buy Gowns (requires cooperative standing to access)
+
+
+0.1.1
+- Hotfix to remove unintended dependency
+
+
+0.1
+- Initial beta release

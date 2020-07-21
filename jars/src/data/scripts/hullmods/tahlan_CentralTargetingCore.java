@@ -27,7 +27,7 @@ public class tahlan_CentralTargetingCore extends BaseHullMod {
 		return null;
 	}
 	
-	public static float RANGE_BONUS = 60f;
+	public static float RANGE_BONUS = 80f;
 	
 	public String getDescriptionParam(int index, HullSize hullSize) {
 		if (index == 0) return "" + (int)Math.round(RANGE_BONUS) + "%";
@@ -38,7 +38,7 @@ public class tahlan_CentralTargetingCore extends BaseHullMod {
 	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
 		for (String tmp : BLOCKED_HULLMODS) {
 			if (ship.getVariant().getHullMods().contains(tmp)) {
-				MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(),tmp,"tahlan_centraltargetingcore");
+				MagicIncompatibleHullmods.removeHullmodWithWarning(ship.getVariant(),tmp,"tahlan_centraltargeting");
 			}
 		}
 	}

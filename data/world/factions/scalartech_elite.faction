@@ -1,9 +1,11 @@
 {
 	id:"scalartech_elite",
-	#"color":[255,235,225,255],
-	"color":[160,0,95,255],
+	"color":[100,255,255,255],
+	"secondaryUIColor":[255,80,50,255],
+	"secondarySegments":2,
 	"displayName":"STDF",
-	"logo":"graphics/tahlan/factions/tahlan_scalartech.png",
+	"logo":"graphics/tahlan/factions/tahlan_scalartech.png",	
+	"crest":"graphics/tahlan/factions/tahlan_scalartech_crest.png",
 	"displayNameWithArticle":"the STDF",
 	"displayNameLong":"ScalarTech Defense Force",
 	"displayNameLongWithArticle":"the ScalarTech Defense Force",
@@ -29,6 +31,7 @@
 		},
 		"hulls":{
 			"tahlan_skye":0.8,
+			"tahlan_skirt":0.3,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -43,7 +46,8 @@
 			"tahlan_filament",
 			"tahlan_skye",
 			"tahlan_strand",
-			"tahlan_gown"
+			"tahlan_gown",
+			"tahlan_skirt"
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available

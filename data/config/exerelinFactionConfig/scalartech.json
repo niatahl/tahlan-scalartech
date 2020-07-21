@@ -8,7 +8,8 @@
     
     "marketSpawnWeight":0.75,
 	
-	"factionIdForHqResponse":"scalartech_elite",
+	"factionIdForHqResponse":"scalartech_elite",	
+    "specialForcesNamerClass":"data.scripts.campaign.nexerelin.tahlan_ScalartechNamer",
      
     "startRelationships":{ 
 		"hegemony": -0.3, 
@@ -34,8 +35,6 @@
     # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
     "colonyExpeditionChance":0.5,	# They like to bunker up in Spindle
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
-    
-    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
         
     "startShipsSolo":[
 		["tahlan_margin_standard"]
@@ -58,6 +57,7 @@
 		["tahlan_strand_strike", "tahlan_brim_hunter", "tahlan_curl_standard"]
 	],
     "startShipsSuper":[
+		["tahlan_skirt_hunter"],
 		["tahlan_skye_hunter"]
 	],
     

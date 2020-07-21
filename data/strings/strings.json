@@ -15,5 +15,12 @@
 		access:"%s accessibility",
 		defense:"%s ground defense strength",
 		conGateScar:"The Gate Scar",
+		cycleaccel_rof:"Energy weapon rate of fire increased by ",
+		cycleaccel_flux:"Energy weapon flux reduced by ",
+		overboost:"Speed increased",
+		berserk_def:"Damage taken reduced by ",
+		berserk_speed:"Speed increased by ",
+		berserk_dam:"Weapon damage increased by ",
+		berserk_range:"Range reduced by "
 	}
 }
