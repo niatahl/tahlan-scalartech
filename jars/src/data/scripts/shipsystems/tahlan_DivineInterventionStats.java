@@ -138,7 +138,7 @@ public class tahlan_DivineInterventionStats extends BaseShipSystemScript {
                 ShipEngineControllerAPI.ShipEngineAPI shipengine = ship.getEngineController().getShipEngines().get(MathUtils.getRandomNumberInRange(0,ship.getEngineController().getShipEngines().size()-1));
 
                 if (target != null) {
-                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), new SimpleEntity(ship.getLocation()), target,
+                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), ship, target,
                             DamageType.ENERGY, //Damage type
                             100f, //Damage
                             200f, //Emp
@@ -149,7 +149,7 @@ public class tahlan_DivineInterventionStats extends BaseShipSystemScript {
                             LIGHTNING_FRINGE_COLOR //Fringe Color
                     );
                 } else {
-                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), new SimpleEntity(ship.getLocation()), new SimpleEntity(MathUtils.getRandomPointInCircle(ship.getLocation(),100f)),
+                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), ship, new SimpleEntity(MathUtils.getRandomPointInCircle(shipengine.getLocation(),100f)),
                             DamageType.ENERGY, //Damage type
                             100f, //Damage
                             200f, //Emp

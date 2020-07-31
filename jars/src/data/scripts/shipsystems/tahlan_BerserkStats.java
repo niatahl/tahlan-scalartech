@@ -1,11 +1,15 @@
 package data.scripts.shipsystems;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
+import com.fs.starfarer.api.util.IntervalUtil;
+import org.lazywizard.lazylib.MathUtils;
+import org.lazywizard.lazylib.combat.entities.SimpleEntity;
 
 import java.awt.*;
+import java.util.EnumSet;
 
 import static data.scripts.utils.tahlan_scalar_txt.txt;
 
@@ -16,11 +20,18 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
     public static final float WEAPON_DAM_MULT = 1.5f;
     public static final float RANGE_MULT = 0.8f;
 
-    private static final Color OVERDRIVE_COLOR = new Color(255, 84, 89,60);
-    private static final Color COOLDOWN_COLOR = new Color(255, 84, 89,40);
-    private static final Color ENGINE_COLOR = new Color(255, 65, 65);
+    private static final Color OVERDRIVE_COLOR = new Color(255, 63, 60,60);
+    private static final Color COOLDOWN_COLOR = new Color(255, 58, 58,40);
+    private static final Color ENGINE_COLOR = new Color(255, 42, 42);
+    private static final Color GLOW_COLOR = new Color(255, 93, 47);
+    private static final Color SMOKE_COLOR = new Color(87, 43, 42, 20);
+
+    private IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
+
+    private String origPersonality;
 
     boolean  runOnce = false;
+    boolean  runOnceCap = false;
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
 
@@ -34,8 +45,12 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             return;
         }
 
+        PersonAPI captain = ship.getCaptain();
 
-
+        if (!runOnceCap) {
+            origPersonality = captain.getPersonalityAPI().getId();
+            runOnceCap = true;
+        }
 
 
         if (state == State.OUT) {
@@ -45,26 +60,74 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
                 ship.getFluxTracker().beginOverloadWithTotalBaseDuration(2f);
                 runOnce = true;
             }
+
+            captain.setPersonality(origPersonality);
+
         } else {
             runOnce = false;
             stats.getMaxSpeed().modifyFlat(id, SPEED_BOOST * effectLevel);
             stats.getAcceleration().modifyFlat(id, SPEED_BOOST * 2* effectLevel);
             stats.getDeceleration().modifyFlat(id, SPEED_BOOST * effectLevel);
-            stats.getEmpDamageTakenMult().modifyMult(id, DAMAGE_MULT);
-            stats.getArmorDamageTakenMult().modifyMult(id, DAMAGE_MULT);
-            stats.getHullDamageTakenMult().modifyMult(id, DAMAGE_MULT);
+            stats.getEmpDamageTakenMult().modifyMult(id, 1f-((1f-DAMAGE_MULT)*effectLevel));
+            stats.getArmorDamageTakenMult().modifyMult(id, 1f-((1f-DAMAGE_MULT)*effectLevel));
+            stats.getHullDamageTakenMult().modifyMult(id, 1f-((1f-DAMAGE_MULT)*effectLevel));
             stats.getEnergyWeaponDamageMult().modifyMult(id, WEAPON_DAM_MULT);
             stats.getBallisticWeaponDamageMult().modifyMult(id, WEAPON_DAM_MULT);
-            stats.getEnergyWeaponRangeBonus().modifyMult(id, RANGE_MULT);
-            stats.getBallisticWeaponRangeBonus().modifyMult(id, RANGE_MULT);
+            stats.getEnergyWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
+            stats.getBallisticWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
+
+
+            captain.setPersonality("reckless");
         }
 
-        ship.setJitter(id,COOLDOWN_COLOR,0.8f*effectLevel, 2, 6f);
-        ship.setJitterUnder(id, OVERDRIVE_COLOR, 1f*effectLevel, 10, 8f);
-        ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
-        ship.getEngineController().fadeToOtherColor(id, ENGINE_COLOR, null, effectLevel, 0.9f);
+        //Global.getSoundPlayer().playLoop("tahlan_berserk_loop",ship,0.5f+0.5f*effectLevel,5f,ship.getLocation(),ship.getVelocity());
 
+        ship.setJitter(id,COOLDOWN_COLOR,0.8f*effectLevel, 2, 10f);
+        ship.setJitterUnder(id, OVERDRIVE_COLOR, 1f*effectLevel, 10, 15f);
+        ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
+        ship.getEngineController().fadeToOtherColor(id, ENGINE_COLOR, SMOKE_COLOR, effectLevel, 0.9f);
+
+        EnumSet<WeaponAPI.WeaponType> WEAPON_TYPES = EnumSet.of(WeaponAPI.WeaponType.BALLISTIC,WeaponAPI.WeaponType.ENERGY);
+        ship.setWeaponGlow(0.5f*effectLevel, GLOW_COLOR, WEAPON_TYPES);
+
+
+        if(Math.random()>0.5f){
+            ship.addAfterimage(COOLDOWN_COLOR, 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 10f, 0, 0, 1.5f*effectLevel, false, false, false);
+        }
+
+        /*
+        //Always render smoke at the shadow's position
+        for (int i = 0; i < (200 * Global.getCombatEngine().getElapsedInLastFrame()); i++) {
+            Global.getCombatEngine().addSmokeParticle(
+                    MathUtils.getRandomPointInCircle(ship.getLocation(),ship.getCollisionRadius()),
+                    MathUtils.getRandomPointInCircle(null, 10f),
+                    MathUtils.getRandomNumberInRange(50f,70f),
+                    0.8f,
+                    MathUtils.getRandomNumberInRange(0.38f, 0.67f),
+                    SMOKE_COLOR
+            );
+        }
+        */
+
+        //Choose a random vent port to send lightning from
+        ShipEngineControllerAPI.ShipEngineAPI shipengine = ship.getEngineController().getShipEngines().get(MathUtils.getRandomNumberInRange(0,ship.getEngineController().getShipEngines().size()-1));
+
+        interval.advance(Global.getCombatEngine().getElapsedInLastFrame());
+        if (interval.intervalElapsed()) {
+            Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), ship, new SimpleEntity(MathUtils.getRandomPointInCircle(shipengine.getLocation(), 100f)),
+                    DamageType.ENERGY, //Damage type
+                    0f, //Damage
+                    0f, //Emp
+                    100000f, //Max range
+                    null, //Impact sound
+                    8f, // thickness of the lightning bolt
+                    ENGINE_COLOR, //Central color
+                    OVERDRIVE_COLOR //Fringe Color
+            );
+        }
     }
+
+
     public void unapply(MutableShipStatsAPI stats, String id) {
         ShipAPI ship = null;
         boolean player = false;
@@ -86,6 +149,9 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
         stats.getEnergyWeaponDamageMult().unmodify(id);
         stats.getEnergyWeaponRangeBonus().unmodify(id);
         stats.getBallisticWeaponRangeBonus().unmodify(id);
+
+        EnumSet<WeaponAPI.WeaponType> WEAPON_TYPES = EnumSet.of(WeaponAPI.WeaponType.BALLISTIC,WeaponAPI.WeaponType.ENERGY);
+        ship.setWeaponGlow(0f, GLOW_COLOR, WEAPON_TYPES);
 
     }
 

@@ -18,6 +18,18 @@
 		"sylphon":0.1,
 		"tiandong":0.3,
 		"pirates":-0.6,
+		"luddic_path":-0.6,
+		"fpe":-0.6,
+		"blackrock_driveyards":-0.5,
+		"dassault_mikoyan":-0.6,
+		"aic":0.4,
+		"brighton":0.5,
+		"hmi":-0.3,
+		"interstellarimperium":0.1,
+		"kadur_remnant":0.1,
+		"al_ars":-0.1,
+		"ora":0.4,
+		"shadow_industry":0.4
 		},
     "maxRelationships":{},
     "diplomacyPositiveChance":{},
@@ -25,9 +37,12 @@
     "morality":"good",
     
     "alignments":{
-        "corporate":1,
-        "technocratic":1,
+        "corporate":0.5,
+        "technocratic":0.5,
+		"diplomatic":1,
+		"militarist":0.5,
     },
+	
     "diplomacyTraits":["pacifist", "helps_allies", "stalwart", "lowprofile", "neutralist"],
     
     "freeMarket":true,
@@ -62,7 +77,8 @@
 	],
     
     "startSpecialItems":[
-        [["tahlan_scalartech_hull_package", "tahlan_scalartech_weapon_package", ""]],
+        [["tahlan_scalartech_hull_package",  ""]],
+        [["tahlan_scalartech_weapon_package",  ""]]
     ],
     
     "defenceStations":[

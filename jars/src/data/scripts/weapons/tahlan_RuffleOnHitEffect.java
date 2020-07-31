@@ -88,9 +88,11 @@ public class tahlan_RuffleOnHitEffect implements OnHitEffectPlugin {
                     0.2f
             );
 
+            /*
             if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
                 CustomRippleDistortion(point,ZERO,100,3f,false,0f,360f,0.5f,0f,0.15f,0.15f,0.3f,0f);
             }
+            */
         }
     }
 }

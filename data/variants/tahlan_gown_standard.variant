@@ -18,8 +18,6 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "tahlan_lace",
-        "WS0017": "tahlan_lace",
         "WS0040": "hurricane",
         "WS0041": "hurricane"
       }
@@ -43,7 +41,9 @@
     {
       "autofire": true,
       "mode": "LINKED",
-      "weapons": {
+      "weapons": {	  
+        "WS0009": "tahlan_lace",
+        "WS0017": "tahlan_lace",
         "WS0018": "tahlan_lace"
       }
     },

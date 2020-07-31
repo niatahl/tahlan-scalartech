@@ -1,26 +1,19 @@
 {
 	"id":"tahlan_divintervention",
-	"type":"ENGINE_MOD",
-	"aiType":"MANEUVERING_JETS",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
 	
 	"statsScript":"data.scripts.shipsystems.tahlan_DivineInterventionStats",
 	
-	"engineGlowLengthMult":1.2,
-	"engineGlowWidthMult":1.2,
-	"engineGlowGlowMult":1.5,
-	
-	"flameoutOnImpactChance":0,
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
 
-	"clampTurnRateAfter":true,
-	"clampMaxSpeedAfter":true,
+	"effectColor1":[0,0,0,0],
+	"effectColor2":[0,0,0,0],
 
-	"useSound":"system_maneuvering_jets",
-	"loopSound":"system_maneuvering_jets_loop",
-	"outOfUsesSound":"engine_disabled",
-	
-	"aiHints":{
-		"activeSpeedIncrease":500,
-		"burstMovementPotential":1000,
-		"averageSpeedIncrease":300,
-	}
+	"fadeActivationSoundOnChargedown":false,
+
+	"shipAlpha":1.0,
+
+	"outOfUsesSound":"system_phase_cloak_collision",
 }

@@ -122,7 +122,6 @@ public class tahlan_Spindle {
                                 Industries.POPULATION,
                                 Industries.MEGAPORT,
                                 Industries.MINING,
-                                Industries.ORBITALWORKS,
                                 Industries.FARMING,
                                 Industries.STARFORTRESS_HIGH,
                                 Industries.HEAVYBATTERIES,
@@ -134,6 +133,7 @@ public class tahlan_Spindle {
                 false,
                 true);
 
+        spindle_3_market.addIndustry(Industries.ORBITALWORKS,new ArrayList<String>(Arrays.asList(Items.CORRUPTED_NANOFORGE)));
         spindle_3_market.getIndustry(Industries.HIGHCOMMAND).setAICoreId(Commodities.ALPHA_CORE);
         spindle_3_market.getIndustry(Industries.STARFORTRESS_HIGH).setAICoreId(Commodities.ALPHA_CORE);
 

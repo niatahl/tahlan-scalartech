@@ -1,3 +1,35 @@
+0.1.5
+- Added Vestige-class IBB
+- Updated faction nex alignments
+- Updated faction relationships
+- Updated ship logistics stats
+- Added a Corrupted Nanoforge to Charkha's Orbital Works (only applies to new saves)
+- STDF Requisitions market now always offers scalartech weaponry for sale (only applies to new saves)
+- Fixed some weapon sounds
+- Fixed second wave system spawning extra fighters for single fighter wings
+- Removed carrier tags from Filament so it fights properly
+- Lowered String Pulser projectile velocity
+- Lowered Strand DP to 24
+- Increased Tress DP to 14
+- Tousle
+	- Increased dps to 200
+	- Increased efficiency to 1.1
+- Lace
+	- Increased efficiency to 1.1
+	- Lowered range to 600
+- Verge
+	- Reduced top speed to 60
+	- Increased shield efficiency to 0.7
+	- Lowered shield upkeep to 0.3
+	- Increased armor to 1000
+- Skye
+	- Reduced shield efficiency to 0.8
+	- Increased shield upkeep to 0.4
+- Hanakaze
+	- Can no longer be found as BP
+	- System changed to Energy Surge
+
+
 0.1.4a
 - Actually added the frigate to the faction
 

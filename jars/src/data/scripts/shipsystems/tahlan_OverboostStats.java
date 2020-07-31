@@ -102,7 +102,7 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
                             LIGHTNING_FRINGE_COLOR //Fringe Color
                     );
                 } else {
-                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), new SimpleEntity(ship.getLocation()), new SimpleEntity(MathUtils.getRandomPointInCircle(ship.getLocation(),100f)),
+                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), new SimpleEntity(ship.getLocation()), new SimpleEntity(MathUtils.getRandomPointInCircle(shipengine.getLocation(),100f)),
                             DamageType.ENERGY, //Damage type
                             100f, //Damage
                             200f, //Emp

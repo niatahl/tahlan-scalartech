@@ -1,26 +1,26 @@
 {
 	"tahlan_ruffle_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.8,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.82,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.84,"volume":0.5},
-		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.8,"volume":0.8},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.82,"volume":0.8},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.84,"volume":0.8},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.8},
 	],
 	
 	"tahlan_lace_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.0,"volume":0.4},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.02,"volume":0.4},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.04,"volume":0.4},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.06,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.0,"volume":0.6},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.02,"volume":0.6},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.04,"volume":0.6},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.06,"volume":0.6},
 	],
 	
 	"tahlan_lacette_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.3,"volume":0.3},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.32,"volume":0.3},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.34,"volume":0.3},
-		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.36,"volume":0.3},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.3,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.32,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.34,"volume":0.4},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.36,"volume":0.4},
 	],	
 	
 	"tahlan_string_fire":
@@ -46,19 +46,45 @@
 	
 	"tahlan_spiral_fire":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_spiral_fire.ogg","pitch":1.0,"volume":1.0},
+		{"file":"sounds/tahlan/weapons/tahlan_spiral_fire.ogg","pitch":1.0,"volume":1.6},
 	],
 	
 	"tahlan_limit_release_end":
 	[
-		{"file":"sounds/tahlan/systems/tahlan_limit_release_end.ogg","pitch":1.0,"volume":1.2},
+		{"file":"sounds/tahlan/systems/tahlan_limit_release_end.ogg","pitch":1.0,"volume":1.0},
 	],
 	"tahlan_limit_release_start":
 	[
-		{"file":"sounds/tahlan/systems/tahlan_limit_release_start.ogg","pitch":1.3,"volume":1.5},
+		{"file":"sounds/tahlan/systems/tahlan_limit_release_start.ogg","pitch":1.3,"volume":1.0},
 	],
 	"tahlan_limit_release_loop":
 	[
-		{"file":"sounds/tahlan/systems/tahlan_limit_release_loop.ogg","pitch":1.0,"volume":1.3},
+		{"file":"sounds/tahlan/systems/tahlan_limit_release_loop.ogg","pitch":1.0,"volume":1.0},
 	],
+	
+	"tahlan_berserk_end":
+	[
+		{"file":"sounds/tahlan/systems/tahlan_berserk_end.ogg","pitch":1.0,"volume":1.2},
+	],
+	"tahlan_berserk_start":
+	[
+		{"file":"sounds/tahlan/systems/tahlan_berserk_start.ogg","pitch":1.0,"volume":1.2},
+	],
+	"tahlan_berserk_loop":
+	[
+		{"file":"sounds/tahlan/systems/tahlan_berserk_loop.ogg","pitch":0.9,"volume":1.2},
+	],
+	
+	"music":{
+				
+			"tahlan_scalar_neutral":[
+				{"file":"tahlan_scalar_market_theme.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
+			"tahlan_scalar_friendly":[
+				{"file":"tahlan_scalar_market_theme.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
+			"tahlan_scalar_hostile":[
+				{"file":"tahlan_scalar_market_theme.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
+        }
 }

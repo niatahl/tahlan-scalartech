@@ -1,0 +1,12 @@
+{
+	"id":"tahlan_powersurge",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.scripts.shipsystems.tahlan_LimitReleaseStats",
+	
+	"useSound":"tahlan_limit_release_start",
+	"loopSound":"tahlan_limit_release_loop",
+	"deactivateSound":"tahlan_limit_release_end",
+	"outOfUsesSound":"engine_disabled",
+}

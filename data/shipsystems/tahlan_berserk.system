@@ -1,12 +1,14 @@
 {
 	"id":"tahlan_berserk",
 	"type":"STAT_MOD",
-	"aiType":"WEAPON_BOOST",
+	#"aiType":"WEAPON_BOOST",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystems.ai.tahlan_BerserkAI",
 	
 	"statsScript":"data.scripts.shipsystems.tahlan_BerserkStats",
 	
-	"useSound":"tahlan_limit_release_start",
-	"loopSound":"tahlan_limit_release_loop",
-	"deactivateSound":"tahlan_limit_release_end",
+	"useSound":"tahlan_berserk_start",
+	"loopSound":"tahlan_berserk_loop",
+	"deactivateSound":"tahlan_berserk_end",
 	"outOfUsesSound":"engine_disabled",
 }

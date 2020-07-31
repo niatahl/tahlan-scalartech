@@ -56,6 +56,7 @@ public class tahlan_SecondWaveStats extends BaseShipSystemScript {
     public static int getAdditionalFor(FighterWingSpecAPI spec) {
 
         int size = spec.getNumFighters();
+        if (size == 1) return 0;
         if (size <= 3) return 1;
         if (size <= 5) return 2;
         return 3;

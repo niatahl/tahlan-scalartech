@@ -36,7 +36,7 @@
       "mount": "TURRET",
       "arc": 90,
       "angle": 21.5,
-      "locations": [-49, 45]
+      "locations": [-49, 42]
     },
     {
       "id": "WS0003",
@@ -45,7 +45,7 @@
       "mount": "TURRET",
       "arc": 90,
       "angle": -21.5,
-      "locations": [-49, -45]
+      "locations": [-49, -42]
     },
     {
       "id": "WS0004",
@@ -54,7 +54,7 @@
       "mount": "TURRET",
       "arc": 176,
       "angle": 60.5,
-      "locations": [47, 24]
+      "locations": [47, 22]
     },
     {
       "id": "WS0005",
@@ -63,7 +63,7 @@
       "mount": "TURRET",
       "arc": 176,
       "angle": -60.5,
-      "locations": [47, -24]
+      "locations": [47, -22]
     },
     {
       "id": "WS0006",
@@ -72,7 +72,7 @@
       "mount": "TURRET",
       "arc": 131,
       "angle": 48.5,
-      "locations": [68, 20]
+      "locations": [68, 18]
     },
     {
       "id": "WS0007",
@@ -81,7 +81,7 @@
       "mount": "TURRET",
       "arc": 131,
       "angle": -48.5,
-      "locations": [68, -20]
+      "locations": [68, -18]
     },
     {
       "id": "WS0008",
@@ -90,7 +90,7 @@
       "mount": "TURRET",
       "arc": 205,
       "angle": 132.5,
-      "locations": [-78, 47]
+      "locations": [-78, 44]
     },
     {
       "id": "WS0009",
@@ -99,7 +99,7 @@
       "mount": "TURRET",
       "arc": 205,
       "angle": -132.5,
-      "locations": [-78, -47]
+      "locations": [-78, -44]
     },
     {
       "id": "WS0010",
@@ -108,7 +108,7 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
-      "locations": [103.5, 18]
+      "locations": [103.5, 16]
     },
     {
       "id": "WS0011",
@@ -117,44 +117,28 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": -0,
-      "locations": [103.5, -18]
+      "locations": [103.5, -16]
     }
   ],
   "engineSlots": [
     {
-      "location": [-65, 15],
-      "length": 60,
-      "width": 12,
-      "angle": 180,
-      "contrailSize": 12,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-65, -15],
-      "length": 60,
-      "width": 12,
-      "angle": -180,
-      "contrailSize": 12,
-      "style": "HIGH_TECH"
-    },
-    {
       "location": [-61.5, -0],
-      "length": 101,
-      "width": 37,
+      "length": 83,
+      "width": 22,
       "angle": 180,
-      "contrailSize": 37,
+      "contrailSize": 22,
       "style": "HIGH_TECH"
     },
     {
       "location": [-60.5, -0],
-      "length": 20,
-      "width": 40,
+      "length": 38,
+      "width": 32,
       "angle": 180,
-      "contrailSize": 40,
+      "contrailSize": 32,
       "style": "TAHLAN_RED_ENGINE"
     },
     {
-      "location": [-111, 33.5],
+      "location": [-111, 30.5],
       "length": 33,
       "width": 10,
       "angle": 180,
@@ -162,7 +146,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-111, -33.5],
+      "location": [-111, -30.5],
       "length": 33,
       "width": 10,
       "angle": -180,
@@ -170,7 +154,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-111, 40.5],
+      "location": [-111, 37.5],
       "length": 28,
       "width": 7,
       "angle": 180,
@@ -178,7 +162,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-111, -40.5],
+      "location": [-111, -37.5],
       "length": 28,
       "width": 7,
       "angle": -180,
@@ -186,7 +170,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-104.5, 76],
+      "location": [-104.5, 73],
       "length": 24,
       "width": 6,
       "angle": 180,
@@ -194,7 +178,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-104.5, -76],
+      "location": [-104.5, -73],
       "length": 24,
       "width": 6,
       "angle": -180,
@@ -202,19 +186,35 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-105.5, 71.5],
-      "length": 29.5,
-      "width": 6,
+      "location": [-105.5, 67],
+      "length": 29,
+      "width": 8,
       "angle": 180,
-      "contrailSize": 6,
+      "contrailSize": 8,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-105.5, -71.5],
-      "length": 29.5,
-      "width": 6,
+      "location": [-105.5, -67],
+      "length": 29,
+      "width": 8,
       "angle": -180,
-      "contrailSize": 6,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-65.5, 11],
+      "length": 43.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-65.5, -11],
+      "length": 43.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
       "style": "HIGH_TECH"
     }
   ],
@@ -226,7 +226,8 @@
     -127.5, -44.5,
     -131.5, -52.5,
     -110, -59.5,
-    -100.5, -83,
+    -103, -78.5,
+    -111, -85,
     -61, -87.5,
     -64.5, -94,
     -25.5, -93,
@@ -238,6 +239,10 @@
     92.5, -65,
     109, -56,
     113, -35,
+    109, -5,
+    103.5, -4,
+    103.5, 4,
+    109, 5,
     113, 35,
     109, 56,
     92.5, 65,
@@ -249,7 +254,8 @@
     -25.5, 93,
     -64.5, 94,
     -61, 87.5,
-    -100.5, 83,
+    -111, 85,
+    -103, 78.5,
     -110, 59.5,
     -131.5, 52.5,
     -127.5, 44.5,

@@ -1,5 +1,5 @@
 {
-	id:"scalartech_elite",
+	id:"scalartech_requisitions",
 	"color":[100,255,255,255],
 	"secondaryUIColor":[255,80,50,255],
 	"secondarySegments":2,
@@ -30,18 +30,16 @@
 		"tags":{
 		},
 		"hulls":{
-			"tahlan_skye":0.8,
-			"tahlan_skirt":0.3,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "hightech_bp", "midline_bp"],
+		"tags":["base_bp"],
 		"hulls":[
 		],
 	},
 	"knownShips":{
-		"tags":["hightech_bp", "scalartech_bp"],
+		"tags":["scalartech_bp"],
 		"hulls":[
 			"tahlan_filament",
 			"tahlan_skye",
@@ -62,12 +60,8 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "sindrian_diktat", "scalartech_bp"],
+		"tags":["scalartech_bp"],
 		"fighters":[
-			"xyphos_wing",
-			"thunder_wing",
-			"claw_wing",
-			"longbow_wing",
 		],
 	},
 	"priorityFighters":{
@@ -76,24 +70,8 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "scalartech_wep_bp"],
+		"tags":["scalartech_wep_bp"],
 		"weapons":[
-			"lightneedler",
-			"heavyneedler",
-			"multineedler",
-			"sabotpod",
-			"phasecl",
-			"cyclone",
-			"hurricane",
-			"squall",
-			"locust",
-			"pdburst",
-			"phasebeam",
-			"heavyblaster",
-			"heavyburst",
-			"ionpulser",
-			"ionbeam",
-			"tachyonlance",
 		],
 	},
 	"priorityWeapons":{
@@ -134,11 +112,11 @@
 		"carriers":3,
 		"phaseShips":1,
 		
-		"officerQuality":5,
-		"shipQuality":5,
+		"officerQuality":4,
+		"shipQuality":4,
 		"numShips":3,
 		
-		"shipSize":4,
+		"shipSize":2,
 		
 		"aggression":3,
 		

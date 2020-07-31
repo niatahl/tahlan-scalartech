@@ -88,7 +88,9 @@ public class tahlan_STDFMarketPlugin extends BaseSubmarketPlugin {
 
             pruneWeapons(0f);
 
-            addWeapons(5, 10, 5, submarket.getFaction().getId());
+            addWeapons(2, 6, 5, submarket.getFaction().getId());
+
+            addFighters(1, 3, 5, submarket.getFaction().getId());
 
             pruneShips(0.5f);
         }
