@@ -79,6 +79,12 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
                         continue;
                     }
 
+                    if (potentialTarget instanceof ShipAPI) {
+                        if ( ((ShipAPI) potentialTarget).isPhased() ) {
+                            continue;
+                        }
+                    }
+
                     //If we found any applicable targets, pick the closest one
                     if (target == null) {
                         target = potentialTarget;

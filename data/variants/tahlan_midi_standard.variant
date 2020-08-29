@@ -1,0 +1,53 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 30,
+    "hullId": "tahlan_midi",
+    "hullMods": [
+        "targetingunit",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "variantId": "tahlan_midi_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0013": "tahlan_ocbeam"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "atropos",
+                "WS0008": "atropos",
+                "WS0009": "sabot",
+                "WS0010": "sabot",
+                "WS0011": "sabot",
+                "WS0012": "sabot"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_lacette",
+                "WS0002": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "heavyneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "tahlan_string",
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string"
+            }
+        }
+    ]
+}

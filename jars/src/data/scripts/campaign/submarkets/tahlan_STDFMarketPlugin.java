@@ -10,6 +10,7 @@ import com.fs.starfarer.api.campaign.econ.SubmarketAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.submarkets.BaseSubmarketPlugin;
+import com.fs.starfarer.api.util.Misc;
 
 public class tahlan_STDFMarketPlugin extends BaseSubmarketPlugin {
 
@@ -23,7 +24,11 @@ public class tahlan_STDFMarketPlugin extends BaseSubmarketPlugin {
 
     @Override
     public float getTariff() {
-        return 0.2f;
+        if (Misc.getCommissionFactionId() == "scalartech") {
+            return 0.9f;
+        } else {
+            return 0.3f;
+        }
     }
 
     @Override

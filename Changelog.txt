@@ -1,4 +1,16 @@
-0.1.5
+0.3
+- Added Midi-class beam cruiser
+- Filament
+	- Increased DP from 50 to 55
+- Ruffle
+	- Increased refire delay
+- Skirt
+	- Fixed system being able to hit phased ships with emp arcs
+	- Increased DP from 8 to 10
+	
+
+0.2
+- Changed faction name to "Spindle Protectorate" to better convey its political nature
 - Added Vestige-class IBB
 - Updated faction nex alignments
 - Updated faction relationships

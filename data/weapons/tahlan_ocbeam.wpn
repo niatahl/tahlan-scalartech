@@ -1,0 +1,70 @@
+{
+  "beamEffect": "data.scripts.weapons.tahlan_OverchargeBeamEffect",
+  "everyFrameEffect": "data.scripts.weapons.tahlan_OverchargeBeamScript",
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fireSoundTwo": "tahlan_ocbeam_loop",
+  "fringeColor": [
+    50,
+    205,
+    255,
+    205
+  ],
+  "glowColor": [
+    50,
+    205,
+    255,
+    50
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "",
+  "hardpointGunSprite": "",
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 0,
+  "id": "tahlan_ocbeam",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "pixelsPerTexel": 4,
+  "renderAboveAllWeapons": 0,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 300,
+  "fringeScrollSpeedMult":1.5,
+  "textureType": [
+    "graphics/tahlan/fx/tahlan_titanomachy_beam_fringe.png",
+    "graphics/tahlan/fx/tahlan_shiva_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "",
+  "turretGunSprite": "",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "",
+  "type": "ENERGY",
+  "width": 14
+}
