@@ -1,0 +1,40 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 50,
+    "hullId": "tahlan_camise",
+    "hullMods": [],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_camise_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "tahlan_tousle"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "sabot"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "tahlan_lacette",
+                "WS0005": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0002": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ]
+}

@@ -25,7 +25,7 @@ public class tahlan_FilamentSpecs extends BaseHullMod {
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int)-REFIT_BONUS + txt("%");
+		if (index == 0) return "" + (int)REFIT_BONUS + txt("%");
 		return null;
 	}
 	

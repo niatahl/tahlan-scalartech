@@ -7,8 +7,8 @@ Supercruise Mode,tahlan_supercruise,,,,,,,,,,1.5,,1.5,5,TRUE,,,,,,,,,,graphics/i
 Swarmer Deployment,tahlan_swarmerstrike,,,,,,0.2,,,,0,20,0.6,20,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
 Magmine Strike,tahlan_magminestrike,,,,,,0.1,,3,0.1,0.25,,0.25,0,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 Limit Release,tahlan_limitrelease,,,,,,,,,,0.5,5.5,3,15,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
-Energy Surge,tahlan_powersurge,,,,,,,,3,0.1,0.25,2.25,1,0.5,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
+Energy Surge,tahlan_powersurge,,,,,,,,3,0.08,0.25,2.25,1,0.5,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
 Overboost,tahlan_overboost,,,,,,,,3,0.15,0.1,1,0.1,1,,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
 Divine Intervention,tahlan_divintervention,,,,,,0.1,,,,0.1,0.5,0.1,3,,TRUE,TRUE,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/maneuvering_jets.png
-Berserk,tahlan_berserk,1,,,,,0.15,,,,0.5,10,0.5,20,,,,,,,,,TRUE,TRUE,graphics/icons/hullsys/burn_drive.png
+Berserk,tahlan_berserk,1,,,,,,,3,0.075,0.5,4,1,0,,,,,,,,,TRUE,TRUE,graphics/icons/hullsys/burn_drive.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,

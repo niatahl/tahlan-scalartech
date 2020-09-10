@@ -57,7 +57,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             stats.getMaxSpeed().unmodify(id); // to slow down ship to its regular top speed while powering drive down
 
             if (!runOnce) {
-                ship.getFluxTracker().beginOverloadWithTotalBaseDuration(2f);
+                ship.getFluxTracker().beginOverloadWithTotalBaseDuration(ship.getSystem().getChargeDownDur());
                 runOnce = true;
             }
 
@@ -75,7 +75,6 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             stats.getBallisticWeaponDamageMult().modifyMult(id, WEAPON_DAM_MULT);
             stats.getEnergyWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
             stats.getBallisticWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
-
 
             captain.setPersonality("reckless");
         }
@@ -114,7 +113,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
 
         interval.advance(Global.getCombatEngine().getElapsedInLastFrame());
         if (interval.intervalElapsed()) {
-            Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), ship, new SimpleEntity(MathUtils.getRandomPointInCircle(shipengine.getLocation(), 100f)),
+            Global.getCombatEngine().spawnEmpArc(ship, MathUtils.getRandomPointInCircle(shipengine.getLocation(), 100f), null, ship,
                     DamageType.ENERGY, //Damage type
                     0f, //Damage
                     0f, //Emp

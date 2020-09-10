@@ -15,7 +15,8 @@
     "tahlan_filamentspecs",
     "reduced_explosion",
     "tahlan_gownmodule",
-    "tahlan_centraltargeting"
+    "tahlan_centraltargeting",
+    "always_detaches"
   ],
   "builtInWeapons": {
     "WS0005": "tahlan_filamentengine",

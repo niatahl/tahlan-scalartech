@@ -1,0 +1,34 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 29,
+    "hullId": "tahlan_culotte",
+    "hullMods": [],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_culotte_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_lacette",
+                "WS0002": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "harpoon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_string",
+                "WS0004": "tahlan_string",
+                "WS0005": "tahlan_string"
+            }
+        }
+    ]
+}

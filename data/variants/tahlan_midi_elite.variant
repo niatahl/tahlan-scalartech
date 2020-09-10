@@ -1,12 +1,15 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 17,
+    "displayName": "Elite",
+    "fluxCapacitors": 11,
     "fluxVents": 30,
     "hullId": "tahlan_midi",
-    "hullMods": ["targetingunit"],
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
     "permaMods": [],
-    "variantId": "tahlan_midi_standard",
 	"goalVariant": true,
+    "variantId": "tahlan_midi_elite",
     "weaponGroups": [
         {
             "autofire": false,
@@ -17,8 +20,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0007": "atropos",
-                "WS0008": "atropos"
+                "WS0007": "harpoon",
+                "WS0008": "harpoon"
             }
         },
         {
@@ -35,9 +38,9 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "tahlan_lacette",
-                "WS0002": "tahlan_lacette",
-                "WS0003": "heavyneedler"
+                "WS0001": "ioncannon",
+                "WS0002": "ioncannon",
+                "WS0003": "tahlan_lace"
             }
         },
         {

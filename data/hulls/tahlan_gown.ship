@@ -19,7 +19,8 @@
     "operations_center"
   ],
   "builtInWings": [
-    "tahlan_thread_swarmer_wing"
+    "tahlan_plaid_drone_wing",
+    "tahlan_plaid_drone_wing"
   ],
   "builtInWeapons": {
     "WS0001": "tahlan_filamentbays"
@@ -312,8 +313,6 @@
       "arc": 360,
       "angle": 0,
       "locations": [
-        -49, -41.5,
-        -60.5, -41.5,
         -49, 42,
         -60.5, 42
       ]
@@ -326,6 +325,18 @@
       "arc": 360,
       "angle": 180,
       "locations": [-34, -0]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -46, -41.5,
+        -62, -41.5
+      ]
     }
   ],
   "engineSlots": [

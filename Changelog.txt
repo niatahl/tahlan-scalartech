@@ -1,12 +1,21 @@
 0.3
 - Added Midi-class beam cruiser
+- Added Camise-class freighter
+- Added Culotte-class tanker
+- Added Corset-class battlecruiser
+- Gown
+	- Built-in wing replaced by two Plaid drone wings
 - Filament
 	- Increased DP from 50 to 55
 - Ruffle
-	- Increased refire delay
+	- Increased refire delay to 2.5s
 - Skirt
 	- Fixed system being able to hit phased ships with emp arcs
 	- Increased DP from 8 to 10
+- Fiber
+	- Increased launch velocity of bomb from 200 to 300
+- Frill
+	- Reduced shield efficiency from 0.6 to 0.7
 	
 
 0.2

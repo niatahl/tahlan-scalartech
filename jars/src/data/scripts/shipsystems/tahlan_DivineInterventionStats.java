@@ -114,7 +114,7 @@ public class tahlan_DivineInterventionStats extends BaseShipSystemScript {
                 CombatEntityAPI target = null;
 
                 //Finds a target, in case we are going to overkill our current one
-                List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(ship.getLocation(), 300f);
+                List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(ship.getLocation(), 800f);
 
                 for (CombatEntityAPI potentialTarget : targetList) {
                     //Checks for dissallowed targets, and ignores them

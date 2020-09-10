@@ -46,7 +46,10 @@
 			"tahlan_strand",
 			"tahlan_gown",
 			"tahlan_skirt",
-			"tahlan_midi"
+			"tahlan_midi",
+			"tahlan_camise",
+			"tahlan_corset",
+			"tahlan_culotte"
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -57,7 +60,10 @@
 			"tahlan_skye",
 			"tahlan_strand",
 			"tahlan_gown",
-			"tahlan_skirt"
+			"tahlan_skirt",
+			"tahlan_camise",
+			"tahlan_culotte",
+			"tahlan_corset"
 		],
 	},
 	"knownFighters":{

@@ -1,0 +1,59 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 6,
+    "fluxVents": 50,
+    "hullId": "tahlan_corset",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_corset_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_ruffle",
+                "WS0002": "tahlan_ruffle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "sabotpod",
+                "WS0008": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_tousle",
+                "WS0004": "tahlan_tousle",
+                "WS0005": "tahlan_tousle",
+                "WS0006": "tahlan_tousle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0009": "heavyburst"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string",
+                "WS0012": "tahlan_string",
+                "WS0013": "tahlan_string",
+                "WS0014": "tahlan_string",
+                "WS0015": "tahlan_string"
+            }
+        }
+    ],
+    "wings": []
+}

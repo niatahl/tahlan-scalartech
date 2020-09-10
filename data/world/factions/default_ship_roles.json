@@ -24,11 +24,14 @@
 		"tahlan_skye_killer":5,
 		"tahlan_verge_standard":5,
 		"tahlan_verge_standoff":5,
-		"tahlan_midi_standard":10,
+		"tahlan_midi_standard":6,
+		"tahlan_midi_elite":4,
 	},
 	"combatCapital":{
 		"tahlan_gown_standard":5,
 		"tahlan_gown_illus":5,
+		"tahlan_corset_standard":6,
+		"tahlan_corset_support":4,
 	},
 	
 	
@@ -73,11 +76,13 @@
 	"freighterMedium":{
 	},
 	"freighterLarge":{
+		"tahlan_camise_standard":10,
 	},
 	
 	"tankerSmall":{
 	},
 	"tankerMedium":{
+		"tahlan_culotte_standard":10,
 	},
 	"tankerLarge":{
 	},
