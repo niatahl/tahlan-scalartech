@@ -3,8 +3,8 @@
   "hullId": "tahlan_gown",
   "displayName": "Audacious",
   "goalVariant": true,
-  "fluxCapacitors": 20,
-  "fluxVents": 50,
+  "fluxCapacitors": 0,
+  "fluxVents": 38,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -82,5 +82,7 @@
       "WS0016": "tahlan_gown_ringright_standard"
     }
   ],
-  "wings": []
+    "wings": [
+        "tahlan_cord_fighter_wing",
+    ]
 }

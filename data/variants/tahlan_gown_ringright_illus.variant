@@ -1,6 +1,6 @@
 {
     "displayName": "Illustrious",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 0,
     "fluxVents": 30,
     "hullId": "tahlan_gown_ringright",
     "hullMods": ["fluxbreakers"],

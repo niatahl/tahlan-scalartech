@@ -63,7 +63,7 @@
 	],
 	"tahlan_ocbeam_loop":
 	[
-		{"file":"sounds/tahlan/weapons/tahlan_ocbeam_loop.ogg","pitch":1.3,"volume":1.0},
+		{"file":"sounds/tahlan/weapons/tahlan_ocbeam_loop.ogg","pitch":1.3,"volume":0.85},
 	],
 	
 	"tahlan_berserk_end":

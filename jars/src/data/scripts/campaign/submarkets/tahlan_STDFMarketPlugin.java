@@ -132,4 +132,6 @@ public class tahlan_STDFMarketPlugin extends BaseSubmarketPlugin {
     public boolean isParticipatesInEconomy() {
         return false;
     }
+
+
 }

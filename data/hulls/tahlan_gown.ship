@@ -18,10 +18,6 @@
     "tahlan_centraltargeting",
     "operations_center"
   ],
-  "builtInWings": [
-    "tahlan_plaid_drone_wing",
-    "tahlan_plaid_drone_wing"
-  ],
   "builtInWeapons": {
     "WS0001": "tahlan_filamentbays"
   },

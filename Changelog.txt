@@ -1,3 +1,16 @@
+0.3.1
+- Increased range of Swarmer Strike shipsystem
+- Fixed Midi-class not spawning properly
+- Stitch
+	- Reduced direct damage component of emp arcs
+- Gown
+	- Reduced OP of main hull from 420 to 400
+	- Reduced OP of modules from 130 to 120
+	- Reverted to 1 fighter bay on main hull. No longer built-in
+	- Centralized targeting core now increases PD weapon range by only 60%
+	- Shield efficiency reduced from 0.7 to 0.8
+
+
 0.3
 - Added Midi-class beam cruiser
 - Added Camise-class freighter

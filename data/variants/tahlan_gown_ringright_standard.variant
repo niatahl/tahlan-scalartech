@@ -4,7 +4,7 @@
   "displayName": "Audacious",
   "goalVariant": true,
   "fluxCapacitors": 2,
-  "fluxVents": 30,
+  "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

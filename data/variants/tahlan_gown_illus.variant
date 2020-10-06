@@ -1,6 +1,6 @@
 {
     "displayName": "Illustrious",
-    "fluxCapacitors": 36,
+    "fluxCapacitors": 8,
     "fluxVents": 50,
     "hullId": "tahlan_gown",
     "hullMods": [
@@ -74,5 +74,7 @@
             }
         }
     ],
-    "wings": []
+    "wings": [
+        "tahlan_thread_swarmer_wing",
+    ]
 }

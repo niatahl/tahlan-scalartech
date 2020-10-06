@@ -19,9 +19,9 @@ Corset,tahlan_corset,Battlecruiser,ScalarTech Solutions,tahlan_pulsedrive,25,120
 Hanakaze,tahlan_skye_hana,Mod Cruiser,ScalarTech Solutions,tahlan_powersurge,17,8000,700,12000,,650,150,1,90,80,60,28,30,1600,FRONT,,270,0.4,0.7,,,70,160,150,90,3,30,8,220000,4,20,480,0.25,30,30,HIDE_IN_CODEX,no_autofit,,0.6,2,3,405
 Vestige,tahlan_vestige,Heavy Cruiser,ScalarTech Solutions,tahlan_berserk,20,8500,1200,12000,,900,160,,60,45,35,25,25,2000,FRONT,,270,0.3,1.0,,,80,180,160,90,3,30,8,250000,4,20,540,0.25,32,32,HIDE_IN_CODEX,no_autofit,,0.6,2,3,405
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,30,30000,1200,25000,31250,1200,420,2,30,20,15,5,5,3000,OMNI,,180,0.4,0.7,,,650,1500,400,400,20,20,7,1250000,10,30,780,0.25,100,100,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
-Left Wing,tahlan_gown_ringleft,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,130,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
-Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,130,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
+Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,30,30000,1200,25000,31250,1200,400,1,30,20,15,5,5,3000,OMNI,,180,0.4,0.8,,,650,1500,400,400,20,20,7,1500000,10,30,780,0.25,100,100,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
+Left Wing,tahlan_gown_ringleft,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
+Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Cord,tahlan_cord,Heavy Fighter,ScalarTech Solutions,tahlan_cycleaccel,,500,20,400,,100,0,,200,300,250,90,120,30,OMNI,,120,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,100
 Fiber,tahlan_fiber,Bomber,ScalarTech Solutions,,,400,20,600,,50,0,,160,150,125,30,90,50,OMNI,,180,0,1,,,3,3,,,,,,,,,,,,,,,,0,,,106

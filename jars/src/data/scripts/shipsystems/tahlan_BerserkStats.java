@@ -28,10 +28,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
 
     private IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
 
-    private String origPersonality;
-
     boolean  runOnce = false;
-    boolean  runOnceCap = false;
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
 
@@ -45,12 +42,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             return;
         }
 
-        PersonAPI captain = ship.getCaptain();
 
-        if (!runOnceCap) {
-            origPersonality = captain.getPersonalityAPI().getId();
-            runOnceCap = true;
-        }
 
 
         if (state == State.OUT) {
@@ -60,8 +52,6 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
                 ship.getFluxTracker().beginOverloadWithTotalBaseDuration(ship.getSystem().getChargeDownDur());
                 runOnce = true;
             }
-
-            captain.setPersonality(origPersonality);
 
         } else {
             runOnce = false;
@@ -76,7 +66,6 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             stats.getEnergyWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
             stats.getBallisticWeaponRangeBonus().modifyMult(id, 1f-((1f-RANGE_MULT)*effectLevel));
 
-            captain.setPersonality("reckless");
         }
 
         //Global.getSoundPlayer().playLoop("tahlan_berserk_loop",ship,0.5f+0.5f*effectLevel,5f,ship.getLocation(),ship.getVelocity());

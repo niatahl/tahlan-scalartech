@@ -31,12 +31,12 @@ public class tahlan_StitchBeamEffect implements BeamEffectPlugin {
 
 					if (Math.random() > 0.5f) {
 
-						float dam = beam.getWeapon().getDamage().getDamage() * 0.25f;
-						float empdam = beam.getWeapon().getDamage().getFluxComponent() * 0.5f;
+						float dam = beam.getWeapon().getDamage().getDamage() * 0.1f;
+						float empdam = beam.getWeapon().getDamage().getFluxComponent() * 0.2f;
 						engine.spawnEmpArc(beam.getSource(), beam.getTo(), beam.getDamageTarget(), beam.getDamageTarget(),
 								DamageType.ENERGY,
 								dam,
-								dam,
+								empdam,
 								10000f,
 								"tachyon_lance_emp_impact",
 								beam.getWidth(),

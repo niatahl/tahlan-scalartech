@@ -25,7 +25,7 @@ public class tahlan_SwarmerStrikeStats extends BaseShipSystemScript {
     private final static float  WING_SPAWN_DISTANCE_MIN = 600f;
     private final static float  WING_SPAWN_DISTANCE_MAX = 700f;
     private final static float  WING_SPAWN_ANGLE_DIFF = 180f;
-    private final static float  MAX_RANGE = 6000f;
+    private final static float  MAX_RANGE = 10000f;
 
     private boolean hasDeployed = false;
     private List<ShipAPI> leadersToDespawn = new ArrayList<ShipAPI>();
