@@ -24,7 +24,7 @@ public class tahlan_SuperCruiseStats extends BaseShipSystemScript {
             stats.getMaxTurnRate().unmodify(id);
         } else {
             stats.getMaxTurnRate().modifyMult(id, 1f + 0.5f * effectLevel);
-            stats.getMaxSpeed().modifyFlat(id, 50f * effectLevel);
+            stats.getMaxSpeed().modifyFlat(id, 40f * effectLevel);
         }
 
         stats.getAcceleration().modifyPercent(id, 50f * effectLevel);
@@ -33,6 +33,7 @@ public class tahlan_SuperCruiseStats extends BaseShipSystemScript {
 
         stats.getBallisticWeaponRangeBonus().modifyMult(id, 1f - 0.33f * effectLevel);
         stats.getEnergyWeaponRangeBonus().modifyMult(id, 1f - 0.33f * effectLevel);
+        stats.getFluxDissipation().modifyMult(id, 1f- 0.33f * effectLevel);
 
         ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
         ship.getEngineController().fadeToOtherColor(id, new Color(255,0,100), null, effectLevel, 0.7f);
@@ -49,6 +50,7 @@ public class tahlan_SuperCruiseStats extends BaseShipSystemScript {
 
         stats.getEnergyWeaponRangeBonus().unmodify(id);
         stats.getBallisticWeaponRangeBonus().unmodify(id);
+        stats.getFluxDissipation().unmodify(id);
 
     }
 

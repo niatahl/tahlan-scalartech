@@ -1,3 +1,19 @@
+0.3.2
+- Filament
+	- Reduced OP from 360 to 320
+- Corset
+	- Reduced top speed from 60 to 40
+- Strand
+	- System changed to PD Suppression
+- Curl
+	- Armor increased from 150 to 200
+- Margin
+	- Dissipation increased from 200 to 225
+- Gown
+	- Added a 33% dissipation penalty to Supercruise Mode
+	- Supercruise Mode speed increased reduced from 50 to 40
+	
+
 0.3.1
 - Increased range of Swarmer Strike shipsystem
 - Fixed Midi-class not spawning properly

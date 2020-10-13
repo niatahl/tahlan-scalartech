@@ -1,12 +1,11 @@
 {
     "displayName": "Bridgehead",
-    "fluxCapacitors": 14,
+    "fluxCapacitors": 4,
     "fluxVents": 50,
     "hullId": "tahlan_filament",
     "hullMods": [
         "targetingunit",
-        "fluxbreakers",
-        "hardenedshieldemitter"
+        "fluxbreakers"
     ],
     "permaMods": [],
 	"goalVariant": true,

@@ -21,6 +21,11 @@
 		berserk_def:"Damage taken reduced by ",
 		berserk_speed:"Speed increased by ",
 		berserk_dam:"Weapon damage increased by ",
-		berserk_range:"Range reduced by "
+		berserk_range:"Range reduced by ",
+		suppression_1:"Target PD weapons ",
+		suppression_2:"% less effective",
+		suppressed:"PD suppressed!",
+		suppressed_1:"PD weapons",
+		suppressed_2:"% less effective"
 	}
 }
