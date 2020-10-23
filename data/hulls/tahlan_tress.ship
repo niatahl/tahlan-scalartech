@@ -4,7 +4,7 @@
   "hullSize": "DESTROYER",
   "spriteName": "graphics/tahlan/ships/tahlan_tress.png",
   "style": "TAHLAN_FILAMENT_TECH",
-  "height": 133,
+  "height": 134,
   "width": 188,
   "center": [94, 66.5],
   "collisionRadius": 136.5,

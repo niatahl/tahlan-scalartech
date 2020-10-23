@@ -4,7 +4,7 @@
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/tahlan/ships/tahlan_filament.png",
   "style": "TAHLAN_FILAMENT_TECH",
-  "height": 379,
+  "height": 380,
   "width": 300,
   "center": [150, 184],
   "collisionRadius": 280,

@@ -1,3 +1,15 @@
+0.4
+- Added Sateen-class Battlecruiser
+- Added Stitchette medium beamlance
+- Added Baste Ion Discharger
+- Added Sew Diffusion Gun
+- Ruffle
+	- Renamed to Ruffle Diffusion Cannon
+- String Pulser
+	- Added 25 EMP damage to projectile
+- Corset
+	- Flux capacity increased from 14000 to 16000
+
 0.3.2
 - Filament
 	- Reduced OP from 360 to 320

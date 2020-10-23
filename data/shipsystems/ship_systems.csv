@@ -12,4 +12,5 @@ Overboost,tahlan_overboost,,,,,,,,3,0.15,0.1,1,0.1,1,,,,,,,,,,,graphics/icons/hu
 Divine Intervention,tahlan_divintervention,,,,,,0.1,,,,0.1,0.5,0.1,3,,TRUE,TRUE,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/maneuvering_jets.png
 Berserk,tahlan_berserk,1,,,,,,,3,0.075,0.5,4,1,0,,,,,,,,,TRUE,TRUE,graphics/icons/hullsys/burn_drive.png
 PD Suppression,tahlan_emsuppression,,,,,,0.1,,,,0.5,10,1,10,,,,,,,,,,,graphics/icons/hullsys/entropy_amplifier.png
+Flicker Drive,tahlan_flickerdrive,1,,,,,0.05,,3,0.1,0.1,1.5,0.1,0.1,,,,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/displacer.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,

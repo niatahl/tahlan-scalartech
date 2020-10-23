@@ -1,0 +1,69 @@
+{
+  "id": "tahlan_stitchette",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "data.scripts.weapons.tahlan_StitchBeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_stitchette_turret_base.png",
+  "turretGlowSprite": "graphics/tahlan/weapons/tahlan_stitchette_turret_glow.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_stitchette_hp_base.png",
+  "hardpointGlowSprite": "graphics/tahlan/weapons/tahlan_stitchette_hp_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    100,
+    200,
+    255,
+    80
+  ],
+  "hitGlowRadius": 40,
+  "turretOffsets": [
+    0.5,
+    2,
+    0.5,
+    -2
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    -1,
+    2,
+    -1,
+    -2
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    60,
+    120,
+    255,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 6,
+  "textureType": [
+    "graphics/tahlan/fx/tahlan_titanomachy_beam_fringe.png",
+    "graphics/tahlan/fx/tahlan_shiva_beam_core.png"
+  ],
+  "textureScrollSpeed": 256,
+  "pixelsPerTexel": 1,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF,
+    FIGHTER
+  ],
+  "fireSoundOne": "tahlan_stitch_fire"
+}

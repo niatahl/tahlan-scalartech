@@ -4,7 +4,7 @@
   "hullSize": "CRUISER",
   "spriteName": "graphics/tahlan/ships/tahlan_strand.png",
   "style": "TAHLAN_FILAMENT_TECH",
-  "height": 237,
+  "height": 238,
   "width": 216,
   "center": [108, 110.5],
   "collisionRadius": 191.5,

@@ -1,0 +1,42 @@
+{
+  "id": "tahlan_sew",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_sew_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_sew_turret_base.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_sew_hp_base.png",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    6,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 0,
+    "particleSizeMin": 8,
+    "particleSizeRange": 8,
+    "particleDuration": 0.2,
+    "particleCount": 15,
+    "particleColor": [
+      255,
+      150,
+      200,
+      125
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_sew_fire"
+}

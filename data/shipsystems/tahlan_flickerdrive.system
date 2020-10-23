@@ -1,0 +1,28 @@
+{
+	"id":"tahlan_flickerdrive",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+	
+	"statsScript":"data.scripts.shipsystems.tahlan_FlickerDriveStats",
+	"runScriptWhilePaused":false, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":true,
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+	
+	"effectColor1":[0,13,102,0],
+	"effectColor2":[0,13,102,0],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+	
+	"shipAlpha":1,
+	
+	#"loopSound":"SRD_nullspace_with_system",
+	"outOfUsesSound":"system_phase_cloak_collision",
+}

@@ -7,12 +7,28 @@
 		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.8},
 	],
 	
+	"tahlan_sew_fire":
+	[
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":1.8,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":1.82,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":1.84,"volume":0.5},
+		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":1.86,"volume":0.5},
+	],
+	
 	"tahlan_lace_fire":
 	[
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.0,"volume":0.6},
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.02,"volume":0.6},
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.04,"volume":0.6},
 		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":1.06,"volume":0.6},
+	],
+	
+	"tahlan_baste_fire":
+	[
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":0.7,"volume":0.7},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":0.72,"volume":0.7},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":0.74,"volume":0.7},
+		{"file":"sounds/tahlan/weapons/tahlan_lace_fire.ogg","pitch":0.76,"volume":0.7},
 	],
 	
 	"tahlan_lacette_fire":
