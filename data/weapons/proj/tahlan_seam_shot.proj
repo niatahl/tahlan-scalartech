@@ -1,0 +1,21 @@
+{
+	"id":"tahlan_seam_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.scripts.weapons.tahlan_SeamOnHitEffect",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":8.0,
+	"width":15,
+	"fadeTime":0.2,
+	"fringeColor":[0,50,255,205],
+	"coreColor":[0,175,255,150],
+	"glowColor":[0,50,255,30],
+	"glowRadius":40,
+	"hitGlowRadius":30,	
+	"textureType": [
+    "graphics/tahlan/fx/tahlan_fluff_beam_fringe.png",
+    "graphics/tahlan/fx/tahlan_fluff_beam_core.png"],
+	"textureScrollSpeed":32,
+	"pixelsPerTexel":1.0
+}

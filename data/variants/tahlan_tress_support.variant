@@ -1,6 +1,6 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 4,
+    "fluxCapacitors": 2,
     "fluxVents": 0,
     "hullId": "tahlan_tress",
     "hullMods": ["missleracks"],
@@ -20,8 +20,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "harpoonpod",
-                "WS0004": "harpoonpod"
+                "WS0003": "tahlan_tear_medium",
+                "WS0004": "tahlan_tear_medium"
             }
         }
     ],

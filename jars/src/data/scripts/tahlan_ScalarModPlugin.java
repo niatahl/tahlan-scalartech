@@ -2,15 +2,21 @@ package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.PluginPick;
+import com.fs.starfarer.api.campaign.CampaignPlugin;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.combat.MissileAIPlugin;
+import com.fs.starfarer.api.combat.MissileAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 
+import data.scripts.ai.tahlan_emptorpedo_ai;
 import data.scripts.world.tahlan_ScalarRelationPlugin;
 import data.scripts.world.tahlan_Spindle;
 import exerelin.campaign.SectorManager;
@@ -31,6 +37,8 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
     }
     //All hullmods related to shields, saved in a convenient list
     public static List<String> SHIELD_HULLMODS = new ArrayList<String>();
+
+    public static final String EMPMISSILE_ID = "tahlan_tear_msl";
 
     public static Logger log = Global.getLogger(tahlan_ScalarModPlugin.class);
 
@@ -113,6 +121,16 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(admin, 0);
             market.addPerson(admin);
         }
+    }
+
+    @Override
+    public PluginPick<MissileAIPlugin> pickMissileAI(MissileAPI missile, ShipAPI launchingShip) {
+        switch (missile.getProjectileSpecId()) {
+            case EMPMISSILE_ID:
+                return new PluginPick<MissileAIPlugin>(new tahlan_emptorpedo_ai(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
+            default:
+        }
+        return null;
     }
 
     @Override

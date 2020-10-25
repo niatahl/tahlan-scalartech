@@ -28,7 +28,7 @@
 									 "collisionClassByFighter":PROJECTILE_FIGHTER,
 									 "particleSizeMin":2.0,
 									 "particleSizeRange":5.0,
-									 "particleDuration":0.05,
+									 "particleDuration":0.2,
 									 "particleCount":50,
 									 "particleColor":[100,150,255,255],
 									 "sound":"tahlan_volkite_flak"},

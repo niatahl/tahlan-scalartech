@@ -1,0 +1,21 @@
+{
+	"id":"tahlan_crinkle_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.scripts.weapons.tahlan_CrinkleOnHitEffect",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":20.0,
+	"width":35,
+	"fadeTime":0.2,
+	"fringeColor":[50,180,255,225],
+	"coreColor":[0,255,255,255],
+	"glowColor":[50,180,255,40],
+	"glowRadius":60,
+	"hitGlowRadius":40,	
+	"textureType": [
+    "graphics/tahlan/fx/tahlan_fluff_beam_fringe.png",
+    "graphics/tahlan/fx/tahlan_fluff_beam_core.png"],
+	"textureScrollSpeed":32,
+	"pixelsPerTexel":1.0
+}

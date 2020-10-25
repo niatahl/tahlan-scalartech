@@ -3,14 +3,13 @@
   "hullId": "tahlan_gown",
   "displayName": "Audacious",
   "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 38,
+  "fluxCapacitors": 1,
+  "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "hardenedshieldemitter",
     "fluxbreakers",
-    "stabilizedshieldemitter",
     "missleracks"
   ],
   "weaponGroups": [
@@ -51,7 +50,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0010": "dualflak",
+        "WS0010": "tahlan_baste",
         "WS0019": "tahlan_string",
         "WS0020": "tahlan_string",
         "WS0021": "tahlan_string",

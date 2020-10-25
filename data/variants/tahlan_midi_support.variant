@@ -1,0 +1,56 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 12,
+    "fluxVents": 30,
+    "hullId": "tahlan_midi",
+    "hullMods": [
+        "targetingunit",
+        "frontemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_midi_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "harpoon",
+                "WS0008": "harpoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "swarmer",
+                "WS0010": "swarmer",
+                "WS0011": "swarmer",
+                "WS0012": "swarmer"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0013": "tahlan_ocbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_sew",
+                "WS0002": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_baste",
+                "WS0004": "tahlan_string",
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string"
+            }
+        }
+    ]
+}

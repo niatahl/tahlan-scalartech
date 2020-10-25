@@ -1,0 +1,61 @@
+{
+    "displayName": "Frontline",
+    "fluxCapacitors": 15,
+    "fluxVents": 50,
+    "hullId": "tahlan_corset",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_corset_frontline",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_ruffle",
+                "WS0002": "tahlan_ruffle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "tahlan_tear_medium",
+                "WS0008": "tahlan_tear_medium"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_stitchette",
+                "WS0004": "tahlan_stitchette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_baste",
+                "WS0006": "tahlan_baste",
+                "WS0009": "tahlan_baste"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string",
+                "WS0012": "tahlan_string",
+                "WS0013": "tahlan_string",
+                "WS0014": "tahlan_string",
+                "WS0015": "tahlan_string"
+            }
+        }
+    ],
+    "wings": []
+}

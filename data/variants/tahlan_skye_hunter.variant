@@ -1,6 +1,6 @@
 {
     "displayName": "Hunter",
-    "fluxCapacitors": 4,
+    "fluxCapacitors": 5,
     "fluxVents": 30,
     "hullId": "tahlan_skye",
     "hullMods": [
@@ -14,12 +14,12 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "tahlan_ruffle"}
+            "weapons": {"WS0001": "tahlan_seam"}
         },
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0004": "typhoon"}
+            "weapons": {"WS0004": "tahlan_tear_medium"}
         },
         {
             "autofire": true,

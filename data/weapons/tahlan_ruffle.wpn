@@ -27,6 +27,7 @@
   "barrelMode": "ALTERNATING",
   "glowColor":[255,0,120,255],
   "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
   "muzzleFlashSpec": {
     "length": 60,
     "spread": 0,

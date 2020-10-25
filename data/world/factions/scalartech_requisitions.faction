@@ -30,6 +30,9 @@
 		"tags":{
 		},
 		"hulls":{
+			"tahlan_gown":0.25,
+			"tahlan_sateen":0.5,
+			"tahlan_skirt":0.5
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -49,7 +52,8 @@
 			"tahlan_midi",
 			"tahlan_camise",
 			"tahlan_corset",
-			"tahlan_culotte"
+			"tahlan_culotte",
+			"tahlan_sateen"
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available

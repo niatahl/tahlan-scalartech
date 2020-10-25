@@ -1,6 +1,6 @@
 {
     "displayName": "Guardian",
-    "fluxCapacitors": 4,
+    "fluxCapacitors": 2,
     "fluxVents": 20,
     "hullId": "tahlan_frill",
     "hullMods": ["missleracks"],
@@ -20,8 +20,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "sabotpod",
-                "WS0004": "sabotpod"
+                "WS0003": "tahlan_tear_medium",
+                "WS0004": "tahlan_tear_medium"
             }
         },
         {

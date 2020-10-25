@@ -1,14 +1,23 @@
 0.4
 - Added Sateen-class Battlecruiser
+- Added Kimono HVB
 - Added Stitchette medium beamlance
 - Added Baste Ion Discharger
 - Added Sew Diffusion Gun
+- Added Seam Storm Pulser
+- Added Crinkle Disruptor
+- Added Tear Torpedo in small and medium mount variants
+- Increased rarity of Gowns in both STDF fleets and the requisitions market
+- Added new autofit variants for most ships
+- Filament
+	- Top speed reduced from 50 to 40
 - Ruffle
 	- Renamed to Ruffle Diffusion Cannon
 - String Pulser
 	- Added 25 EMP damage to projectile
 - Corset
 	- Flux capacity increased from 14000 to 16000
+
 
 0.3.2
 - Filament

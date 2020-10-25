@@ -23,6 +23,7 @@
   ],
   "barrelMode": "ALTERNATING",
   "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
   "muzzleFlashSpec": {
     "length": 20,
     "spread": 0,

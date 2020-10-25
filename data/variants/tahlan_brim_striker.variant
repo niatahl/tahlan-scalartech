@@ -1,10 +1,9 @@
 {
     "displayName": "Striker",
-    "fluxCapacitors": 1,
+    "fluxCapacitors": 4,
     "fluxVents": 20,
     "hullId": "tahlan_brim",
     "hullMods": [
-        "magazines",
         "hardenedshieldemitter"
     ],
     "permaMods": [],
@@ -15,16 +14,16 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0004": "amblaster",
-                "WS0005": "amblaster"
+                "WS0004": "tahlan_crinkle",
+                "WS0005": "tahlan_crinkle"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0002": "reaper",
-                "WS0003": "reaper"
+                "WS0002": "tahlan_tear_small",
+                "WS0003": "tahlan_tear_small"
             }
         },
         {

@@ -1,0 +1,51 @@
+{
+    "displayName": "Striker",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "hullId": "tahlan_skye",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_skye_striker",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_ruffle"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "harpoonpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_sew",
+                "WS0006": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "tahlan_stitchette",
+                "WS0003": "tahlan_stitchette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "tahlan_string",
+                "WS0008": "tahlan_string",
+                "WS0009": "tahlan_string",
+                "WS0010": "tahlan_string"
+            }
+        }
+    ]
+}

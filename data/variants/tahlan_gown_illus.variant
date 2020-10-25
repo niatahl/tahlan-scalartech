@@ -1,6 +1,6 @@
 {
     "displayName": "Illustrious",
-    "fluxCapacitors": 8,
+    "fluxCapacitors": 12,
     "fluxVents": 50,
     "hullId": "tahlan_gown",
     "hullMods": [
@@ -8,12 +8,12 @@
         "fluxbreakers",
         "missleracks"
     ],
+	"goalVariant": true,
     "modules": [
         {"WS0015": "tahlan_gown_ringleft_illus"},
         {"WS0016": "tahlan_gown_ringright_illus"}
     ],
     "permaMods": [],
-	"goalVariant": true,
     "variantId": "tahlan_gown_illus",
     "weaponGroups": [
         {
@@ -28,28 +28,28 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0042": "typhoon",
-                "WS0043": "typhoon"
+                "WS0042": "tahlan_tear_medium",
+                "WS0043": "tahlan_tear_medium"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "plasma",
-                "WS0008": "plasma"
+                "WS0007": "tahlan_seam",
+                "WS0008": "tahlan_seam"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0009": "ionbeam"}
+            "weapons": {"WS0009": "tahlan_stitchette"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0010": "dualflak",
+                "WS0010": "tahlan_baste",
                 "WS0017": "pulselaser",
                 "WS0018": "pulselaser",
                 "WS0019": "lrpdlaser",
@@ -74,7 +74,5 @@
             }
         }
     ],
-    "wings": [
-        "tahlan_thread_swarmer_wing",
-    ]
+    "wings": ["tahlan_cord_fighter_wing"]
 }

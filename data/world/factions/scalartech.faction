@@ -33,6 +33,7 @@
 			"tahlan_strand":1.1,
 			"gremlin":0, #fuck off
 			"tahlan_skirt":0.5,
+			"tahlan_sateen":0.4,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -52,6 +53,7 @@
 			"tahlan_camise",
 			"tahlan_culotte",
 			"tahlan_corset",
+			"tahlan_sateen",
 			"atlas",
 			"kite_original",
 			"odyssey",

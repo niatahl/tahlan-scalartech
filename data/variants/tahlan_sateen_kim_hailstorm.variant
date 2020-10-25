@@ -1,0 +1,59 @@
+{
+    "displayName": "Hailstorm",
+    "fluxCapacitors": 6,
+    "fluxVents": 50,
+    "hullId": "tahlan_sateen_kim",
+    "hullMods": [
+        "frontemitter",
+        "armoredweapons",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_sateen_kim_hailstorm",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_stitch"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0012": "tahlan_spiral2_l",
+                "WS0013": "tahlan_spiral2_r"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "tahlan_sew",
+                "WS0003": "tahlan_sew",
+                "WS0006": "tahlan_sew",
+                "WS0007": "tahlan_sew",
+                "WS0008": "tahlan_sew",
+                "WS0009": "tahlan_sew",
+                "WS0016": "tahlan_sew",
+                "WS0017": "tahlan_sew",
+                "WS0018": "tahlan_sew",
+                "WS0019": "tahlan_sew",
+                "WS0022": "tahlan_sew",
+                "WS0023": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "tahlan_string",
+                "WS0005": "tahlan_string",
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string",
+                "WS0020": "tahlan_string",
+                "WS0021": "tahlan_string"
+            }
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "displayName": "Bridgehead",
-    "fluxCapacitors": 4,
+    "fluxCapacitors": 2,
     "fluxVents": 50,
     "hullId": "tahlan_filament",
     "hullMods": [
@@ -23,8 +23,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "harpoonpod",
-                "WS0006": "harpoonpod"
+                "WS0005": "tahlan_tear_medium",
+                "WS0006": "tahlan_tear_medium"
             }
         },
         {

@@ -1,0 +1,48 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 2,
+    "fluxVents": 30,
+    "hullId": "tahlan_verge",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_verge_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "tahlan_stitchette"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "tahlan_stitchette"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "tahlan_ruffle"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "tahlan_sew"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "harpoonpod",
+                "WS0002": "harpoonpod",
+                "WS0007": "tahlan_string",
+                "WS0008": "tahlan_string",
+                "WS0009": "tahlan_sew",
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string"
+            }
+        }
+    ]
+}

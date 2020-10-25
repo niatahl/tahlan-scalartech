@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 0,
     "fluxVents": 30,
     "hullId": "tahlan_verge",
     "hullMods": [
@@ -20,8 +20,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0001": "typhoon",
-                "WS0002": "typhoon"
+                "WS0001": "tahlan_tear_medium",
+                "WS0002": "tahlan_tear_medium"
             }
         },
         {
