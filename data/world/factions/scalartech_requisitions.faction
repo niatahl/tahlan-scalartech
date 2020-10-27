@@ -68,7 +68,8 @@
 			"tahlan_midi",
 			"tahlan_camise",
 			"tahlan_culotte",
-			"tahlan_corset"
+			"tahlan_corset",
+			"tahlan_sateen"
 		],
 	},
 	"knownFighters":{
