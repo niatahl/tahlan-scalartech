@@ -1,3 +1,11 @@
+0.4.1
+- Added Stocking bomber
+- Updated GraphicsLib lighting data for new weapons
+- Fixed Kimono HVB ship dropping as BP
+- Crinkle
+	- EMP arc count reduced from 10 to 5
+	- EMP arc damage increased from 100 to 150
+
 0.4
 - Added Sateen-class Battlecruiser
 - Added Kimono HVB

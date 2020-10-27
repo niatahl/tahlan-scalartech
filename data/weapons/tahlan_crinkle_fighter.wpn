@@ -1,0 +1,52 @@
+{
+  "id": "tahlan_crinkle_fighter",
+  "specClass": "projectile",
+  "projectileSpecId": "tahlan_crinkle_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "everyFrameEffect": "data.scripts.weapons.tahlan_SeamScript",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_crinkle_turret_base.png",
+  "turretGlowSprite": "graphics/tahlan/weapons/tahlan_crinkle_turret_glow.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_crinkle_hp_base.png",
+  "hardpointGlowSprite": "graphics/tahlan/weapons/tahlan_crinkle_hp_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    4.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    3.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 30,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "tahlan_crinkle_fire"
+}
