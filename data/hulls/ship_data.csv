@@ -5,24 +5,25 @@ Tress,tahlan_tress,Light Carrier,ScalarTech Solutions,tahlan_magminestrike,11,40
 Brim,tahlan_brim,Destroyer,ScalarTech Solutions,tahlan_cycleaccel,11,3500,400,6000,,350,80,,120,90,60,35,100,300,FRONT,,270,0.4,0.8,,,35,50,50,40,2,20,9,50000,5,18,300,0.25,12,12,,scalartech_bp,,0.7,2,3,309
 Hem,tahlan_hem,Frigate,ScalarTech Solutions,tahlan_chainskimmer,5,1500,200,2200,,150,40,,150,130,100,60,120,200,FRONT,,270,0.4,0.8,,,15,30,50,20,1,20,10,30000,6,20,180,0.25,5,5,,scalartech_bp,,0.5,2,2,200
 Margin,tahlan_margin,Frigate,ScalarTech Solutions,tahlan_cycleaccel,5,1300,150,2500,,225,40,,170,140,110,65,120,180,OMNI,,120,0.4,0.8,,,12,25,40,20,1,20,10,15000,6,20,180,0.25,4,4,,scalartech_bp,,0.5,2,2,200
-Curl,tahlan_curl,Frigate,ScalarTech Solutions,tahlan_pulsedrive,5,1400,200,2400,,200,45,,160,130,100,60,100,180,FRONT,,270,0.3,0.7,,,14,30,45,20,1,20,10,22000,6,20,180,0.25,5,5,,scalartech_bp,,0.5,2,2,200
-Frill,tahlan_frill,Destroyer,ScalarTech Solutions,tahlan_pulsedrive,11,4200,500,6500,,300,90,,100,80,80,30,90,300,OMNI,,180,0.3,0.7,,,40,60,60,40,2,20,9,40000,5,18,360,0.25,12,12,,scalartech_bp,,0.7,2,3,309
+Curl,tahlan_curl,Frigate,ScalarTech Solutions,tahlan_pulsedrive,5,1400,200,2400,,200,45,,160,130,100,60,100,180,FRONT,,270,0.3,0.7,,,14,30,45,20,1,20,10,22000,6,20,180,0.25,4,4,,scalartech_bp,,0.5,2,2,200
+Frill,tahlan_frill,Destroyer,ScalarTech Solutions,tahlan_pulsedrive,11,4200,500,6500,,300,90,,100,80,80,30,90,300,OMNI,,180,0.3,0.7,,,40,60,60,40,2,20,9,40000,5,18,360,0.25,13,13,,scalartech_bp,,0.7,2,3,309
 Verge,tahlan_verge,Cruiser,ScalarTech Solutions,tahlan_cycleaccel,17,8500,1000,11000,,700,165,,60,45,22,22,22,1800,FRONT,,270,0.3,0.7,,,80,180,160,90,3,30,8,140000,4,20,480,0.25,26,26,,scalartech_bp,,0.6,2,3,405
-Skye,tahlan_skye,Cruiser,ScalarTech Solutions,tahlan_limitrelease,17,8000,700,12000,,650,150,,90,80,60,28,30,1600,FRONT,,270,0.4,0.8,,,70,160,150,90,3,30,8,220000,4,20,480,0.25,30,30,,rare_bp,,0.6,2,3,405
+Skye,tahlan_skye,Cruiser,ScalarTech Solutions,tahlan_limitrelease,17,8000,700,12000,,650,150,,90,80,60,28,30,1600,FRONT,,270,0.4,0.8,,,70,160,150,90,3,30,8,220000,4,20,480,0.25,28,28,,rare_bp,,0.6,2,3,405
 Skirt,tahlan_skirt,Frigate,ScalarTech Solutions,tahlan_overboost,5,1800,250,2500,,300,40,1,170,160,140,80,120,200,FRONT,,270,0.3,0.7,,,15,30,40,20,1,20,10,40000,8,20,240,0.25,10,10,,rare_bp,,0.5,2,2,200
 Midi,tahlan_midi,Cruiser,ScalarTech Solutions,tahlan_magminestrike,17,8000,550,12000,,600,130,,70,60,50,25,30,1400,OMNI,,120,0.4,0.9,,,70,160,150,90,3,30,8,180000,4,20,480,0.25,24,24,,rare_bp,,0.6,2,3,405
 Camise,tahlan_camise,Freighter,ScalarTech Solutions,tahlan_pulsedrive,8,7500,400,6000,5000,300,100,,30,8,4,5,5,3200,OMNI,,90,0.4,0.8,,,60,120,1500,400,10,40,8,90000,2,20,720,0.25,14,14,"CIVILIAN, FREIGHTER",rare_bp,,0.7,2,4,502
 Culotte,tahlan_culotte,Tanker,ScalarTech Solutions,tahlan_pulsedrive,6,2000,350,3000,2500,200,60,,50,30,20,25,15,800,OMNI,,90,0.4,0.8,,,15,30,200,1000,2,300,9,50000,5,20,360,0.25,8,8,"CIVILIAN, TANKER",rare_bp,,0.75,3,4,311
 Corset,tahlan_corset,Battlecruiser,ScalarTech Solutions,tahlan_pulsedrive,25,12000,1000,16000,,900,280,2,40,50,40,8,12,2400,OMNI,,180,0.3,0.8,,,380,750,400,450,8,56,8,350000,4,20,660,0.25,45,45,,rare_bp,,0.6,2,4,505
 Sateen,tahlan_sateen,Battlecruiser,ScalarTech Solutions,tahlan_flickerdrive,25,10000,1200,12000,,1000,220,,70,90,60,15,20,2200,OMNI,,100,0.3,1,,,300,500,250,400,12,33,8,400000,3,15,600,0.25,40,40,,rare_bp,,0.5,2,5,11311
+Belt,tahlan_belt,Destroyer,ScalarTech Solutions,tahlan_loaderjets,9,4000,500,5500,,350,70,,90,70,50,35,100,300,FRONT,,270,0.4,0.9,,,20,40,50,40,2,20,9,42000,5,18,300,0.25,10,10,,scalartech_bp,,0.7,2,3,309
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hanakaze,tahlan_skye_hana,Mod Cruiser,ScalarTech Solutions,tahlan_powersurge,17,8000,700,12000,,650,150,1,90,80,60,28,30,1600,FRONT,,270,0.4,0.7,,,70,160,150,90,3,30,8,220000,4,20,480,0.25,30,30,HIDE_IN_CODEX,no_autofit,,0.6,2,3,405
 Vestige,tahlan_vestige,Heavy Cruiser,ScalarTech Solutions,tahlan_berserk,20,8500,1200,12000,,900,160,,60,45,35,25,25,2000,FRONT,,270,0.3,1.0,,,80,180,160,90,3,30,8,250000,4,20,540,0.25,32,32,HIDE_IN_CODEX,no_autofit,,0.6,2,3,405
 Kimono,tahlan_sateen_kim,Battlecruiser,ScalarTech Solutions,tahlan_flickerdrive,25,10000,1200,12000,,1000,220,,70,90,60,15,20,2200,OMNI,,100,0.3,1,,,300,500,250,400,12,33,8,400000,3,15,720,0.25,40,40,HIDE_IN_CODEX,no_autofit,,0.5,2,5,11311
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,30,30000,1200,25000,31250,1200,400,1,30,20,15,5,5,3000,OMNI,,180,0.4,0.8,,,650,1500,400,400,20,20,7,1500000,10,30,780,0.25,100,100,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
-Left Wing,tahlan_gown_ringleft,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
-Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrike,17,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
+Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,45,30000,1200,25000,31250,1200,400,1,30,20,15,5,5,3000,OMNI,,180,0.4,0.8,,,650,1500,400,400,20,20,7,1500000,10,30,780,0.25,120,120,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
+Left Wing,tahlan_gown_ringleft,Module,ScalarTech Solutions,tahlan_magminestrike,15,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
+Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrike,15,8000,1200,10000,,500,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Cord,tahlan_cord,Heavy Fighter,ScalarTech Solutions,tahlan_cycleaccel,,500,20,400,,100,0,,200,300,250,90,120,30,OMNI,,120,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,100
 Fiber,tahlan_fiber,Bomber,ScalarTech Solutions,,,400,20,600,,50,0,,160,150,125,50,90,50,OMNI,,180,0,1,,,3,3,,,,,,,,,,,,,,,,0,,,106

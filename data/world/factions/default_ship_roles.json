@@ -23,6 +23,9 @@
 		"tahlan_frill_guardian":4,
 		"tahlan_frill_blaster":3,
 		"tahlan_frill_support":3,
+		"tahlan_belt_standard":4,
+		"tahlan_belt_support":3,
+		"tahlan_belt_strike":3,
 	},
 	"combatLarge":{
 		"tahlan_skye_hunter":4,

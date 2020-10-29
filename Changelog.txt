@@ -1,3 +1,26 @@
+0.4.3
+- Added Belt-class Destroyer
+- Gown
+	- Increased DP from 100 to 120
+- Skye
+	- Lowered DP from 30 to 28
+- Curl
+	- Lowered DP from 5 to 4
+- Fiber
+	- Increased bomb speed by 50
+- Ruffle Diffusion Cannon
+	- Projectile velocity reduced from 1500 to 1200
+- Lace Pulse Repeater
+	- Increased flux/damage from 1.1 to 1.2
+- Tear-type Torpedoes
+	- Reduced speed from 400 to 350
+- Seam Storm Pulser
+	- OP increased from 24 to 25
+	- Range reduced from 650 to 600
+- Tousle Flechette Gun
+	- Lowered combined projectile speed average from 1200 to 1000
+
+
 0.4.2
 - Fixed Sateen spawning
 
