@@ -4,6 +4,7 @@ import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import data.scripts.util.MagicIncompatibleHullmods;
 
 import java.util.HashSet;
@@ -53,5 +54,5 @@ public class tahlan_CentralTargetingCore extends BaseHullMod {
         stats.getNonBeamPDWeaponRangeBonus().modifyPercent(id, -PD_MINUS);
         stats.getBeamPDWeaponRangeBonus().modifyPercent(id, -PD_MINUS);
 	}
-	
+
 }

@@ -1,0 +1,36 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 13,
+    "fluxVents": 30,
+    "hullId": "tahlan_percale",
+    "hullMods": [
+        "fluxbreakers",
+        "missleracks"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_percale_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "tahlan_sew",
+                "WS0005": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "tahlan_tear_medium",
+                "WS0003": "tahlan_tear_medium"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_ruffle"}
+        }
+    ]
+}

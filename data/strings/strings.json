@@ -26,6 +26,11 @@
 		suppression_2:"% less effective",
 		suppressed:"PD suppressed!",
 		suppressed_1:"PD weapons",
-		suppressed_2:"% less effective"
+		suppressed_2:"% less effective",
+		gownModule_01:"Core overloads also cause modules to overlad",
+		gownModule_02:"Modules can't vent individually",
+		gownModule_03:"Core venting also triggers venting on modules",
+		gownModule_04:"Modules can't be equipped with shields",		
+		capOvercharge:"Energy weapon damage increased by ",
 	}
 }

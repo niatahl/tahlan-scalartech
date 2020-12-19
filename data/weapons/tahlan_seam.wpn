@@ -3,14 +3,13 @@
   "specClass": "projectile",
   "projectileSpecId": "tahlan_seam_shot",
   "type": "ENERGY",
-  "size": "LARGE",  
+  "size": "LARGE",
   "everyFrameEffect": "data.scripts.weapons.tahlan_SeamScript",
   "turretSprite": "graphics/tahlan/weapons/tahlan_seam_turret_base.png",
   "turretGlowSprite": "graphics/tahlan/weapons/tahlan_seam_turret_glow.png",
   "hardpointSprite": "graphics/tahlan/weapons/tahlan_seam_hp_base.png",
   "hardpointGlowSprite": "graphics/tahlan/weapons/tahlan_seam_hp_glow.png",
-  "renderAboveAllWeapons": 0,  
-  "separateRecoilForLinkedBarrels":"TRUE",
+  "renderAboveAllWeapons": 0,
   "glowColor": [
     100,
     200,
@@ -20,23 +19,23 @@
   "turretOffsets": [
     17,
     0,
-    17,
-    -0.5,
-    17,
-    0.5
+    9.5,
+    0,
+    2,
+    0
   ],
   "turretAngleOffsets": [
     0,
     0,
-    0
+    -0
   ],
   "hardpointOffsets": [
     17.5,
     0,
-    17.5,
-    -0.5,
-    17.5,
-    0.5
+    10,
+    0,
+    2.5,
+    0
   ],
   "hardpointAngleOffsets": [
     -1.5,
@@ -46,6 +45,7 @@
   "barrelMode": "LINKED",
   "animationType": "GLOW_AND_FLASH",
   "autocharge": true,
+  "separateRecoilForLinkedBarrels":"TRUE",
   "muzzleFlashSpec": {
     "length": 40,
     "spread": 10,

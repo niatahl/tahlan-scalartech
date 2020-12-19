@@ -87,6 +87,7 @@ public class tahlan_SupercruiseAI implements ShipSystemAIScript {
                 }
 
                 /* Glorious debug code without which I would've hammered my head against a wall for another 3 hours
+
                 Global.getCombatEngine().maintainStatusForPlayerShip(this.getClass().getName() + "_TOOLTIP1",
                         "graphics/icons/hullsys/high_energy_focus.png", "engage range",
                         "" + (int)engageRange, false);

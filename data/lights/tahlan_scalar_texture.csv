@@ -24,3 +24,10 @@ tem_vestige,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_vestige_N
 tahlan_gown,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_Normal.png
 tahlan_gown_ringleft,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_ringleft_Normal.png
 tahlan_gown_ringright,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_ringright_Normal.png
+tahlan_percale,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_percale_Normal.png
+,,,,,
+tahlan_percale_cover_r,hardpoint,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_percale_cover_r_Normal.png
+tahlan_percale_cover_l,hardpoint,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_percale_cover_l_Normal.png
+,,,,,
+,,,,,
+,,,,,

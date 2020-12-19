@@ -1,6 +1,6 @@
 id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
 tahlan_thread_swarmer_wing,tahlan_thread_swarmer,"high, interceptor5, interceptor, scalartech_bp",1,0.8,3,8,CLAW,4000,500,,5,INTERCEPTOR,Swarmer,7,10000,,,,,,,,,,,,,227
-tahlan_fiber_bomber_wing,tahlan_fiber_bomber,"bomber12, bomber, high, scalartech_bp",3,0.8,6,20,V,4000,2000,500,3,BOMBER,Heavy Bomber,18,30000,,,,,,,,,,,,,230
-tahlan_stocking_bomber_wing,tahlan_stocking_bomber,"bomber10, bomber, high, scalartech_bp",3,0.8,5,18,CLAW,4000,1500,200,3,BOMBER,Strike Bomber,18,26000,,,,,,,,,,,,,230
+tahlan_fiber_bomber_wing,tahlan_fiber_bomber,"bomber12, bomber, high, scalartech_bp",3,0.8,6,18,V,4000,2000,500,3,BOMBER,Heavy Bomber,18,30000,,,,,,,,,,,,,230
+tahlan_stocking_bomber_wing,tahlan_stocking_bomber,"bomber10, bomber, high, scalartech_bp",3,0.8,5,16,CLAW,4000,1500,200,3,BOMBER,Strike Bomber,18,26000,,,,,,,,,,,,,230
 tahlan_cord_fighter_wing,tahlan_cord_fighter,"fighter15, fighter, high, scalartech_bp",2,0.8,5,12,V,4000,500,,3,FIGHTER,Heavy Fighter,12,20000,,,,,,,,,,,,,230
 tahlan_plaid_drone_wing,tahlan_plaid_drone,"high, no_drop, no_sell",3,0.8,2,69,V,0,250,,2,SUPPORT,Drone,10,0,,,,,,,,,,,,,230

@@ -1,6 +1,6 @@
 {
     "displayName": "Bridgehead",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 6,
     "fluxVents": 50,
     "hullId": "tahlan_filament",
     "hullMods": [

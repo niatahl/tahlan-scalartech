@@ -1,3 +1,44 @@
+0.5
+- Added Percale-class phase cruiser
+- Increased the number of weapons and fighters available at Requisitions submarket
+- HVBs will now properly appear in High End Seller when defeated
+- Magmine Strike
+	- Charge regen reduced by 20%
+- Stitch/Stitchette
+	- Added Strike and Use vs Frigates tags (will no longer target fighters)
+	- Reduced magazine reload time from 10s to 8s
+- Gown
+	- DP reduced from 120 to 100
+	- Module dissipation reduced from 500 to 400
+	- Module capacity reduced from 10000 to 9000
+	- Modules can no longer vent individually
+	- Modules now overload with main hull
+	- Modules now vent when main hull vents
+	- Now has a visible hullmod explaining the above mechanics
+- Fiber
+	- OP reduced from 20 to 18
+- Stocking
+	- OP reduced from 18 to 16
+- Tress
+	- System changed to PD Suppression
+	- DP lowered from 14 to 12
+- Belt
+	- Increased armor from 500 to 750
+	- Increased hitpoints from 4000 to 4500
+- Brim
+	- Increased dissipation from 350 to 400
+	- Increased capacity from 6000 to 7000
+	- Reduced shield upkeep ratio from 0.4 to 0.3
+	- DP reduced from 12 to 11
+- Frill
+	- DP reduced from 13 to 12
+- Filament
+	- Shield efficiency reduced from 0.7 to 0.8
+	- System changed from Second Wave to EMP Relay
+	- DP reduced from 55 to 50
+
+
+
 0.4.3
 - Added Belt-class Destroyer
 - Gown

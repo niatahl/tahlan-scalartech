@@ -1,0 +1,36 @@
+{
+    "displayName": "Disabler",
+    "fluxCapacitors": 5,
+    "fluxVents": 30,
+    "hullId": "tahlan_percale",
+    "hullMods": [
+        "fluxbreakers",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_percale_disabler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "tahlan_crinkle",
+                "WS0005": "tahlan_crinkle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "tahlan_baste",
+                "WS0003": "tahlan_baste"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_seam"}
+        }
+    ]
+}

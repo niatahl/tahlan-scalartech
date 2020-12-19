@@ -7,7 +7,7 @@
 	"glowColor":[100,220,255,255],
 	"size":[14,14],	
 	"center":[7,7],
-	"collisionRadius":16,
+	"collisionRadius":7,
 	"collisionClass":"MISSILE_FF",
 	"explosionColor":[50,255,255,255],  # purely visual, will get a white additively blended core on top of this color
 	"explosionRadius":150, # purely visual

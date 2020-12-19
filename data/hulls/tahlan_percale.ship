@@ -1,0 +1,223 @@
+{
+  "hullName": "Percale",
+  "hullId": "tahlan_percale",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/tahlan/ships/tahlan_percale.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 178,
+  "width": 246,
+  "center": [123, 89],
+  "collisionRadius": 152,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 144.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_scalarspecs",
+	"phasefield"
+  ],
+  "builtInWeapons": {
+    "WS0006": "tahlan_percale_cover_l",
+    "WS0007": "tahlan_percale_cover_r",
+    "WS0008": "tahlan_wingtrail",
+    "WS0009": "tahlan_wingtrail"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 50,
+      "angle": 0,
+      "locations": [-10, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [50, 45]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [50, -45]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [44, 14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [44, -14]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [18.5, 47]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [18.5, -47]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 143.5,
+      "locations": [-7.5, 79]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -143.5,
+      "locations": [-7.5, -79]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, 58],
+      "length": 42.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-58.5, -58],
+      "length": 42.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [2.5, 102.5],
+      "length": 44.808289,
+      "width": 12.762031,
+      "angle": 144,
+      "contrailSize": 12.762031,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [2.5, -102.5],
+      "length": 44.808289,
+      "width": 12.762031,
+      "angle": -144,
+      "contrailSize": 12.762031,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-71, -0],
+      "length": 39,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-70, -0],
+      "length": 16.5,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-57, 58],
+      "length": 22,
+      "width": 23,
+      "angle": 180,
+      "contrailSize": 23,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-57, -58],
+      "length": 22,
+      "width": 23,
+      "angle": -180,
+      "contrailSize": 23,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [3.5, 101.5],
+      "length": 22.858082,
+      "width": 21.70328,
+      "angle": 145,
+      "contrailSize": 21.70328,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [3.5, -101.5],
+      "length": 22.858082,
+      "width": 21.70328,
+      "angle": -145,
+      "contrailSize": 21.70328,
+      "style": "TAHLAN_RED_ENGINE"
+    }
+  ],
+  "bounds": [
+    -85.5, -7,
+    -79.5, -14,
+    -46.5, -24,
+    -74.5, -32,
+    -68, -36.5,
+    -75, -49,
+    -60, -51,
+    -54, -71,
+    -30.5, -72,
+    -6.5, -84.5,
+    2, -105.5,
+    26, -113,
+    36, -108.5,
+    56.5, -75.5,
+    60, -34,
+    46, -18.5,
+    46, 18.5,
+    60, 34,
+    56.5, 75.5,
+    36, 108.5,
+    26, 113,
+    2, 105.5,
+    -6.5, 84.5,
+    -30.5, 72,
+    -54, 71,
+    -60, 51,
+    -75, 49,
+    -68, 36.5,
+    -74.5, 32,
+    -46.5, 24,
+    -79.5, 14,
+    -85.5, 7
+  ]
+}

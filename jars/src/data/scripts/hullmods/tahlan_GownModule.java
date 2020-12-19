@@ -4,12 +4,16 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipEngineControllerAPI.ShipEngineAPI;
 import com.fs.starfarer.api.combat.ShipwideAIFlags.AIFlags;
+import com.fs.starfarer.api.ui.TooltipMakerAPI;
+import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.MagicIncompatibleHullmods;
 
 import java.awt.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import static data.scripts.utils.tahlan_scalar_txt.txt;
 
 //Nabbed this from Alfonzo, madman extraordinaire
 //Original code by DR, mad god of the modiverse
@@ -62,6 +66,7 @@ public class tahlan_GownModule extends BaseHullMod {
 
         }
 
+
         if (parent.getVariant().hasHullMod("unstableinjector")) {
             child.getMutableStats().getBallisticWeaponRangeBonus().modifyMult("tahlan_module_ui", 0.85f);
             child.getMutableStats().getEnergyWeaponRangeBonus().modifyMult("tahlan_module_ui", 0.85f);
@@ -77,11 +82,15 @@ public class tahlan_GownModule extends BaseHullMod {
 
         }
 
-        /* //Vent mirroring, maybe
+        //Vent mirroring. This code is so fucky but hey, you do what works
+
         if (parent.getFluxTracker().isVenting()) {
+            child.getMutableStats().getVentRateMult().unmodify("tahlan_supercruise_module");
             child.giveCommand(ShipCommand.VENT_FLUX, null, 0);
+        } else if (!child.getFluxTracker().isVenting()) {
+            child.getMutableStats().getVentRateMult().modifyMult("tahlan_supercruise_module", 0f);
         }
-        */
+
 
         if (parent.getSystem() != null) {
             ShipSystemAPI system = parent.getSystem();
@@ -119,10 +128,22 @@ public class tahlan_GownModule extends BaseHullMod {
             }
         }
 
+        //Fucky 0-flux boost mirroring that mostly works
         if (parent.getFluxLevel() > parent.getMutableStats().getZeroFluxMinimumFluxLevel().getModifiedValue()) {
             child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("zerofluxmirror", -2f);
         } else {
             child.getMutableStats().getZeroFluxMinimumFluxLevel().modifyFlat("zerofluxmirror", 2f);
+        }
+
+        //Overload module with parent
+        if (parent.getFluxTracker().isOverloaded()) {
+            if (!child.getFluxTracker().isOverloaded()) {
+                child.getFluxTracker().forceOverload(parent.getFluxTracker().getOverloadTimeRemaining());
+            } else {
+                if (child.getFluxTracker().getOverloadTimeRemaining() < parent.getFluxTracker().getOverloadTimeRemaining()) {
+                    child.getFluxTracker().forceOverload(parent.getFluxTracker().getOverloadTimeRemaining()-child.getFluxTracker().getOverloadTimeRemaining());
+                }
+            }
         }
 
     }
@@ -259,5 +280,14 @@ public class tahlan_GownModule extends BaseHullMod {
             default:
                 break;
         }
+    }
+
+
+    @Override
+    public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
+        tooltip.addPara("%s " + txt("gownModule_01"),5f, Misc.getHighlightColor(),">");
+        tooltip.addPara("%s " + txt("gownModule_02"),5f, Misc.getHighlightColor(),">");
+        tooltip.addPara("%s " + txt("gownModule_03"),5f, Misc.getHighlightColor(),">");
+        tooltip.addPara("%s " + txt("gownModule_04"),5f, Misc.getHighlightColor(),">");
     }
 }

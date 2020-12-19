@@ -5,7 +5,7 @@ Chain Skimmer,tahlan_chainskimmer,,,,,,,,9,0.3,0.1,,0.1,0,,TRUE,,TRUE,,,,,,,grap
 Pulsedrive,tahlan_pulsedrive,1,,,,,,,3,0.15,0.3,0.3,0.3,,,,,,,,TRUE,TRUE,,,graphics/icons/hullsys/burn_drive.png
 Supercruise Mode,tahlan_supercruise,,,,,,,,,,1.5,,1.5,5,TRUE,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
 Swarmer Deployment,tahlan_swarmerstrike,,,,,,0.2,,,,0,20,0.6,20,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
-Magmine Strike,tahlan_magminestrike,,,,,,0.1,,3,0.1,0.25,,0.25,0,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
+Magmine Strike,tahlan_magminestrike,,,,,,0.1,,3,0.08,0.25,,0.25,0,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 Limit Release,tahlan_limitrelease,,,,,,,,,,0.5,5.5,3,15,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
 Energy Surge,tahlan_powersurge,,,,,,,,3,0.08,0.25,2.25,1,0.5,,,,,,,,,,,graphics/icons/hullsys/ammo_feeder.png
 Overboost,tahlan_overboost,,,,,,,,3,0.15,0.1,1,0.1,1,,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
@@ -14,4 +14,7 @@ Berserk,tahlan_berserk,1,,,,,,,3,0.075,0.5,4,1,0,,,,,,,,,TRUE,TRUE,graphics/icon
 PD Suppression,tahlan_emsuppression,,,,,,0.1,,,,0.5,10,1,10,,,,,,,,,,,graphics/icons/hullsys/entropy_amplifier.png
 Flicker Drive,tahlan_flickerdrive,1,,,,,0.05,,3,0.1,0.1,1.5,0.1,0.1,,,,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/displacer.png
 Loader Jets,tahlan_loaderjets,,,,,,,,,,1,3,1,3,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+EMP Relay,tahlan_emprelay,,0.2,,,,0.1,,,,0.5,5,0.5,10,,,,,,,,,,,graphics/icons/hullsys/targeting_feed.png
+STS Phase Cloak,tahlan_scalarphase,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,TRUE,,graphics/icons/hullsys/phase_cloak.png
+Capacitor Overdrive,tahlan_capoverdrive,,,,,,,,3,0.1,0.1,1.5,0.1,0,,,,,,,,,TRUE,,graphics/icons/hullsys/ammo_feeder.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,

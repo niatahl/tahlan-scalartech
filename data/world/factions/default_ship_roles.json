@@ -37,6 +37,8 @@
 		"tahlan_midi_standard":4,
 		"tahlan_midi_elite":3,
 		"tahlan_midi_support":3,
+		"tahlan_percale_combat":5,
+		"tahlan_percale_disabler":5,
 	},
 	"combatCapital":{
 		"tahlan_gown_standard":5,

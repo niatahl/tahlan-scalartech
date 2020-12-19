@@ -8,7 +8,7 @@ Due to interfering with the necessary subsystems, %s will %s these effects and %
 
 Enhanced engine shielding also reduces engine damage taken by %s.",Enhanced Drives,graphics/tahlan/hullmods/tahlan_scalarspecs.png
 ,,,,,,,,,,,,,,,,,,
-Gown Module,tahlan_gownmodule,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.tahlan_GownModule,Mirrors certain aspects between the parent and child hulls.,,graphics/hullmods/vast_bulk.png
+Semi-modular Design,tahlan_gownmodule,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_GownModule,"While the Gown's structure is modular in design, the individual flux grids and systems are closely linked, leading to the following effects:",,graphics/hullmods/vast_bulk.png
 Centralized Targeting Core,tahlan_centraltargeting,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CentralTargetingCore,"A centralized targeting core extends the range of standard ballistic and energy weapons by %s and point defense weapons by %s.
 
 Precludes the installation of a Dedicated Targeting Core or an Integrated Targeting Unit.",Greatly extends non-missile weapon range.,graphics/hullmods/advanced_targeting_core.png
