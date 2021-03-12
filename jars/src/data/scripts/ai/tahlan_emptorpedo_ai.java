@@ -182,28 +182,12 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
         Global.getCombatEngine().spawnExplosion(missile.getLocation(), ZERO, VFX_COLOR, EXPLOSION_SIZE_INNER, EXPLOSION_DURATION);
         Global.getCombatEngine().addSmoothParticle(missile.getLocation(), ZERO, HEATGLOW_SIZE, 1f, HEATGLOW_DURATION, HEATGLOW_COLOR);
 
-        // This spawns the damaging explosion
-        /*
-                float duration
-                float radius
-                float coreRadius
-                float maxDamage
-                float minDamage
-                CollisionClass collisionClass
-                CollisionClass collisionClassByFighter
-                float particleSizeMin
-                float particleSizeRange
-                float particleDuration
-                int particleCount
-                Color particleColor
-                Color explosionColor
-         */
         DamagingExplosionSpec boom = new DamagingExplosionSpec(
                 EXPLOSION_DURATION,
                 EXPLOSION_SIZE_OUTER,
                 EXPLOSION_SIZE_INNER,
-                EXPLOSION_DAMAGE_MAX,
-                EXPLOSION_DAMAGE_MIN,
+                missile.getDamageAmount(),
+                missile.getDamageAmount()/2f,
                 CollisionClass.PROJECTILE_FF,
                 CollisionClass.PROJECTILE_FIGHTER,
                 PARTICLE_SIZE_MIN,
@@ -250,17 +234,20 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
             CombatEntityAPI arcTarget = validTargets.get(MathUtils.getRandomNumberInRange(0, validTargets.size() - 1));
 
             //Arcs can pierce shields of the main target
+
+            float bonusDamage = missile.getDamageAmount()*0.15f;
             if (shieldHit && arcTarget == fuseTarget) {
                 float pierceChance = ((ShipAPI) target).getHardFluxLevel() - 0.5f;
                 pierceChance *= fuseTarget.getMutableStats().getDynamic().getValue(Stats.SHIELD_PIERCED_MULT);
 
                 boolean piercedShield = shieldHit && (float) Math.random() < pierceChance;
 
+
                 if (piercedShield) {
                     Global.getCombatEngine().spawnEmpArcPierceShields(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                             DamageType.FRAGMENTATION, //Damage type
-                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Damage
-                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Emp
+                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
+                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                             100000f, //Max range
                             "tachyon_lance_emp_impact", //Impact sound
                             10f, // thickness of the lightning bolt
@@ -270,8 +257,8 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                 } else {
                         Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                                 DamageType.FRAGMENTATION, //Damage type
-                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Damage
-                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Emp
+                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
+                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                                 100000f, //Max range
                                 "tachyon_lance_emp_impact", //Impact sound
                                 10f, // thickness of the lightning bolt
@@ -283,8 +270,8 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
 
                 Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                         DamageType.FRAGMENTATION, //Damage type
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Damage
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * ARC_DAMAGE, //Emp
+                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
+                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                         100000f, //Max range
                         "tachyon_lance_emp_impact", //Impact sound
                         10f, // thickness of the lightning bolt

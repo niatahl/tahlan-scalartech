@@ -1,7 +1,7 @@
 {
     "displayName": "Strike",
     "fluxCapacitors": 0,
-    "fluxVents": 21,
+    "fluxVents": 17,
     "hullId": "tahlan_strand",
     "hullMods": [],
     "permaMods": [],
@@ -37,6 +37,6 @@
     "wings": [
         "tahlan_fiber_bomber_wing",
         "tahlan_fiber_bomber_wing",
-        "tahlan_cord_fighter_wing"
+        "tahlan_garter_bomber_wing"
     ]
 }

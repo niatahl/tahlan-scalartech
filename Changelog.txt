@@ -1,3 +1,25 @@
+0.6
+- Added Garter bomber
+	- Carries a single Tear-torp
+	- Wing of 2
+- Fixed Version Checker support
+- Strand
+	- Lowered DP from 24 to 18
+- Fiber
+	- Increased wing size from 3 to 5
+	- Lowered bomb damage from 1500 to 1200
+	- Lowered shield hp from 600 to 300
+	- Lowered hp from 400 to 200
+	- Increased top speed from 160 to 180
+- Stocking
+	- Lowered OP from 14 to 12
+- Thread
+	- Lowered OP from 8 to 4
+- Cord
+	- Lowered OP from 12 to 10
+- Stocking
+	- Lowered OP cost from 16 to 14
+
 0.5
 - Added Percale-class phase cruiser
 - Increased the number of weapons and fighters available at Requisitions submarket

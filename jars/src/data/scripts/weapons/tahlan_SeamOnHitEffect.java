@@ -36,11 +36,12 @@ public class tahlan_SeamOnHitEffect implements OnHitEffectPlugin {
             engine.addHitParticle(point, ZERO, CoreGlowRadius, 1f, CoreGlowDuration, CORE_GLOW_COLOR);
             //Global.getSoundPlayer().playSound(SOUND_ID, 1f, 1f, point, ZERO);
 
+            float bonusDamage = projectile.getDamageAmount()*5f;
             DamagingExplosionSpec blast = new DamagingExplosionSpec(0.1f,
                     200f,
                     100f,
-                    500f,
-                    250f,
+                    bonusDamage,
+                    bonusDamage/2f,
                     CollisionClass.PROJECTILE_FF,
                     CollisionClass.PROJECTILE_FIGHTER,
                     10f,

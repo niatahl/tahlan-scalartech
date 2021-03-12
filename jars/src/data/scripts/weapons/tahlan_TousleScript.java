@@ -112,7 +112,7 @@ public class tahlan_TousleScript implements EveryFrameWeaponEffectPlugin {
             //Calculates split range : hard-coded to match up with range properly
             Vector2f loc = proj.getLocation();
             float projAngle = proj.getFacing();
-            float projDamage = proj.getDamageAmount();
+            float projDamage = proj.getBaseDamageAmount();
 
             float splitDuration = (weapon.getRange() / weapon.getProjectileSpeed());
 

@@ -1,0 +1,69 @@
+{
+  "hullName": "Garter",
+  "hullId": "tahlan_garter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/tahlan/ships/fighters/tahlan_garter.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 43,
+  "width": 38,
+  "center": [19, 21.5],
+  "collisionRadius": 30.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 28,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, 5.5],
+      "length": 19,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-10.5, -5.5],
+      "length": 19,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-11.5, 3.5],
+      "length": 19,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [-11.5, -3.5],
+      "length": 19,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_ENGINE"
+    }
+  ],
+  "bounds": [
+    -19, -6,
+    -0.5, -18,
+    19, -8.5,
+    10, -0,
+    19, 8.5,
+    -0.5, 18,
+    -19, 6,
+    -11.5, -0
+  ]
+}

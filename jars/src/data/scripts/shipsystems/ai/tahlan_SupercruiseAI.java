@@ -21,7 +21,7 @@ public class tahlan_SupercruiseAI implements ShipSystemAIScript {
     private ShipwideAIFlags flags;
     private ShipSystemAPI system;
     private IntervalUtil tracker = new IntervalUtil(0.5F, 1.0F);
-    private float engageRange = 100f;
+    private float engageRange = 1000f;
 
     public void init(ShipAPI ship, ShipSystemAPI system, ShipwideAIFlags flags, CombatEngineAPI engine) {
         this.ship = ship;
@@ -86,20 +86,6 @@ public class tahlan_SupercruiseAI implements ShipSystemAIScript {
                     threatRange = MathUtils.getDistance(ship,closestThreat);
                 }
 
-                /* Glorious debug code without which I would've hammered my head against a wall for another 3 hours
-
-                Global.getCombatEngine().maintainStatusForPlayerShip(this.getClass().getName() + "_TOOLTIP1",
-                        "graphics/icons/hullsys/high_energy_focus.png", "engage range",
-                        "" + (int)engageRange, false);
-
-                Global.getCombatEngine().maintainStatusForPlayerShip(this.getClass().getName() + "_TOOLTIP2",
-                        "graphics/icons/hullsys/high_energy_focus.png", "target range",
-                        "" + (int)targetRange, false);
-
-                Global.getCombatEngine().maintainStatusForPlayerShip(this.getClass().getName() + "_TOOLTIP3",
-                        "graphics/icons/hullsys/high_energy_focus.png", "threat range",
-                        "" + (int)threatRange, false);
-                */
 
                 //Actual decision making
                 if (system.isActive()) {

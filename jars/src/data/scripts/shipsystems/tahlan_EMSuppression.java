@@ -24,7 +24,6 @@ public class tahlan_EMSuppression extends BaseShipSystemScript {
 	public static final Color TEXT_COLOR = new Color(255,55,55,255);
 	
 	public static final Color JITTER_COLOR = new Color(255,50,50,75);
-	public static final Color JITTER_UNDER_COLOR = new Color(255,100,100,155);
 
 	
 	public static class TargetData {
@@ -48,7 +47,7 @@ public class tahlan_EMSuppression extends BaseShipSystemScript {
 			return;
 		}
 		
-		final String targetDataKey = ship.getId() + "_entropy_target_data";
+		final String targetDataKey = ship.getId() + "_emsuppression_target_data";
 		
 		Object targetDataObj = Global.getCombatEngine().getCustomData().get(targetDataKey); 
 		if (state == State.IN && targetDataObj == null) {

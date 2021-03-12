@@ -16,7 +16,7 @@ Tear Hyperpulse Torpedo,tahlan_tear_medium,2,0.8,1500,1200,,2000,,50,10,11,5,,,E
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built-ins/fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Crinkle Disruptor,tahlan_crinkle_fighter,3,0.7,900,400,,800,800,0,30,9,1,,,ENERGY,1040,,0,1,,,0,0,0,0,,800,,,100,"STRIKE, USE_VS_FRIGATES, SYSTEM",,,ScalarTech Solutions,,Strike,,,,,"Detonates on impact, discharging %s arcs at nearby targets, dealing about %s energy and emp damage each.",5 | 150,,,
-Magbomb,tahlan_magmine,2,,1500,1000,,1500,1500,50,30,69,1,,,ENERGY,0,,0,1.5,1,,0,0,0,0,,250,350,20,500,"SYSTEM,STRIKE",,,ScalarTech Solutions,,Strike,Very Slow,None,,,,,,,TRUE
+Magbomb,tahlan_magmine,2,,1500,1000,,1200,1200,50,30,69,1,,,ENERGY,0,,0,1.5,1,,0,0,0,0,,250,350,20,500,"SYSTEM,STRIKE",,,ScalarTech Solutions,,Strike,Very Slow,None,,,,,,,TRUE
 Spiral Torpedo Tube,tahlan_spiral,0,0.2,600,1200,,800,800,30,15,69,3,0.08,1,ENERGY,0,,0,2,1,,0,0,0,0,,800,800,2.5,200,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
 Helix Torpedo Launcher,tahlan_spiral2_l,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
 Helix Torpedo Launcher,tahlan_spiral2_r,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE

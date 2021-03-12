@@ -237,7 +237,7 @@ public class tahlan_GownModule extends BaseHullMod {
 
         /* Crew penalty doesn't reflect in campaign */
         BLOCKED_OTHER_PLAYER_ONLY.add("converted_hangar");
-        BLOCKED_OTHER_PLAYER_ONLY.add("expanded_deck_crew");
+        //BLOCKED_OTHER_PLAYER_ONLY.add("expanded_deck_crew");
         BLOCKED_OTHER_PLAYER_ONLY.add("TSC_converted_hangar");
     }
 

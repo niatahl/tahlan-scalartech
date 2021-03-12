@@ -81,12 +81,14 @@ public class tahlan_CrinkleOnHitEffect implements OnHitEffectPlugin {
                     validTargets.add(new SimpleEntity(MathUtils.getRandomPointInCircle(point, 300)));
                 }
 
+                float bonusDamage = projectile.getDamageAmount()*0.1875f;
+
                 //And finally, fire at a random valid target
                 CombatEntityAPI arcTarget = validTargets.get(MathUtils.getRandomNumberInRange(0, validTargets.size() - 1));
                 Global.getCombatEngine().spawnEmpArc(projectile.getSource(), point, projectile.getSource(), arcTarget,
                         DamageType.ENERGY, //Damage type
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * 150, //Damage
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * 150, //Emp
+                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
+                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                         100000f, //Max range
                         "tachyon_lance_emp_impact", //Impact sound
                         10f, // thickness of the lightning bolt

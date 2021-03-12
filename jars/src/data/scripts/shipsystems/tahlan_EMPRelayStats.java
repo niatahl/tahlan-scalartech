@@ -18,10 +18,10 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
     private static final Color JITTER_UNDER_COLOR = new Color(47, 218, 255, 125);
     private static final Color JITTER_COLOR = new Color(0, 197, 255, 75);
 
-    private static Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
-    private static Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
+    private static final Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
+    private static final Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
 
-    private IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
+    private final IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         ShipAPI ship = null;

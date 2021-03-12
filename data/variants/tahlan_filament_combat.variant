@@ -1,6 +1,6 @@
 {
     "displayName": "Combat",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 24,
     "fluxVents": 50,
     "hullId": "tahlan_filament",
     "hullMods": [
@@ -61,7 +61,7 @@
     "wings": [
         "tahlan_cord_fighter_wing",
         "tahlan_cord_fighter_wing",
-        "tahlan_cord_fighter_wing",
-        "tahlan_cord_fighter_wing"
+        "tahlan_stocking_bomber_wing",
+        "tahlan_stocking_bomber_wing"
     ]
 }
