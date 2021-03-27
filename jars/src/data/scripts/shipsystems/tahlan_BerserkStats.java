@@ -83,20 +83,6 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             ship.addAfterimage(COOLDOWN_COLOR, 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 10f, 0, 0, 1.5f*effectLevel, false, false, false);
         }
 
-        /*
-        //Always render smoke at the shadow's position
-        for (int i = 0; i < (200 * Global.getCombatEngine().getElapsedInLastFrame()); i++) {
-            Global.getCombatEngine().addSmokeParticle(
-                    MathUtils.getRandomPointInCircle(ship.getLocation(),ship.getCollisionRadius()),
-                    MathUtils.getRandomPointInCircle(null, 10f),
-                    MathUtils.getRandomNumberInRange(50f,70f),
-                    0.8f,
-                    MathUtils.getRandomNumberInRange(0.38f, 0.67f),
-                    SMOKE_COLOR
-            );
-        }
-        */
-
         //Choose a random vent port to send lightning from
         ShipEngineControllerAPI.ShipEngineAPI shipengine = ship.getEngineController().getShipEngines().get(MathUtils.getRandomNumberInRange(0,ship.getEngineController().getShipEngines().size()-1));
 

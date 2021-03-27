@@ -92,9 +92,6 @@ public class tahlan_SecondWaveStats extends BaseShipSystemScript {
 
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
-//		if (index == 0) {
-//			return new StatusData("deploying additional fighters", false);
-//		}
         return null;
     }
 

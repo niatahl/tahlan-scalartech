@@ -2,6 +2,7 @@ package data.scripts.weapons;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
+import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import com.fs.starfarer.api.loading.DamagingExplosionSpec;
 import data.scripts.tahlan_ScalarModPlugin;
 import data.scripts.util.MagicRender;
@@ -20,7 +21,7 @@ public class tahlan_SeamOnHitEffect implements OnHitEffectPlugin {
 
 
     @Override
-    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, CombatEngineAPI engine) {
+    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
         if (projectile.didDamage() && !(target instanceof MissileAPI) && Math.random()>0.95) {
 
             // Blast visuals

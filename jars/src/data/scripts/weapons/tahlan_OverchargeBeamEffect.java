@@ -26,7 +26,7 @@ public class tahlan_OverchargeBeamEffect implements BeamEffectPlugin {
 
 				Vector2f point = Vector2f.add(beam.getFrom(),dir,new Vector2f());
 
-				engine.spawnEmpArcPierceShields(beam.getSource(), beam.getFrom(), beam.getSource(),
+				EmpArcEntityAPI arc =  engine.spawnEmpArcPierceShields(beam.getSource(), beam.getFrom(), beam.getSource(),
 						new SimpleEntity(point),
 						DamageType.FRAGMENTATION,
 						0f,
@@ -39,7 +39,7 @@ public class tahlan_OverchargeBeamEffect implements BeamEffectPlugin {
 				);
 
 		        point = MathUtils.getRandomPointInCircle(beam.getFrom(),50f);
-		        engine.spawnEmpArcPierceShields(beam.getSource(), beam.getFrom(), beam.getSource(),
+		        arc =  engine.spawnEmpArcPierceShields(beam.getSource(), beam.getFrom(), beam.getSource(),
                         new SimpleEntity(point),
                         DamageType.FRAGMENTATION,
                         0f,
@@ -76,7 +76,7 @@ public class tahlan_OverchargeBeamEffect implements BeamEffectPlugin {
 
                         float dam = beam.getWeapon().getDamage().getDamage() * 0.25f;
                         float empdam = beam.getWeapon().getDamage().getFluxComponent() * 0.5f;
-                        engine.spawnEmpArc(beam.getSource(), beam.getTo(), beam.getDamageTarget(), beam.getDamageTarget(),
+                        EmpArcEntityAPI arc =  engine.spawnEmpArc(beam.getSource(), beam.getTo(), beam.getDamageTarget(), beam.getDamageTarget(),
                                 DamageType.ENERGY,
                                 dam,
                                 dam,

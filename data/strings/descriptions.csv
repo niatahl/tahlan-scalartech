@@ -111,7 +111,7 @@ tahlan_powersurge,SHIP_SYSTEM,"Boosts weapon rate of fire, top speed and dissipa
 tahlan_pulsedrive,SHIP_SYSTEM,Swiftly boost forward. Can hold multiple charges.,Mobility,,
 tahlan_overboost,SHIP_SYSTEM,"Supercharges drive systems, greatly boosting speed and discharging emp arcs at nearby targets.",Mobility,,
 tahlan_berserk,SHIP_SYSTEM,"Switches all systems to berserk assault mode. Reduces damage taken by 2/3, increases top speed and boosts energy and ballistic weapon damage. Disables shields while active, reduces weapon ranges and high system stress results in a short overload upon system shutdown.",Mobility,,
-tahlan_emsuppression,SHIP_SYSTEM,"Suppresses the target's point defense systems with false signatures, reducing the effective range of all PD weapons and damage down to missiles and fighters by 25%.",Suppression,,
+tahlan_emsuppression,SHIP_SYSTEM,"Suppresses the target's point defense systems with false signatures, reducing the effective range of all PD weapons and damage done to missiles and fighters by 25%.",Suppression,,
 tahlan_flickerdrive,SHIP_SYSTEM,"Briefly become intangible, dissipating some flux and boosting mobility. Discharges EMP bolts on nearby targets and projectiles upon activation. Holds up to 3 charges.",Mobility,,
 tahlan_loaderjets,SHIP_SYSTEM,Provides a modest boost to speed and maneuverability.,Mobility,,
 tahlan_emprelay,SHIP_SYSTEM,Discharges EMP arcs from fighters at targets near them. Generates flux on use.,Mobility,,

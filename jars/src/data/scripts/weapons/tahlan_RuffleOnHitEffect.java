@@ -3,6 +3,7 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.AsteroidAPI;
 import com.fs.starfarer.api.combat.*;
+import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import data.scripts.tahlan_ScalarModPlugin;
 import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
@@ -26,7 +27,7 @@ public class tahlan_RuffleOnHitEffect implements OnHitEffectPlugin {
 
 
     @Override
-    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, CombatEngineAPI engine) {
+    public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
         if (projectile.didDamage() && !(target instanceof MissileAPI)) {
 
             // Blast visuals
@@ -88,11 +89,7 @@ public class tahlan_RuffleOnHitEffect implements OnHitEffectPlugin {
                     0.2f
             );
 
-            /*
-            if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
-                CustomRippleDistortion(point,ZERO,100,3f,false,0f,360f,0.5f,0f,0.15f,0.15f,0.3f,0f);
-            }
-            */
         }
     }
+
 }

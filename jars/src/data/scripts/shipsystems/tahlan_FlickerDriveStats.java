@@ -46,14 +46,6 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
         float EffectMult = 1f + (MAX_MOBILITY_MULT - 1f) * effectLevel;
         float TimeMult = 1f + (MAX_TIME_MULT - 1f) * effectLevel;
 
-        /*
-        if (player) {
-            Global.getCombatEngine().getTimeMult().modifyMult(id,1f/TimeMult);
-        } else {
-            Global.getCombatEngine().getTimeMult().unmodify(id);
-        }
-        */
-
         ship.setExtraAlphaMult(1f-0.75f*effectLevel);
         ship.setApplyExtraAlphaToEngines(true);
 

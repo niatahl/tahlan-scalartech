@@ -1,10 +1,7 @@
 package data.scripts.weapons;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.DamageType;
-import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
-import com.fs.starfarer.api.combat.WeaponAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.util.IntervalUtil;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.entities.SimpleEntity;
@@ -15,7 +12,7 @@ import java.awt.*;
 public class tahlan_OverchargeBeamScript implements EveryFrameWeaponEffectPlugin {
 
 
-    private IntervalUtil effectInterval = new IntervalUtil(0.05f, 0.1f);
+    private final IntervalUtil effectInterval = new IntervalUtil(0.05f, 0.1f);
     private boolean hasFiredThisCharge = false;
     private final String CHARGE_SOUND_ID = "tahlan_ocbeam_loop";
 
@@ -61,7 +58,7 @@ public class tahlan_OverchargeBeamScript implements EveryFrameWeaponEffectPlugin
             effectInterval.advance(engine.getElapsedInLastFrame());
             if (effectInterval.intervalElapsed()){
                 Vector2f arcPoint = MathUtils.getRandomPointInCircle(weapon.getLocation(),75f*chargelevel);
-                engine.spawnEmpArcPierceShields(weapon.getShip(), weapon.getLocation(), weapon.getShip(),
+                EmpArcEntityAPI arc =  engine.spawnEmpArcPierceShields(weapon.getShip(), weapon.getLocation(), weapon.getShip(),
                         new SimpleEntity(arcPoint),
                         DamageType.FRAGMENTATION,
                         0f,

@@ -313,10 +313,7 @@ public class tahlan_ScalarTechHQ extends BaseIndustry implements RouteFleetSpawn
 		fleet.setNoFactionInName(true);
 		
 		fleet.addEventListener(this);
-		
-//		PatrolAssignmentAIV2 ai = new PatrolAssignmentAIV2(fleet, custom);
-//		fleet.addScript(ai);
-		
+
 		fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PATROL_FLEET, true);
 
 		if (type == PatrolType.FAST || type == PatrolType.COMBAT) {
@@ -346,10 +343,7 @@ public class tahlan_ScalarTechHQ extends BaseIndustry implements RouteFleetSpawn
 		fleet.setLocation(market.getPrimaryEntity().getLocation().x, market.getPrimaryEntity().getLocation().x);
 		
 		fleet.addScript(new PatrolAssignmentAIV4(fleet, route));
-		
-		//market.getContainingLocation().addEntity(fleet);
-		//fleet.setLocation(market.getPrimaryEntity().getLocation().x, market.getPrimaryEntity().getLocation().y);
-		
+
 		if (custom.spawnFP <= 0) {
 			custom.spawnFP = fleet.getFleetPoints();
 		}

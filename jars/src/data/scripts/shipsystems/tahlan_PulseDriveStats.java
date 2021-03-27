@@ -30,16 +30,7 @@ public class tahlan_PulseDriveStats extends BaseShipSystemScript {
 	
 	
 	public float getActiveOverride(ShipAPI ship) {
-//		if (ship.getHullSize() == HullSize.FRIGATE) {
-//			return 1.25f;
-//		}
-//		if (ship.getHullSize() == HullSize.DESTROYER) {
-//			return 0.75f;
-//		}
-//		if (ship.getHullSize() == HullSize.CRUISER) {
-//			return 0.5f;
-//		}
-		return -1;
+        return -1;
 	}
 	public float getInOverride(ShipAPI ship) {
 		return -1;

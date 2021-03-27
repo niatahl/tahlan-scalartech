@@ -11,11 +11,7 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
     private static final float[] COLOR_NORMAL = {255f / 255f, 200f / 255f, 200f / 255f};
     private static final float MAX_OPACITY = 0.9f;
 
-    private ShipAPI SHIP;
-    private ShipEngineControllerAPI ENGINES;
-    private ShipEngineControllerAPI.ShipEngineAPI ENGINE;
     private float FLAME_THROTTLE=1;
-    private float throttle=1;
 
     private final IntervalUtil timer = new IntervalUtil(0.03f,0.05f);
 
@@ -39,8 +35,8 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
         }
 
 
-        SHIP=weapon.getShip();
-        ENGINES=SHIP.getEngineController();
+        ShipAPI SHIP = weapon.getShip();
+        ShipEngineControllerAPI ENGINES = SHIP.getEngineController();
 
         ShipAPI ship = weapon.getShip();
         if (ship == null) {
@@ -76,13 +72,13 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
         //Dynamic resizing
         for(ShipEngineControllerAPI.ShipEngineAPI e : SHIP.getEngineController().getShipEngines()){
             if(MathUtils.isWithinRange(e.getLocation(),weapon.getLocation(),10)){
-                ENGINE = e;
             }
         }
 
         timer.advance(amount);
         if(timer.intervalElapsed() && currentBrightness > 0) {
             //check the current behavior of the ship
+            float throttle = 1;
             if (ENGINES.isFlamedOut() || ENGINES.isFlamingOut()) {
                 throttle = 0;
             } else if (ENGINES.isAccelerating()) {
@@ -101,7 +97,7 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
             //if(ENGINE.isDisabled()){flameout=0;}
 
             //lightly smooth out the flame behavior
-            float offsetFlame = flameout*throttle-FLAME_THROTTLE;
+            float offsetFlame = flameout* throttle -FLAME_THROTTLE;
             if(Math.abs(offsetFlame)<0.05f){
                 FLAME_THROTTLE = throttle;
             } else {

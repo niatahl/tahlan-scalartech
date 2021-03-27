@@ -38,9 +38,10 @@ public class tahlan_WingTrailScript implements EveryFrameWeaponEffectPlugin {
                     15f,
                     Color.red,
                     brightness,
+                    0f,
+                    1f,
                     2f,
-                    true,
-                    ZERO);
+                    true);
         }
 
         //Glows off in refit screen

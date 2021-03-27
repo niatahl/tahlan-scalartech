@@ -134,10 +134,7 @@ public class tahlan_MagMinesStats extends BaseShipSystemScript implements MineSt
 		float fadeInTime = 0.5f;
 		mine.getVelocity().scale(0);
 		mine.fadeOutThenIn(fadeInTime);
-		
-		//Global.getCombatEngine().addPlugin(createMissileJitterPlugin(mine, fadeInTime));
-		
-		//mine.setFlightTime((float) Math.random());
+
 		float liveTime = LIVE_TIME;
 		//liveTime = 0.01f;
 		mine.setFlightTime(mine.getMaxFlightTime() - liveTime);
@@ -196,7 +193,7 @@ public class tahlan_MagMinesStats extends BaseShipSystemScript implements MineSt
 	
 	
 	protected float getMaxRange(ShipAPI ship) {
-		return getMineRange();
+		return getMineRange(ship);
 	}
 
 	
@@ -253,16 +250,11 @@ public class tahlan_MagMinesStats extends BaseShipSystemScript implements MineSt
 		for (ShipAPI other : Global.getCombatEngine().getShips()) {
 			if (other.isShuttlePod()) continue;
 			if (other.isFighter()) continue;
-			
-//			Vector2f otherLoc = other.getLocation();
-//			float otherR = other.getCollisionRadius();
-			
+
 			Vector2f otherLoc = other.getShieldCenterEvenIfNoShield();
 			float otherR = other.getShieldRadiusEvenIfNoShield();
-			
-			
-//			float dist = Misc.getDistance(loc, other.getLocation());
-//			float r = other.getCollisionRadius();
+
+
 			float dist = Misc.getDistance(loc, otherLoc);
 			float r = otherR;
 			//r = Math.min(r, Misc.getTargetingRadius(loc, other, false) + r * 0.25f);
@@ -285,11 +277,10 @@ public class tahlan_MagMinesStats extends BaseShipSystemScript implements MineSt
 		return 3f;
 	}
 
-
-	public float getMineRange() {
+	@Override
+	public float getMineRange(ShipAPI ship) {
 		return MINE_RANGE;
 	}
-
 	
 }
 
