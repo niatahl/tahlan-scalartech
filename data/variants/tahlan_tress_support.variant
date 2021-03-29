@@ -1,11 +1,12 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 6,
     "fluxVents": 0,
+    "goalVariant": true,
     "hullId": "tahlan_tress",
     "hullMods": ["missleracks"],
     "permaMods": [],
-	"goalVariant": true,
+    "sMods": [],
     "variantId": "tahlan_tress_support",
     "weaponGroups": [
         {

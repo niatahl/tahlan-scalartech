@@ -1,3 +1,6 @@
+0.6a
+- 0.95a compatibility, mostly
+
 0.6
 - Added Garter bomber
 	- Carries a single Tear-torp

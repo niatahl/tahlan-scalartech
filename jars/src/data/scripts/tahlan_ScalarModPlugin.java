@@ -113,9 +113,9 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             admin.getName().setLast("Kusanagi");
             admin.setPortraitSprite("graphics/tahlan/portraits/yurika.png");
 
-            //admin.getStats().setSkillLevel(Skills.FLEET_LOGISTICS, 3);
-            //admin.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 1);
-            //admin.getStats().setSkillLevel(Skills.PLANETARY_OPERATIONS, 1);
+            admin.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 3);
+            admin.getStats().setSkillLevel(Skills.PLANETARY_OPERATIONS, 3);
+            admin.getStats().setSkillLevel(Skills.SPACE_OPERATIONS, 3);
 
             market.setAdmin(admin);
             market.getCommDirectory().addPerson(admin, 0);

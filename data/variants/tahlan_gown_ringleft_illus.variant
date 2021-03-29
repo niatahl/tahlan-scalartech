@@ -1,11 +1,12 @@
 {
     "displayName": "Illustrious",
-    "fluxCapacitors": 9,
+    "fluxCapacitors": 13,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "tahlan_gown_ringleft",
     "hullMods": [],
     "permaMods": [],
+    "sMods": [],
     "variantId": "tahlan_gown_ringleft_illus",
     "weaponGroups": [
         {

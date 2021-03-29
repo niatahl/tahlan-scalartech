@@ -173,11 +173,11 @@
 
 		"commanderSkillsShuffleProbability":0,
 		"commanderSkills":[
-			"ship_design",
-			"electronic_warfare",
-			"fighter_doctrine",
-			"officer_management",
 			"coordinated_maneuvers",
+			"electronic_warfare",
+			"fighter_uplink",
+			"carrier_group",
+			"flux_regulation",
 		],
 	},
 	"illegalCommodities":[
@@ -225,6 +225,20 @@
 			"patrolCommander":{"name":"Captain"},
 			"fleetCommander":{"name":"Admiral"},
 			"baseCommander":{"name":"Base Commander"},
+		},
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"business":10,
+		},
+		"HIGH":{
+			"business":10,
+			"aristo":10,
+			"scientist":3,
 		},
 	},
 	"custom":{

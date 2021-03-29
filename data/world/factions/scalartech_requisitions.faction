@@ -142,10 +142,11 @@
 		
 		"commanderSkillsShuffleProbability":0,
 		"commanderSkills":[
-			"officer_management",
 			"coordinated_maneuvers",
-			"fighter_doctrine",
 			"electronic_warfare",
+			"fighter_uplink",
+			"carrier_group",
+			"flux_regulation",
 		],
 	},
 	"illegalCommodities":[
