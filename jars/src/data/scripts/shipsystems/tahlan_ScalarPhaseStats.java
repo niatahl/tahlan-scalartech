@@ -64,6 +64,9 @@ public class tahlan_ScalarPhaseStats extends BaseShipSystemScript {
             return;
         }
 
+        float speedPercentMod = stats.getDynamic().getMod(Stats.PHASE_CLOAK_SPEED_MOD).computeEffective(0f);
+        stats.getMaxSpeed().modifyPercent(id, speedPercentMod * effectLevel);
+
         if (state == State.COOLDOWN || state == State.IDLE) {
             unapply(stats, id);
             return;
@@ -131,7 +134,9 @@ public class tahlan_ScalarPhaseStats extends BaseShipSystemScript {
         }
 
         Global.getCombatEngine().getTimeMult().unmodify(id);
+
         stats.getTimeMult().unmodify(id);
+        stats.getMaxSpeed().unmodify(id);
 
         ship.setPhased(false);
         ship.setExtraAlphaMult(1f);

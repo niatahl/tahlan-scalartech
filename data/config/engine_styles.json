@@ -10,5 +10,36 @@
 		"glowAlternateColor":[255,0,0,225],
 		"type":"GLOW" # GLOW or SMOKE
 	},
+	"TAHLAN_RED_FIGHTER_ENGINE":{
+		"mode":"QUAD_STRIP",
+		"engineColor":[255,50,50,225],
+		"contrailDuration":1.5,
+		"contrailWidthMult":1,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		"contrailColor":[255,50,50,100],
+		"omegaMode":true,
+		"glowSizeMult":1,
+		"glowAlternateColor":[255,0,0,225],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	"TAHLAN_HIGH_TECH_FIGHTER":{
+		"mode":"QUAD_STRIP",
+		"contrailDuration":1.5,
+		"contrailWidthMult":1,
+		"contrailWidthAddedFractionAtEnd":-1f,  # can be negative. makes trail spread out/narrow at the end
+		"contrailMinSeg":5, # min segment length, in pixels
+		"contrailMaxSpeedMult":1f,
+		"contrailAngularVelocityMult":0f,
+		"glowSizeMult":1,
+		"glowAlternateColor":[255,0,0,225],
+						
+		"engineColor":[100,165,255,255],
+		"contrailColor":[100,165,255,25],
+		"contrailCampaignColor":[100,165,255,75],
+		"type":"GLOW" # GLOW or SMOKE
+	},
 }
 

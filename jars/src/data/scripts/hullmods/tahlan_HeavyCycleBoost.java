@@ -1,8 +1,7 @@
 package data.scripts.hullmods;
 
-import com.fs.starfarer.api.combat.BaseHullMod;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 
 import static data.scripts.utils.tahlan_scalar_txt.txt;
@@ -29,6 +28,23 @@ public class tahlan_HeavyCycleBoost extends BaseHullMod {
 		if (index == 0) return "" + (int)((ROF_BOOST-1f)*100f) + txt("%");
 		if (index == 1) return "" + (int)((BEAM_BOOST-1f)*100f) + txt("%");
 		return null;
+	}
+
+	@Override
+	public void advanceInCombat(ShipAPI ship, float amount) {
+		CombatEngineAPI engine = Global.getCombatEngine();
+		if (engine.isPaused() || !ship.isAlive()) {
+			return;
+		}
+		for (WeaponAPI w : ship.getAllWeapons()) {
+			//only bother with ammo regenerators
+
+			float reloadRate = w.getSpec().getAmmoPerSecond();
+			float nuCharge = reloadRate * ROF_BOOST;
+			if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+				w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+			}
+		}
 	}
 	
 

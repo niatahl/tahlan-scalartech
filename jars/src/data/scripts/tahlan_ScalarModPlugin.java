@@ -86,9 +86,8 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()){
             new tahlan_Spindle().generate(sector);
         }
-        if (!haveNexerelin) {
-            tahlan_ScalarRelationPlugin.initFactionRelationships(sector);
-        }
+
+        tahlan_ScalarRelationPlugin.initFactionRelationships(sector);
 
         //Adding ScalarTech to bounty system
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("scalartech");

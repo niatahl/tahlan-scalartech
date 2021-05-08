@@ -33,7 +33,7 @@ public class tahlan_StitchBeamEffect implements BeamEffectPlugin {
 
 						float dam = beam.getWeapon().getDamage().getDamage() * 0.1f;
 						float empdam = beam.getWeapon().getDamage().getFluxComponent() * 0.2f;
-						EmpArcEntityAPI arc =  engine.spawnEmpArc(beam.getSource(), beam.getTo(), beam.getDamageTarget(), beam.getDamageTarget(),
+						EmpArcEntityAPI arc =  engine.spawnEmpArcPierceShields(beam.getSource(), beam.getTo(), beam.getDamageTarget(), beam.getDamageTarget(),
 								DamageType.ENERGY,
 								dam,
 								empdam,

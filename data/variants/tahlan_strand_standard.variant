@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "hullId": "tahlan_strand",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_strand_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_strassette",
+                "WS0004": "tahlan_strassette"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "tahlan_tear_medium",
+                "WS0002": "tahlan_tear_medium"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_dessous_fighter_wing",
+        "tahlan_cord_fighter_wing",
+        "tahlan_twine_interceptor_wing"
+    ]
+}

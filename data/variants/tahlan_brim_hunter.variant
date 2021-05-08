@@ -1,6 +1,6 @@
 {
     "displayName": "Hunter",
-    "fluxCapacitors": 0,
+    "fluxCapacitors": 2,
     "fluxVents": 20,
     "hullId": "tahlan_brim",
     "hullMods": [
@@ -28,8 +28,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "tahlan_lacette",
-                "WS0005": "tahlan_lacette"
+                "WS0004": "tahlan_strassette",
+                "WS0005": "tahlan_strassette"
             }
         },
         {

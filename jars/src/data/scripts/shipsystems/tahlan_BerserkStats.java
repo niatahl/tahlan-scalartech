@@ -42,9 +42,6 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
             return;
         }
 
-
-
-
         if (state == State.OUT) {
             stats.getMaxSpeed().unmodify(id); // to slow down ship to its regular top speed while powering drive down
 
@@ -88,7 +85,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
 
         interval.advance(Global.getCombatEngine().getElapsedInLastFrame());
         if (interval.intervalElapsed()) {
-            Global.getCombatEngine().spawnEmpArc(ship, MathUtils.getRandomPointInCircle(shipengine.getLocation(), 100f), null, ship,
+            Global.getCombatEngine().spawnEmpArc(ship, MathUtils.getRandomPointInCircle(shipengine.getLocation(), 200f), null, ship,
                     DamageType.ENERGY, //Damage type
                     0f, //Damage
                     0f, //Emp

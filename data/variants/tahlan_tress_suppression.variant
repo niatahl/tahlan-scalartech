@@ -1,0 +1,33 @@
+{
+    "displayName": "Suppression",
+    "fluxCapacitors": 4,
+    "fluxVents": 0,
+    "hullId": "tahlan_tress",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "sMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_tress_suppression",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0002": "tahlan_string"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "salamanderpod",
+                "WS0004": "salamanderpod"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_garter_bomber_wing",
+        "tahlan_stocking_bomber_wing"
+    ]
+}

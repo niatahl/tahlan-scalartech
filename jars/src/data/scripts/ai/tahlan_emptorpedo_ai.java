@@ -55,7 +55,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
     private static final float HEATGLOW_DURATION = 0.5f;
     private static final Color VFX_COLOR = new Color(0, 0, 0, 0);
     private static final String SOUND_ID = "tahlan_empblast";
-    private static final float ARMING_TIME = 0.5f;
+    private static final float ARMING_TIME = 1f;
 
     private static final Color ARC_FRINGE_COLOR = new Color(53, 218, 255);
     private static final Color ARC_CORE_COLOR = new Color(142, 252, 205);

@@ -1,5 +1,62 @@
+0.8
+- Added Dessous-class Assault Fighter
+- Added Twine-class Interceptor
+- Added Strass and Strassette low-energy blasters
+- Cord fighter
+	- Increased shield hp from 400 to 500
+- Thread swarmer
+	- Increased hp from 200 to 300
+	- Removed shields
+- Fiber bomber
+	- Bombs no longer have proximity fuse
+	- Now drops 3 bombs per fighter
+	- Bomb hp and damage reduced
+- Red rings on engines now disappear when engine is flamed out
+- Updated variants
+- Various Rate of Fire increasing effects now also increase charge regeneration:
+	- Cycle Accelerator system
+	- Limit Release system
+	- Dual Capacitor Banks hullmod
+	- Upscaled Capacitor Banks hullmod
+
+
+0.7
+- Camise
+    - Now civilian-grade
+    - Lowered supply cost to 9
+    - Lowered burn level to 8
+- Culotte
+	- Now civilian-grade
+    - Lowered supply cost to 6
+- Percale
+	- Can no longer overload from phasing
+- Sateen
+	- Slightly reduced system duration
+	- Increased DP from 40 to 45
+- Corset
+	- Lowered DP from 45 to 40
+	- Increased armor from 1000 to 1200
+	- Increased dissipation from 900 to 1000
+	- Improved shield efficiency from 0.8 to 0.6
+- Belt
+	- Increased shield efficiency from 0.9 to 0.8
+- Filament
+	- Increased shield efficiency from 0.8 to 0.7
+	- Increased armor from 900 to 1000
+	- Increased flux capacity from 15000 to 18000
+	- Tripled system duration
+	- Halved system flux cost
+- Strand
+	- Increased shield efficiency from 0.8 to 0.7
+- Tress
+	- Increased shield efficiency from 0.8 to 0.7
+- Midi
+	- Increased shield efficiency from 0.9 to 0.8
+	
+
 0.6a
 - 0.95a compatibility, mostly
+
 
 0.6
 - Added Garter bomber

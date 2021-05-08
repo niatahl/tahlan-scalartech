@@ -10,7 +10,8 @@
 	
 	"phaseHighlight":"_glow1",
 	"phaseDiffuse":"_glow2",
-	
+
+	"canNotCauseOverload":true,	
 	
 	"effectColor1":[255,100,50,255],
 	"effectColor2":[255,150,50,150],

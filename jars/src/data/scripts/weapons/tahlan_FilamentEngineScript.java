@@ -19,6 +19,8 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
     private float LENGTH;
     private float WIDTH;
 
+    private ShipEngineControllerAPI.ShipEngineAPI thruster;
+
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
         if (Global.getCombatEngine().isPaused()) {
@@ -43,7 +45,19 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
             return;
         }
 
+        for(ShipEngineControllerAPI.ShipEngineAPI e : SHIP.getEngineController().getShipEngines()){
+            if(MathUtils.isWithinRange(e.getLocation(),weapon.getLocation(),2)){
+                thruster = e;
+            }
+        }
+
         float currentBrightness = 1f;
+
+        if (thruster != null) {
+            if (thruster.isDisabled()) {
+                currentBrightness = 0f;
+            }
+        }
 
         //A piece should never have glowing lights
         if (ship.isPiece() || !ship.isAlive() || ship.isPhased()) {
@@ -69,12 +83,6 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
         weapon.getSprite().setColor(colorToUse);
 
 
-        //Dynamic resizing
-        for(ShipEngineControllerAPI.ShipEngineAPI e : SHIP.getEngineController().getShipEngines()){
-            if(MathUtils.isWithinRange(e.getLocation(),weapon.getLocation(),10)){
-            }
-        }
-
         timer.advance(amount);
         if(timer.intervalElapsed() && currentBrightness > 0) {
             //check the current behavior of the ship
@@ -92,12 +100,9 @@ public class tahlan_FilamentEngineScript implements EveryFrameWeaponEffectPlugin
                 throttle = 0.25f;
             }
 
-            float flameout=1;
-            //check for individual extinguished engine
-            //if(ENGINE.isDisabled()){flameout=0;}
 
             //lightly smooth out the flame behavior
-            float offsetFlame = flameout* throttle -FLAME_THROTTLE;
+            float offsetFlame = throttle -FLAME_THROTTLE;
             if(Math.abs(offsetFlame)<0.05f){
                 FLAME_THROTTLE = throttle;
             } else {

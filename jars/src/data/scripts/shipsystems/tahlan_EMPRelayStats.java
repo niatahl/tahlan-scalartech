@@ -140,7 +140,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
         if (index == 0) {
-            return new StatusData("Fighter damage taken reduced by 50%", false);
+            return new StatusData("EMP relay active", false);
         }
         return null;
     }

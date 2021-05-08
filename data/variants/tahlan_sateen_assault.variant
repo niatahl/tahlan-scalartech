@@ -1,6 +1,6 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 25,
+    "fluxCapacitors": 34,
     "fluxVents": 50,
     "hullId": "tahlan_sateen",
     "hullMods": [
@@ -14,7 +14,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "tahlan_stitch"}
+            "weapons": {"WS0001": "tahlan_seam"}
         },
         {
             "autofire": false,
@@ -38,10 +38,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "tahlan_lace",
-                "WS0003": "tahlan_lace",
-                "WS0004": "tahlan_lace",
-                "WS0005": "tahlan_lace"
+                "WS0002": "tahlan_strass",
+                "WS0003": "tahlan_strass",
+                "WS0004": "tahlan_strass",
+                "WS0005": "tahlan_strass"
             }
         },
         {

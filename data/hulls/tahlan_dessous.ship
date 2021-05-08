@@ -1,0 +1,97 @@
+{
+  "hullName": "Dessous",
+  "hullId": "tahlan_dessous",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/tahlan/ships/fighters/tahlan_dessous.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 44,
+  "width": 40,
+  "center": [20, 22],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 26,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [-1, 8.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -0,
+      "locations": [-1, -8.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [1.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [-1, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13.5, 4.5],
+      "length": 6,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
+    },
+    {
+      "location": [-13.5, -4.5],
+      "length": 6,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
+    },
+    {
+      "location": [-15.5, -0],
+      "length": 12.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -15, -9,
+    -4.5, -12.5,
+    17.5, -0,
+    -4.5, 12.5,
+    -15, 9
+  ]
+}

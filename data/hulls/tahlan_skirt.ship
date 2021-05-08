@@ -19,8 +19,8 @@
     "tahlan_plaid_drone_wing"
   ],
   "builtInWeapons": {
-    "WS0003": "tahlan_spiral",
-    "WS0004": "tahlan_spiral"
+    "WS0003": "tahlan_fold",
+    "WS0004": "tahlan_fold"
   },
   "weaponSlots": [
     {
@@ -43,7 +43,7 @@
     },
     {
       "id": "WS0003",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN",
       "mount": "HARDPOINT",
       "arc": 10,
@@ -52,7 +52,7 @@
     },
     {
       "id": "WS0004",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN",
       "mount": "HARDPOINT",
       "arc": 10,

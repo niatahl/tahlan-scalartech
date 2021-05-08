@@ -3,6 +3,7 @@
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"onHitEffect":"data.scripts.weapons.tahlan_SeamOnHitEffect",
+	"onFireEffect":"data.scripts.weapons.tahlan_SeamScriptNew",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
 	"length":8.0,

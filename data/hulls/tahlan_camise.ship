@@ -12,7 +12,8 @@
   "shieldRadius": 268,
   "viewOffset": 0,
   "builtInMods": [
-    "tahlan_scalarspecs"
+    "tahlan_scalarspecs",
+	"civgrade"
   ],
   "weaponSlots": [
     {

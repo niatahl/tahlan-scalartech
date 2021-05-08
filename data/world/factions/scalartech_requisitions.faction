@@ -77,6 +77,8 @@
 	"knownFighters":{
 		"tags":["scalartech_bp"],
 		"fighters":[
+			"tahlan_dessous_fighter_wing",
+			"tahlan_fiber_bomber_wing"
 		],
 	},
 	"priorityFighters":{

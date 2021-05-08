@@ -6,9 +6,9 @@
   "style": "TAHLAN_FILAMENT_TECH",
   "height": 43,
   "width": 38,
-  "center": [19, 21.5],
+  "center": [19, 21],
   "collisionRadius": 30.5,
-  "shieldCenter": [0, 0],
+  "shieldCenter": [0.5, 0],
   "shieldRadius": 28,
   "viewOffset": 0,
   "weaponSlots": [
@@ -19,28 +19,28 @@
       "mount": "HIDDEN",
       "arc": 0,
       "angle": 0,
-      "locations": [2.5, -0]
+      "locations": [3, -0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-10.5, 5.5],
+      "location": [-10, 5.5],
       "length": 19,
       "width": 3,
       "angle": 180,
       "contrailSize": 3,
-      "style": "TAHLAN_RED_ENGINE"
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
     },
     {
-      "location": [-10.5, -5.5],
+      "location": [-10, -5.5],
       "length": 19,
       "width": 3,
       "angle": -180,
       "contrailSize": 3,
-      "style": "TAHLAN_RED_ENGINE"
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
     },
     {
-      "location": [-11.5, 3.5],
+      "location": [-11, 3.5],
       "length": 19,
       "width": 3,
       "angle": 180,
@@ -48,7 +48,7 @@
       "style": "TAHLAN_RED_ENGINE"
     },
     {
-      "location": [-11.5, -3.5],
+      "location": [-11, -3.5],
       "length": 19,
       "width": 3,
       "angle": -180,
@@ -57,13 +57,13 @@
     }
   ],
   "bounds": [
-    -19, -6,
-    -0.5, -18,
-    19, -8.5,
-    10, -0,
-    19, 8.5,
-    -0.5, 18,
-    -19, 6,
-    -11.5, -0
+    -18.5, -6,
+    0, -18,
+    19.5, -8.5,
+    10.5, -0,
+    19.5, 8.5,
+    0, 18,
+    -18.5, 6,
+    -11, -0
   ]
 }

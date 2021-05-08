@@ -1,0 +1,52 @@
+{
+	"id":"tahlan_pin_msl",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"sprite":"",
+	"size":[9,16],	
+	"center":[4.5,8],
+	"collisionRadius":1,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,0,20,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"engineSpec":{"turnAcc":1600,
+				  "turnRate":600,
+				  "acc":1400,
+				  "dec":1200},
+	"engineSlots":[{"id":"ES1",
+					"loc":[0.5,0.5],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[50,150,255,255],
+						"glowSizeMult":1,
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":3,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[255,50,90,80],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3,
+				    "length":8.0,
+				    "angle":180.0},
+				    ],
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":0.1,
+					"range":20,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":40,
+									 "coreRadius":10, # full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":10.0,
+									 "particleSizeRange":5.0,
+									 "particleDuration":1,
+									 "particleCount":5,
+									 "particleColor":[255,0,20,255],
+									 "sound":""},
+					}
+}

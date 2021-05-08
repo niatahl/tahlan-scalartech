@@ -1,0 +1,86 @@
+{
+    "displayName": "Victorious",
+    "fluxCapacitors": 19,
+    "fluxVents": 50,
+    "hullId": "tahlan_gown",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter"
+    ],
+    "modules": [
+        {"WS0015": "tahlan_gown_ringleft_victorious"},
+        {"WS0016": "tahlan_gown_ringright_victorious"}
+    ],
+    "permaMods": [],
+    "sMods": [],
+	"goalVariant": true,
+    "variantId": "tahlan_gown_victorious",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0040": "cyclone",
+                "WS0041": "cyclone"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0042": "typhoon",
+                "WS0043": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0008": "tahlan_ruffle"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "tahlan_seam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0010": "tahlan_tousle"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "tahlan_lace",
+                "WS0018": "tahlan_stitchette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "tahlan_baste",
+                "WS0019": "tahlan_string",
+                "WS0020": "tahlan_string",
+                "WS0021": "tahlan_string",
+                "WS0022": "tahlan_string",
+                "WS0023": "tahlan_string",
+                "WS0024": "tahlan_string",
+                "WS0025": "tahlan_string",
+                "WS0026": "tahlan_string",
+                "WS0027": "tahlan_string",
+                "WS0028": "tahlan_string",
+                "WS0029": "tahlan_string",
+                "WS0030": "tahlan_string",
+                "WS0031": "tahlan_string",
+                "WS0032": "tahlan_string",
+                "WS0033": "tahlan_string",
+                "WS0034": "tahlan_string",
+                "WS0035": "tahlan_string",
+                "WS0036": "tahlan_string",
+                "WS0037": "tahlan_string"
+            }
+        }
+    ],
+    "wings": ["tahlan_dessous_fighter_wing"]
+}

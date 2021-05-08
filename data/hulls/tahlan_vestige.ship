@@ -139,66 +139,66 @@
     },
     {
       "location": [-111, 30.5],
-      "length": 33,
-      "width": 10,
+      "length": 55,
+      "width": 20,
       "angle": 180,
-      "contrailSize": 10,
+      "contrailSize": 20,
       "style": "HIGH_TECH"
     },
     {
       "location": [-111, -30.5],
-      "length": 33,
-      "width": 10,
+      "length": 55,
+      "width": 20,
       "angle": -180,
-      "contrailSize": 10,
+      "contrailSize": 20,
       "style": "HIGH_TECH"
     },
     {
       "location": [-111, 37.5],
-      "length": 28,
-      "width": 7,
+      "length": 42.5,
+      "width": 11,
       "angle": 180,
-      "contrailSize": 7,
+      "contrailSize": 11,
       "style": "HIGH_TECH"
     },
     {
       "location": [-111, -37.5],
-      "length": 28,
-      "width": 7,
+      "length": 42.5,
+      "width": 11,
       "angle": -180,
-      "contrailSize": 7,
+      "contrailSize": 11,
       "style": "HIGH_TECH"
     },
     {
       "location": [-104.5, 73],
-      "length": 24,
-      "width": 6,
+      "length": 43.5,
+      "width": 13,
       "angle": 180,
-      "contrailSize": 6,
+      "contrailSize": 13,
       "style": "HIGH_TECH"
     },
     {
       "location": [-104.5, -73],
-      "length": 24,
-      "width": 6,
+      "length": 43.5,
+      "width": 13,
       "angle": -180,
-      "contrailSize": 6,
+      "contrailSize": 13,
       "style": "HIGH_TECH"
     },
     {
       "location": [-105.5, 67],
-      "length": 29,
-      "width": 8,
+      "length": 56.5,
+      "width": 16,
       "angle": 180,
-      "contrailSize": 8,
+      "contrailSize": 16,
       "style": "HIGH_TECH"
     },
     {
       "location": [-105.5, -67],
-      "length": 29,
-      "width": 8,
+      "length": 56.5,
+      "width": 16,
       "angle": -180,
-      "contrailSize": 8,
+      "contrailSize": 16,
       "style": "HIGH_TECH"
     },
     {

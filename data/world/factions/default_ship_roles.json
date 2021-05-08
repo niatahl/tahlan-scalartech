@@ -39,8 +39,9 @@
 		"tahlan_midi_support":3,
 	},
 	"combatCapital":{
-		"tahlan_gown_standard":5,
-		"tahlan_gown_illus":5,
+		"tahlan_gown_standard":4,
+		"tahlan_gown_illus":4,
+		"tahlan_gown_victorious":3,
 		"tahlan_corset_standard":4,
 		"tahlan_corset_support":3,
 		"tahlan_corset_frontline":3,
@@ -63,12 +64,14 @@
 
 	# carriers
 	"carrierSmall":{
-		"tahlan_tress_support":5,
-		"tahlan_tress_strike":5,
+		"tahlan_tress_support":4,
+		"tahlan_tress_strike":3,
+		"tahlan_tress_suppression":3,
 	},
 	"carrierMedium":{
-		"tahlan_strand_strike":5,
-		"tahlan_strand_classic":5,
+		"tahlan_strand_standard":4,
+		"tahlan_strand_strike":4,
+		"tahlan_strand_classic":2,
 	},
 	"carrierLarge":{
 		"tahlan_filament_bridgehead":4,

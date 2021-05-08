@@ -2,12 +2,16 @@ package data.scripts.shipsystems;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
+import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
+import data.scripts.util.MagicRender;
+import org.lazywizard.lazylib.FastTrig;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lazywizard.lazylib.combat.entities.SimpleEntity;
+import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -19,13 +23,14 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
 
     private static final float SPEED_BOOST = 300f;
 
-    private static Color OVERDRIVE_COLOR = new Color(0,255,255,40);
-    private static Color ENGINE_COLOR = new Color(255,0,100);
+    private static final Color OVERDRIVE_COLOR = new Color(0,255,255,40);
+    private static final Color ENGINE_COLOR = new Color(255,0,100);
 
-    private static Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
-    private static Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
+    private static final Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
+    private static final Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
 
-    private IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
+    private final IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
+    private final IntervalUtil effectInterval = new IntervalUtil(0.05f, 0.05f);
 
     @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
@@ -57,8 +62,41 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
             ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
             ship.getEngineController().fadeToOtherColor(id, ENGINE_COLOR, null, effectLevel, 0.7f);
 
-            if(Math.random()>0.25f){
-                ship.addAfterimage(new Color(0, 255, 250,20), 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 5f, 0, 0, 1.2f*effectLevel, false, false, false);
+            //if(Math.random()>0.25f){
+            //    ship.addAfterimage(new Color(0, 255, 250,20), 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 5f, 0, 0, 1.2f*effectLevel, false, false, false);
+            //}
+
+            effectInterval.advance(Global.getCombatEngine().getElapsedInLastFrame());
+            if (effectInterval.intervalElapsed()) {
+
+                // Sprite offset fuckery - Don't you love trigonometry?
+                SpriteAPI sprite = ship.getSpriteAPI();
+                float offsetX = sprite.getWidth() / 2 - sprite.getCenterX();
+                float offsetY = sprite.getHeight() / 2 - sprite.getCenterY();
+
+                float trueOffsetX = (float) FastTrig.cos(Math.toRadians(ship.getFacing() - 90f)) * offsetX - (float) FastTrig.sin(Math.toRadians(ship.getFacing() - 90f)) * offsetY;
+                float trueOffsetY = (float) FastTrig.sin(Math.toRadians(ship.getFacing() - 90f)) * offsetX + (float) FastTrig.cos(Math.toRadians(ship.getFacing() - 90f)) * offsetY;
+
+                MagicRender.battlespace(
+                        Global.getSettings().getSprite(ship.getHullSpec().getSpriteName()),
+                        new Vector2f(ship.getLocation().getX() + trueOffsetX, ship.getLocation().getY() + trueOffsetY),
+                        new Vector2f(0, 0),
+                        new Vector2f(ship.getSpriteAPI().getWidth(), ship.getSpriteAPI().getHeight()),
+                        new Vector2f(0, 0),
+                        ship.getFacing() - 90f,
+                        0f,
+                        new Color(0, 255, 250,40),
+                        true,
+                        0f,
+                        0f,
+                        0f,
+                        0f,
+                        0f,
+                        0.1f,
+                        0.1f,
+                        1f,
+                        CombatEngineLayers.BELOW_SHIPS_LAYER);
+
             }
 
             interval.advance(Global.getCombatEngine().getElapsedInLastFrame());
@@ -67,7 +105,7 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
                 CombatEntityAPI target = null;
 
                 //Finds a target, in case we are going to overkill our current one
-                List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(ship.getLocation(), 300f);
+                List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(ship.getLocation(), 500f);
 
                 for (CombatEntityAPI potentialTarget : targetList) {
                     //Checks for dissallowed targets, and ignores them
@@ -102,16 +140,16 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
                             100f, //Damage
                             200f, //Emp
                             100000f, //Max range
-                            null, //Impact sound
+                            "tachyon_lance_emp_impact", //Impact sound
                             10f, // thickness of the lightning bolt
                             LIGHTNING_CORE_COLOR, //Central color
                             LIGHTNING_FRINGE_COLOR //Fringe Color
                     );
                 } else {
-                    Global.getCombatEngine().spawnEmpArc(ship, shipengine.getLocation(), ship, new SimpleEntity(MathUtils.getRandomPointInCircle(shipengine.getLocation(),100f)),
+                    Global.getCombatEngine().spawnEmpArc(ship, MathUtils.getRandomPointInCircle(shipengine.getLocation(),200f), null, ship,
                             DamageType.ENERGY, //Damage type
-                            100f, //Damage
-                            200f, //Emp
+                            0f, //Damage
+                            0f, //Emp
                             100000f, //Max range
                             null, //Impact sound
                             10f, // thickness of the lightning bolt

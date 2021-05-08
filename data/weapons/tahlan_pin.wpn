@@ -1,0 +1,56 @@
+{
+  "animationType": "NONE",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    -41,
+    41,
+    -66,
+    66,
+    -82,
+    82
+  ],
+  "hardpointOffsets": [
+    -0.5,
+    -0.5,
+    -0.5,
+    0.5,
+    -2.5,
+    -3,
+    -2.5,
+    3,
+    -4.5,
+    -5,
+    -4.5,
+    5
+  ],
+  "hardpointSprite": "",
+  "id": "tahlan_pin",
+  "projectileSpecId": "tahlan_pin_msl",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    -41,
+    41,
+    -66,
+    66,
+    -82,
+    82
+  ],
+  "turretOffsets": [
+    -0.5,
+    -0.5,
+    -0.5,
+    0.5,
+    -2.5,
+    -3,
+    -2.5,
+    3,
+    -4.5,
+    -5,
+    -4.5,
+    5
+  ],
+  "turretSprite": "",
+  "type": "MISSILE"
+}

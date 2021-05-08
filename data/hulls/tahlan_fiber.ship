@@ -42,7 +42,7 @@
       "width": 2.750278,
       "angle": 160.5,
       "contrailSize": 2.750278,
-      "style": "TAHLAN_RED_ENGINE"
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
     },
     {
       "location": [-11.5, -10.5],
@@ -50,7 +50,7 @@
       "width": 2.750278,
       "angle": -160.5,
       "contrailSize": 2.750278,
-      "style": "TAHLAN_RED_ENGINE"
+      "style": "TAHLAN_RED_FIGHTER_ENGINE"
     },
     {
       "location": [-19, -0],

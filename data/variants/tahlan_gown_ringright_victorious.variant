@@ -1,0 +1,32 @@
+{
+    "displayName": "Victorious",
+    "fluxCapacitors": 5,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "tahlan_gown_ringright",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_gown_ringright_victorious",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_strass"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "tahlan_strass"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "tahlan_ruffle"}
+        }
+    ],
+    "wings": [
+        "tahlan_garter_bomber_wing",
+        "tahlan_twine_interceptor_wing"
+    ]
+}

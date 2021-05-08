@@ -35,6 +35,7 @@ public class tahlan_ScalarRelationPlugin implements SectorGeneratorPlugin {
         scalartech.setRelationship("ora", 0.4f);
         scalartech.setRelationship("shadow_industry", 0.4f);
         scalartech.setRelationship("tiandong", 0.3f);
+        scalartech.setRelationship("remnant", -0.6f);
 
     }
 }

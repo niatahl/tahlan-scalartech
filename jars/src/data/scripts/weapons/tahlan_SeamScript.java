@@ -15,7 +15,6 @@ public class tahlan_SeamScript implements EveryFrameWeaponEffectPlugin {
 
     private static final Color PARTICLE_COLOR = new Color(63, 158, 215);
     private static final Color GLOW_COLOR = new Color(205, 234, 255, 50);
-    private static final Color FLASH_COLOR = new Color(237, 246, 255, 100);
 
     private boolean hasFiredThisCharge = false;
 

@@ -1,6 +1,9 @@
 package data.scripts.shipsystems;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
 import static data.scripts.utils.tahlan_scalar_txt.txt;
@@ -11,14 +14,51 @@ public class tahlan_CycleAccelStats extends BaseShipSystemScript {
 
     @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
+
+        ShipAPI ship;
+        if (stats.getEntity() instanceof ShipAPI) {
+            ship = (ShipAPI) stats.getEntity();
+            id = id + "_" + ship.getId();
+        } else {
+            return;
+        }
+
         stats.getEnergyWeaponFluxCostMod().modifyMult(id,1f/(1f+(ROF_MULT-1f)*effectLevel));
         stats.getEnergyRoFMult().modifyMult(id,1f+(ROF_MULT-1f)*effectLevel);
+
+        for (WeaponAPI w : ship.getAllWeapons()) {
+            //only bother with ammo regenerators
+
+            float reloadRate = w.getSpec().getAmmoPerSecond();
+            float nuCharge = reloadRate * ROF_MULT;
+            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+                w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+            }
+        }
     }
 
     @Override
     public void unapply(MutableShipStatsAPI stats, String id) {
+
+        ShipAPI ship;
+        if (stats.getEntity() instanceof ShipAPI) {
+            ship = (ShipAPI) stats.getEntity();
+            id = id + "_" + ship.getId();
+        } else {
+            return;
+        }
+
         stats.getEnergyRoFMult().unmodify(id);
         stats.getEnergyWeaponFluxCostMod().unmodify(id);
+
+        for (WeaponAPI w : ship.getAllWeapons()) {
+            //only bother with ammo regenerators
+
+            float reloadRate = w.getSpec().getAmmoPerSecond();
+            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+                w.getAmmoTracker().setAmmoPerSecond(reloadRate);
+            }
+        }
     }
 
     @Override

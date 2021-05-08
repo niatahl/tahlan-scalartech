@@ -31,13 +31,11 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
     private boolean runOnce = true;
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
-        ShipAPI ship = null;
-        boolean player = false;
+        ShipAPI ship;
         CombatEngineAPI engine = Global.getCombatEngine();
 
         if (stats.getEntity() instanceof ShipAPI) {
             ship = (ShipAPI) stats.getEntity();
-            player = ship == Global.getCombatEngine().getPlayerShip();
             id = id + "_" + ship.getId();
         } else {
             return;

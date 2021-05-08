@@ -1,0 +1,32 @@
+{
+  "variantId": "tahlan_dessous_fighter",
+  "hullId": "tahlan_dessous",
+  "displayName": "Assault Fighter",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "tahlan_sew",
+        "WS0002": "tahlan_sew",
+        "WS0005": "tahlan_stitchette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "tahlan_pin",
+        "WS0004": "tahlan_pin"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
