@@ -2,8 +2,6 @@
 - Added Dessous-class Assault Fighter
 - Added Twine-class Interceptor
 - Added Strass and Strassette low-energy blasters
-- Cord fighter
-	- Increased shield hp from 400 to 500
 - Thread swarmer
 	- Increased hp from 200 to 300
 	- Removed shields
@@ -11,13 +9,27 @@
 	- Bombs no longer have proximity fuse
 	- Now drops 3 bombs per fighter
 	- Bomb hp and damage reduced
+- Skye
+	- System no longer affects ballistic weapons
+	- Increased debuff duration from 3s to 3.5s
+	- Lowered top speed from 90 to 80
+- Seam
+	- Reduced spread a bit
+	- Improved projectile spread from 800 to 900
+- Stocking
+	- Increased OP cost from 12 to 14
+	- Lowered shield hp from 400 to 300
 - Red rings on engines now disappear when engine is flamed out
 - Updated variants
+- Improved turn rates on various weapons
+	- Did these in one pass and was too lazy to write down which ones
 - Various Rate of Fire increasing effects now also increase charge regeneration:
 	- Cycle Accelerator system
 	- Limit Release system
 	- Dual Capacitor Banks hullmod
 	- Upscaled Capacitor Banks hullmod
+- Updated fighter credit costs
+- Touched up some sprites
 
 
 0.7

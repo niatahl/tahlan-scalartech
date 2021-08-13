@@ -37,8 +37,8 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
         if (state == State.OUT) {
             stats.getEnergyWeaponFluxCostMod().unmodify(id);
             stats.getEnergyRoFMult().modifyMult(id,1f/ROF_MULT);
-            stats.getBallisticRoFMult().modifyMult(id,1f/ROF_MULT);
-            stats.getBallisticWeaponFluxCostMod().unmodify(id);
+            //stats.getBallisticRoFMult().modifyMult(id,1f/ROF_MULT);
+            //stats.getBallisticWeaponFluxCostMod().unmodify(id);
             stats.getMaxSpeed().modifyFlat(id,-SPEED_BOOST/2);
             stats.getAcceleration().unmodify(id);
             stats.getFluxDissipation().modifyMult(id,1f-FLUX_MULT/2);
@@ -61,8 +61,8 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
         } else {
             stats.getEnergyWeaponFluxCostMod().modifyMult(id, 1f / (1f + (ROF_MULT - 1f) * effectLevel));
             stats.getEnergyRoFMult().modifyMult(id, 1f + (ROF_MULT - 1f) * effectLevel);
-            stats.getBallisticRoFMult().modifyMult(id, 1f + (ROF_MULT - 1f) * effectLevel);
-            stats.getBallisticWeaponFluxCostMod().modifyMult(id, 1f / (1f + (ROF_MULT - 1f) * effectLevel));
+            //stats.getBallisticRoFMult().modifyMult(id, 1f + (ROF_MULT - 1f) * effectLevel);
+            //stats.getBallisticWeaponFluxCostMod().modifyMult(id, 1f / (1f + (ROF_MULT - 1f) * effectLevel));
             stats.getMaxSpeed().modifyFlat(id, SPEED_BOOST * effectLevel);
             stats.getAcceleration().modifyFlat(id, SPEED_BOOST * 2f * effectLevel);
             stats.getFluxDissipation().modifyMult(id, 1f + FLUX_MULT * effectLevel);
@@ -103,8 +103,8 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
 
         stats.getEnergyRoFMult().unmodify(id);
         stats.getEnergyWeaponFluxCostMod().unmodify(id);
-        stats.getBallisticRoFMult().unmodify(id);
-        stats.getBallisticWeaponFluxCostMod().unmodify(id);
+        //stats.getBallisticRoFMult().unmodify(id);
+        //stats.getBallisticWeaponFluxCostMod().unmodify(id);
         stats.getMaxSpeed().unmodify(id);
         stats.getAcceleration().unmodify(id);
         stats.getFluxDissipation().unmodify(id);

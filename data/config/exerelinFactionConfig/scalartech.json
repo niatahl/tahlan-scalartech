@@ -14,7 +14,7 @@
     "startRelationships":{ 
 		"hegemony": -0.3, 
 		"luddic_church":-0.2, 
-		"diableavionics":0.5, #Dreadnought bros
+		"diableavionics":0.4, #Dreadnought bros
 		"sylphon":0.1,
 		"tiandong":0.3,
 		"pirates":-0.6,

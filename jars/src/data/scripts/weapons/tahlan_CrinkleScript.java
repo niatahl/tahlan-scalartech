@@ -11,7 +11,7 @@ import java.awt.*;
 
 import static com.fs.starfarer.api.util.Misc.ZERO;
 
-public class tahlan_SeamScriptNew implements OnFireEffectPlugin {
+public class tahlan_CrinkleScript implements OnFireEffectPlugin {
 
     private static final Color PARTICLE_COLOR = new Color(63, 158, 215);
     private static final Color GLOW_COLOR = new Color(205, 234, 255, 50);

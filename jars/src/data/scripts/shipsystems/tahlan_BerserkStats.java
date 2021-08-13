@@ -69,7 +69,7 @@ public class tahlan_BerserkStats extends BaseShipSystemScript {
 
         ship.setJitter(id,COOLDOWN_COLOR,0.8f*effectLevel, 2, 10f);
         ship.setJitterUnder(id, OVERDRIVE_COLOR, 1f*effectLevel, 10, 15f);
-        ship.getEngineController().extendFlame(id, 1.2f, 1.2f, 1.2f);
+        ship.getEngineController().extendFlame(id, 1.1f, 1.1f, 1.1f);
         ship.getEngineController().fadeToOtherColor(id, ENGINE_COLOR, SMOKE_COLOR, effectLevel, 0.9f);
 
         EnumSet<WeaponAPI.WeaponType> WEAPON_TYPES = EnumSet.of(WeaponAPI.WeaponType.BALLISTIC,WeaponAPI.WeaponType.ENERGY);

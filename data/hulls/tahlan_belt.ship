@@ -134,6 +134,38 @@
       "angle": 180,
       "contrailSize": 36,
       "style": "TAHLAN_RED_ENGINE"
+    },
+    {
+      "location": [54, 62],
+      "length": 15.479922,
+      "width": 14.473699,
+      "angle": 94.5,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [54, -62],
+      "length": 15.479922,
+      "width": 14.473699,
+      "angle": -94.5,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [6, 63.5],
+      "length": 15.479922,
+      "width": 14.473699,
+      "angle": 114.5,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [6, -63.5],
+      "length": 15.479922,
+      "width": 14.473699,
+      "angle": -114.5,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [

@@ -4,7 +4,7 @@
   "projectileSpecId": "tahlan_seam_shot",
   "type": "ENERGY",
   "size": "LARGE",
-  #"everyFrameEffect": "data.scripts.weapons.tahlan_SeamScript",
+  "everyFrameEffect": "data.scripts.weapons.tahlan_SeamScript",
   "turretSprite": "graphics/tahlan/weapons/tahlan_seam_turret_base.png",
   "turretGlowSprite": "graphics/tahlan/weapons/tahlan_seam_turret_glow.png",
   "hardpointSprite": "graphics/tahlan/weapons/tahlan_seam_hp_base.png",

@@ -20,7 +20,7 @@
 		"contrailMaxSpeedMult":1f,
 		"contrailAngularVelocityMult":0f,
 		"contrailColor":[255,50,50,100],
-		"omegaMode":true,
+		#"omegaMode":true,
 		"glowSizeMult":1,
 		"glowAlternateColor":[255,0,0,225],
 		"type":"GLOW" # GLOW or SMOKE
@@ -39,6 +39,20 @@
 		"engineColor":[100,165,255,255],
 		"contrailColor":[100,165,255,25],
 		"contrailCampaignColor":[100,165,255,75],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	"TAHLAN_VESTIGE_ENGINE":{			
+		"engineColor":[100,165,255,255],
+		"contrailParticleSizeMult":4,
+		"contrailParticleDuration":1,
+		"contrailParticleFinalSizeMult":2.5,
+		"contrailMaxSpeedMult":0.5f,
+		"contrailAngularVelocityMult":0f,
+		"contrailColor":[100,165,255,25],
+		"contrailCampaignColor":[100,165,255,75],
+		"glowSprite":"graphics/tahlan/fx/tahlan_gh_engineglow.png",
+		"glowOutline":"graphics/tahlan/fx/tahlan_gh_engineflame.png",
+		"omegaMode":true,		
 		"type":"GLOW" # GLOW or SMOKE
 	},
 }

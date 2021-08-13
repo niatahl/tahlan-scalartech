@@ -119,7 +119,11 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             market.setAdmin(admin);
             market.getCommDirectory().addPerson(admin, 0);
             market.addPerson(admin);
+
+            // Move Spindle where it's supposed to be
+            market.getStarSystem().getLocation().set(22000,-14000);
         }
+
     }
 
     @Override

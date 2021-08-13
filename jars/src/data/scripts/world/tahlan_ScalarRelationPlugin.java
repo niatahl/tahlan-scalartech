@@ -18,7 +18,7 @@ public class tahlan_ScalarRelationPlugin implements SectorGeneratorPlugin {
 
         //but not pirates and dabble
         scalartech.setRelationship("pirates",-0.6f);
-        scalartech.setRelationship("diableavionics", 0.5f);
+        scalartech.setRelationship("diableavionics", 0.4f);
         scalartech.setRelationship("hegemony", -0.3f);
         scalartech.setRelationship("sylphon", 0.1f);
         scalartech.setRelationship("luddic_path", -0.6f);

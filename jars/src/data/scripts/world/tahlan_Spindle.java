@@ -30,7 +30,8 @@ public class tahlan_Spindle {
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Spindle");
 
-        system.getLocation().set(22000,-14000);
+        // Tart-style fake start location for procgen
+        system.getLocation().set(5000,-5000);
 
         system.setBackgroundTextureFilename("graphics/tahlan/backgrounds/tahlan_spindle.jpg");
 
