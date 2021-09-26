@@ -25,6 +25,7 @@
 		},
 		"portraits":{
 			"tahlan_yurika":"graphics/tahlan/portraits/yurika.png",
+			"tahlan_silvys":"graphics/tahlan/portraits/silvys.png",
 			"tahlan_aurica":"graphics/tahlan/portraits/aurica.png",
 		}
 	}

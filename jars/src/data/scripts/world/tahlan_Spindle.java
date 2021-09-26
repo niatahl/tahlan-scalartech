@@ -283,8 +283,8 @@ public class tahlan_Spindle {
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 
-        //Finally cleans up hyperspace
-        cleanup(system);
+        //Finally cleans up hyperspace - Now done after moving the system
+        //cleanup(system);
     }
 
     protected void generateNebula(StarSystemAPI system, float holeRadius)

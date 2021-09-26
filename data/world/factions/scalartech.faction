@@ -4,7 +4,7 @@
 	"secondaryUIColor":[255,80,50,255],
 	        "secondarySegments":2,
 	"displayName":"Spindle",
-	"displayNameWithArticle":"the Spindle",
+	"displayNameWithArticle":"Spindle",
 	"displayNameLong":"Spindle Protectorate",
 	"displayNameLongWithArticle":"the Spindle Protectorate",
 	"logo":"graphics/tahlan/factions/tahlan_scalartech.png",
@@ -218,13 +218,15 @@
 	"ranks":{
 		"ranks":{
 			"spaceCommander":{"name":"High Admiral"},
-			"factionLeader":{"name":"ECEO"},
+			"factionLeader":{"name":"High Councillor"},
+			"scalar_Silvys":{"name":"ScalarTech Head of Research"},
 		},
 		"posts":{
-			"factionLeader":{"name":"ECEO"},
+			"factionLeader":{"name":"High Councillor"},
 			"patrolCommander":{"name":"Captain"},
 			"fleetCommander":{"name":"Admiral"},
 			"baseCommander":{"name":"Base Commander"},
+			"scalar_Silvys":{"name":"ScalarTech Head of Research"},
 		},
 	},
 	"voices":{

@@ -4,18 +4,22 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.PluginPick;
 import com.fs.starfarer.api.campaign.CampaignPlugin;
+import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.SectorAPI;
+import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.MissileAIPlugin;
 import com.fs.starfarer.api.combat.MissileAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.impl.campaign.ids.Ranks;
-import com.fs.starfarer.api.impl.campaign.ids.Skills;
+import com.fs.starfarer.api.impl.campaign.ids.*;
+import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 
+import com.fs.starfarer.api.util.Misc;
 import data.scripts.ai.tahlan_emptorpedo_ai;
 import data.scripts.world.tahlan_ScalarRelationPlugin;
 import data.scripts.world.tahlan_Spindle;
@@ -110,6 +114,9 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             admin.setRankId(Ranks.FACTION_LEADER);
             admin.getName().setFirst("Yurika");
             admin.getName().setLast("Kusanagi");
+            admin.setImportance(PersonImportance.VERY_HIGH);
+            admin.setPersonality(Personalities.CAUTIOUS);
+            admin.setVoice(Voices.OFFICIAL);
             admin.setPortraitSprite("graphics/tahlan/portraits/yurika.png");
 
             admin.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 3);
@@ -120,8 +127,25 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(admin, 0);
             market.addPerson(admin);
 
+            PersonAPI silvys = Global.getFactory().createPerson();
+            silvys.setFaction("scalartech");
+            silvys.setGender(FullName.Gender.FEMALE);
+            silvys.setPostId(Ranks.POST_SCIENTIST);
+            silvys.setRankId(Ranks.SPECIAL_AGENT);
+            silvys.getName().setFirst("Silvys");
+            silvys.getName().setLast("Renham");
+            silvys.setPortraitSprite("graphics/tahlan/portraits/silvys.png");
+            silvys.setPersonality(Personalities.STEADY);
+            silvys.setVoice(Voices.SCIENTIST);
+            silvys.setImportance(PersonImportance.VERY_HIGH);
+            silvys.addTag(Tags.CONTACT_SCIENCE);
+            silvys.addTag(Tags.CONTACT_MILITARY);
+            market.getCommDirectory().addPerson(silvys,1);
+            market.addPerson(silvys);
+
             // Move Spindle where it's supposed to be
             market.getStarSystem().getLocation().set(22000,-14000);
+            cleanup(market.getStarSystem());
         }
 
     }
@@ -143,6 +167,14 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
         }
     }
 
-    private static void loadTahlanSettings() throws IOException, JSONException {
+    //Shorthand function for cleaning up hyperspace
+    private void cleanup(StarSystemAPI system){
+        HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
+        NebulaEditor editor = new NebulaEditor(plugin);
+        float minRadius = plugin.getTileSize() * 2f;
+
+        float radius = system.getMaxRadiusInHyperspace();
+        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius * 0.5f, 0f, 360f);
+        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0f, 360f, 0.25f);
     }
 }
