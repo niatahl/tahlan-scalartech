@@ -1,4 +1,5 @@
 0.8.1
+- Adds Silvys Renham contact in Charkha
 - Twine
 	- Increased hp from 300 to 600
 	- Increased armor from 20 to 30
@@ -6,6 +7,12 @@
 - Stocking
 	- Reduced wing size from 3 to 2
 	- Increased top speed from 240 to 260
+- Garter
+	- Reduced shield hp from 500 to 300
+- Tear Torpedo
+	- Reduced damage from 2000 to 1200
+	- Arc damage changed from 300 frag to 100 energy
+	
 
 0.8
 - Added Dessous-class Assault Fighter

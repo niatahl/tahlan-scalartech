@@ -159,6 +159,14 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
 													  null, text, true), 
 													  person);
 					}
+					impact = new CoreReputationPlugin.CustomRepImpact();
+					impact.delta = points * 0.005f;
+					if (impact.delta >= 0.01f) {
+						Global.getSector().adjustPlayerReputation(
+								new CoreReputationPlugin.RepActionEnvelope(CoreReputationPlugin.RepActions.CUSTOM, impact,
+										null, text, true),
+								faction.getId());
+					}
 				}
 				
 				FireBest.fire(null, dialog, memoryMap, "tahlan_BPTurnedInSilvys");
@@ -250,7 +258,7 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
 		
 		SpecialItemSpecAPI spec = Global.getSettings().getSpecialItemSpec(itemId);
 		
-		float cost = spec.getBasePrice() + baseCost * Global.getSettings().getFloat("blueprintPriceOriginalItemMult");
+		float cost = spec.getBasePrice() + baseCost * Global.getSettings().getFloat("blueprintPriceOriginalItemMult") * 0.25f;
 		if (spec.hasTag("tiandong_retrofit_bp") || itemId.equals("roider_retrofit_bp"))
 		{
 			//log.info(spec.getName() + " is retrofit, halving cost");

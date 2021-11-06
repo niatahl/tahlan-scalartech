@@ -9,6 +9,7 @@ import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.MissileAIPlugin;
 import com.fs.starfarer.api.combat.MissileAPI;
@@ -105,9 +106,11 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
     @Override
     public void onNewGameAfterEconomyLoad() {
         MarketAPI market = Global.getSector().getEconomy().getMarket("tahlan_spindle_charkha_market");
+        ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
         if (market != null) {
             log.info("Adding admin");
             PersonAPI admin = Global.getFactory().createPerson();
+            admin.setId("scalar_Yurika");
             admin.setFaction("scalartech");
             admin.setGender(FullName.Gender.FEMALE);
             admin.setPostId(Ranks.POST_FACTION_LEADER);
@@ -116,22 +119,39 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             admin.getName().setLast("Kusanagi");
             admin.setImportance(PersonImportance.VERY_HIGH);
             admin.setPersonality(Personalities.CAUTIOUS);
-            admin.setVoice(Voices.OFFICIAL);
+            admin.setVoice(Voices.BUSINESS);
             admin.setPortraitSprite("graphics/tahlan/portraits/yurika.png");
 
+            admin.getMemoryWithoutUpdate().set("$nex_preferredAdmin", true);
+            admin.getMemoryWithoutUpdate().set("$nex_preferredAdmin_factionId", "scalartech");
+            admin.getStats().setSkillLevel(Skills.HELMSMANSHIP, 3);
+            admin.getStats().setSkillLevel(Skills.IMPACT_MITIGATION, 3);
+            admin.getStats().setSkillLevel(Skills.SHIELD_MODULATION, 3);
+            admin.getStats().setSkillLevel(Skills.MISSILE_SPECIALIZATION, 3);
+            admin.getStats().setSkillLevel(Skills.COORDINATED_MANEUVERS, 3);
+            admin.getStats().setSkillLevel(Skills.CREW_TRAINING, 3);
+            admin.getStats().setSkillLevel(Skills.GUNNERY_IMPLANTS, 3);
+            admin.getStats().setSkillLevel(Skills.ELECTRONIC_WARFARE, 3);
+            admin.getStats().setSkillLevel(Skills.DAMAGE_CONTROL, 3);
+            admin.getStats().setSkillLevel(Skills.RELIABILITY_ENGINEERING, 3);
+            admin.getStats().setSkillLevel(Skills.POINT_DEFENSE, 3);
+            admin.getStats().setSkillLevel(Skills.TARGET_ANALYSIS, 3);
             admin.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 3);
             admin.getStats().setSkillLevel(Skills.PLANETARY_OPERATIONS, 3);
             admin.getStats().setSkillLevel(Skills.SPACE_OPERATIONS, 3);
+            admin.getStats().setLevel(15);
 
+            ip.addPerson(admin);
             market.setAdmin(admin);
             market.getCommDirectory().addPerson(admin, 0);
             market.addPerson(admin);
 
             PersonAPI silvys = Global.getFactory().createPerson();
+            silvys.setId("scalar_Silvys");
             silvys.setFaction("scalartech");
             silvys.setGender(FullName.Gender.FEMALE);
-            silvys.setPostId(Ranks.POST_SCIENTIST);
-            silvys.setRankId(Ranks.SPECIAL_AGENT);
+            silvys.setPostId("scalar_headResearch");
+            silvys.setRankId("scalar_headResearch");
             silvys.getName().setFirst("Silvys");
             silvys.getName().setLast("Renham");
             silvys.setPortraitSprite("graphics/tahlan/portraits/silvys.png");
@@ -140,6 +160,25 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             silvys.setImportance(PersonImportance.VERY_HIGH);
             silvys.addTag(Tags.CONTACT_SCIENCE);
             silvys.addTag(Tags.CONTACT_MILITARY);
+
+            silvys.getStats().setSkillLevel(Skills.HELMSMANSHIP, 3);
+            silvys.getStats().setSkillLevel(Skills.IMPACT_MITIGATION, 3);
+            silvys.getStats().setSkillLevel(Skills.SHIELD_MODULATION, 3);
+            silvys.getStats().setSkillLevel(Skills.MISSILE_SPECIALIZATION, 3);
+            silvys.getStats().setSkillLevel(Skills.COORDINATED_MANEUVERS, 3);
+            silvys.getStats().setSkillLevel(Skills.CREW_TRAINING, 3);
+            silvys.getStats().setSkillLevel(Skills.GUNNERY_IMPLANTS, 3);
+            silvys.getStats().setSkillLevel(Skills.ELECTRONIC_WARFARE, 3);
+            silvys.getStats().setSkillLevel(Skills.DAMAGE_CONTROL, 3);
+            silvys.getStats().setSkillLevel(Skills.RELIABILITY_ENGINEERING, 3);
+            silvys.getStats().setSkillLevel(Skills.POINT_DEFENSE, 3);
+            silvys.getStats().setSkillLevel(Skills.TARGET_ANALYSIS, 3);
+            silvys.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, 3);
+            silvys.getStats().setSkillLevel(Skills.PLANETARY_OPERATIONS, 3);
+            silvys.getStats().setSkillLevel(Skills.SPACE_OPERATIONS, 3);
+            silvys.getStats().setLevel(15);
+
+            ip.addPerson(silvys);
             market.getCommDirectory().addPerson(silvys,1);
             market.addPerson(silvys);
 

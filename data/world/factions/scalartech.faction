@@ -219,14 +219,14 @@
 		"ranks":{
 			"spaceCommander":{"name":"High Admiral"},
 			"factionLeader":{"name":"High Councillor"},
-			"scalar_Silvys":{"name":"ScalarTech Head of Research"},
+			"scalar_headResearch":{"name":"ScalarTech Head of Research"},
 		},
 		"posts":{
 			"factionLeader":{"name":"High Councillor"},
 			"patrolCommander":{"name":"Captain"},
 			"fleetCommander":{"name":"Admiral"},
 			"baseCommander":{"name":"Base Commander"},
-			"scalar_Silvys":{"name":"ScalarTech Head of Research"},
+			"scalar_headResearch":{"name":"ScalarTech Head of Research"},
 		},
 	},
 	"voices":{

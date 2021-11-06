@@ -235,17 +235,17 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
 
             //Arcs can pierce shields of the main target
 
-            float bonusDamage = missile.getDamageAmount()*0.15f;
+            float bonusDamage = missile.getDamageAmount()/12;
             if (shieldHit && arcTarget == fuseTarget) {
                 float pierceChance = ((ShipAPI) target).getHardFluxLevel() - 0.5f;
                 pierceChance *= fuseTarget.getMutableStats().getDynamic().getValue(Stats.SHIELD_PIERCED_MULT);
 
-                boolean piercedShield = shieldHit && (float) Math.random() < pierceChance;
+                boolean piercedShield = (float) Math.random() < pierceChance;
 
 
                 if (piercedShield) {
                     Global.getCombatEngine().spawnEmpArcPierceShields(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
-                            DamageType.FRAGMENTATION, //Damage type
+                            DamageType.ENERGY, //Damage type
                             MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
                             MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                             100000f, //Max range
@@ -256,7 +256,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                     );
                 } else {
                         Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
-                                DamageType.FRAGMENTATION, //Damage type
+                                DamageType.ENERGY, //Damage type
                                 MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
                                 MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                                 100000f, //Max range
@@ -269,7 +269,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
             } else {
 
                 Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
-                        DamageType.FRAGMENTATION, //Damage type
+                        DamageType.ENERGY, //Damage type
                         MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
                         MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
                         100000f, //Max range
