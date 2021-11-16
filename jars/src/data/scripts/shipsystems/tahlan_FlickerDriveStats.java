@@ -150,6 +150,13 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
                                     0.0f,
                                     0.1f
                             );
+                            MagicLensFlare.createSharpFlare(engine,target,target.getLocation(),5f,100f,0f,BASIC_FLASH_COLOR,Color.white);
+
+
+                            if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {
+                                CustomRippleDistortion(target.getLocation(),ZERO,60,2f,false,0f,360f,0.5f,0f,0.2f,0.2f,0.4f,0f);
+                            }
+
                             Global.getCombatEngine().removeEntity(target);
                             hitTargets.add(target);
                         }
