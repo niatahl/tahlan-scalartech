@@ -26,6 +26,7 @@ public class tahlan_WingTrailScript implements EveryFrameWeaponEffectPlugin {
         Float brightness = 0.3f+0.3f*ship.getSystem().getEffectLevel();
 
         effectInterval.advance(engine.getElapsedInLastFrame());
+        float angle = Misc.getAngleInDegrees(new Vector2f(ship.getVelocity()));
         if (effectInterval.intervalElapsed()) {
             if (trailID == null) {
                 trailID = MagicTrailPlugin.getUniqueID();
@@ -33,7 +34,7 @@ public class tahlan_WingTrailScript implements EveryFrameWeaponEffectPlugin {
             MagicTrailPlugin.AddTrailMemberSimple(ship, trailID, trailSprite,
                     weapon.getLocation(),
                     0f,
-                    weapon.getCurrAngle(),
+                    angle,
                     30f,
                     15f,
                     Color.red,
