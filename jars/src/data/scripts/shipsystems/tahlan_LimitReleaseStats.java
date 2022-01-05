@@ -24,7 +24,7 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
     @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
 
-        ShipAPI ship = null;
+        ShipAPI ship;
 
         if (stats.getEntity() instanceof ShipAPI) {
             ship = (ShipAPI) stats.getEntity();
@@ -37,6 +37,7 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
         if (state == State.OUT) {
             stats.getEnergyWeaponFluxCostMod().unmodify(id);
             stats.getEnergyRoFMult().modifyMult(id,1f/ROF_MULT);
+            stats.getEnergyAmmoRegenMult().modifyMult(id,1f/ROF_MULT);
             //stats.getBallisticRoFMult().modifyMult(id,1f/ROF_MULT);
             //stats.getBallisticWeaponFluxCostMod().unmodify(id);
             stats.getMaxSpeed().modifyFlat(id,-SPEED_BOOST/2);
@@ -48,19 +49,20 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
             ship.setJitterUnder(id, COOLDOWN_COLOR, 0.2f+0.3f*effectLevel, 10, 10f);
             ship.getEngineController().extendFlame(id, -0.4f, -0.4f, -0.4f);
 
-            for (WeaponAPI w : ship.getAllWeapons()) {
-                //only bother with ammo regenerators
-
-                float reloadRate = w.getSpec().getAmmoPerSecond();
-                float nuCharge = reloadRate / ROF_MULT;
-                if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-                    w.getAmmoTracker().setAmmoPerSecond(nuCharge);
-                }
-            }
+//            for (WeaponAPI w : ship.getAllWeapons()) {
+//                //only bother with ammo regenerators
+//
+//                float reloadRate = w.getSpec().getAmmoPerSecond();
+//                float nuCharge = reloadRate / ROF_MULT;
+//                if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//                    w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+//                }
+//            }
 
         } else {
             stats.getEnergyWeaponFluxCostMod().modifyMult(id, 1f / (1f + (ROF_MULT - 1f) * effectLevel));
             stats.getEnergyRoFMult().modifyMult(id, 1f + (ROF_MULT - 1f) * effectLevel);
+            stats.getEnergyAmmoRegenMult().modifyMult(id,ROF_MULT);
             //stats.getBallisticRoFMult().modifyMult(id, 1f + (ROF_MULT - 1f) * effectLevel);
             //stats.getBallisticWeaponFluxCostMod().modifyMult(id, 1f / (1f + (ROF_MULT - 1f) * effectLevel));
             stats.getMaxSpeed().modifyFlat(id, SPEED_BOOST * effectLevel);
@@ -77,15 +79,15 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
                 ship.addAfterimage(new Color(0, 255, 250,20), 0, 0, -ship.getVelocity().x, -ship.getVelocity().y, 5f, 0, 0, 1.2f*effectLevel, false, false, false);
             }
 
-            for (WeaponAPI w : ship.getAllWeapons()) {
-                //only bother with ammo regenerators
-
-                float reloadRate = w.getSpec().getAmmoPerSecond();
-                float nuCharge = reloadRate * ROF_MULT;
-                if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-                    w.getAmmoTracker().setAmmoPerSecond(nuCharge);
-                }
-            }
+//            for (WeaponAPI w : ship.getAllWeapons()) {
+//                //only bother with ammo regenerators
+//
+//                float reloadRate = w.getSpec().getAmmoPerSecond();
+//                float nuCharge = reloadRate * ROF_MULT;
+//                if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//                    w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+//                }
+//            }
 
         }
     }
@@ -93,31 +95,30 @@ public class tahlan_LimitReleaseStats extends BaseShipSystemScript {
     @Override
     public void unapply(MutableShipStatsAPI stats, String id) {
 
-        ShipAPI ship = null;
-
-        if (stats.getEntity() instanceof ShipAPI) {
-            ship = (ShipAPI) stats.getEntity();
-        } else {
-            return;
-        }
+//        ShipAPI ship = null;
+//
+//        if (stats.getEntity() instanceof ShipAPI) {
+//            ship = (ShipAPI) stats.getEntity();
+//        } else {
+//            return;
+//        }
 
         stats.getEnergyRoFMult().unmodify(id);
         stats.getEnergyWeaponFluxCostMod().unmodify(id);
-        //stats.getBallisticRoFMult().unmodify(id);
-        //stats.getBallisticWeaponFluxCostMod().unmodify(id);
+        stats.getEnergyAmmoRegenMult().unmodify(id);
         stats.getMaxSpeed().unmodify(id);
         stats.getAcceleration().unmodify(id);
         stats.getFluxDissipation().unmodify(id);
         stats.getHardFluxDissipationFraction().unmodify(id);
 
-        for (WeaponAPI w : ship.getAllWeapons()) {
-            //only bother with ammo regenerators
-
-            float reloadRate = w.getSpec().getAmmoPerSecond();
-            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-                w.getAmmoTracker().setAmmoPerSecond(reloadRate);
-            }
-        }
+//        for (WeaponAPI w : ship.getAllWeapons()) {
+//            //only bother with ammo regenerators
+//
+//            float reloadRate = w.getSpec().getAmmoPerSecond();
+//            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//                w.getAmmoTracker().setAmmoPerSecond(reloadRate);
+//            }
+//        }
     }
 
     @Override

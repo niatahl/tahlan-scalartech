@@ -23,18 +23,20 @@ public class tahlan_CycleAccelStats extends BaseShipSystemScript {
             return;
         }
 
-        stats.getEnergyWeaponFluxCostMod().modifyMult(id,1f/(1f+(ROF_MULT-1f)*effectLevel));
-        stats.getEnergyRoFMult().modifyMult(id,1f+(ROF_MULT-1f)*effectLevel);
+        float currMult = 1f+(ROF_MULT-1f)*effectLevel;
+        stats.getEnergyWeaponFluxCostMod().modifyMult(id,1f/currMult);
+        stats.getEnergyRoFMult().modifyMult(id,currMult);
+        stats.getEnergyAmmoRegenMult().modifyMult(id,currMult);
 
-        for (WeaponAPI w : ship.getAllWeapons()) {
-            //only bother with ammo regenerators
-
-            float reloadRate = w.getSpec().getAmmoPerSecond();
-            float nuCharge = reloadRate * ROF_MULT;
-            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-                w.getAmmoTracker().setAmmoPerSecond(nuCharge);
-            }
-        }
+//        for (WeaponAPI w : ship.getAllWeapons()) {
+//            //only bother with ammo regenerators
+//
+//            float reloadRate = w.getSpec().getAmmoPerSecond();
+//            float nuCharge = reloadRate * ROF_MULT;
+//            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//                w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+//            }
+//        }
     }
 
     @Override
@@ -50,15 +52,16 @@ public class tahlan_CycleAccelStats extends BaseShipSystemScript {
 
         stats.getEnergyRoFMult().unmodify(id);
         stats.getEnergyWeaponFluxCostMod().unmodify(id);
+        stats.getEnergyAmmoRegenMult().unmodify(id);
 
-        for (WeaponAPI w : ship.getAllWeapons()) {
-            //only bother with ammo regenerators
-
-            float reloadRate = w.getSpec().getAmmoPerSecond();
-            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-                w.getAmmoTracker().setAmmoPerSecond(reloadRate);
-            }
-        }
+//        for (WeaponAPI w : ship.getAllWeapons()) {
+//            //only bother with ammo regenerators
+//
+//            float reloadRate = w.getSpec().getAmmoPerSecond();
+//            if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//                w.getAmmoTracker().setAmmoPerSecond(reloadRate);
+//            }
+//        }
     }
 
     @Override

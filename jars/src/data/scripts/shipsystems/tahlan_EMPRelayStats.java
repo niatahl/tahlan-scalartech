@@ -24,7 +24,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
     private final IntervalUtil interval = new IntervalUtil(0.05f, 0.1f);
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
-        ShipAPI ship = null;
+        ShipAPI ship;
         if (stats.getEntity() instanceof ShipAPI) {
             ship = (ShipAPI) stats.getEntity();
         } else {
@@ -52,7 +52,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
                     CombatEntityAPI target = null;
 
                     //Finds a target, in case we are going to overkill our current one
-                    List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(fighter.getLocation(), 300f);
+                    List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(fighter.getLocation(), 500f);
 
                     for (CombatEntityAPI potentialTarget : targetList) {
                         //Checks for dissallowed targets, and ignores them
@@ -82,7 +82,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
                         Global.getCombatEngine().spawnEmpArc(fighter, fighter.getLocation(), fighter, target,
                                 DamageType.FRAGMENTATION, //Damage type
                                 100f, //Damage
-                                100f, //Emp
+                                200f, //Emp
                                 100000f, //Max range
                                 null, //Impact sound
                                 10f, // thickness of the lightning bolt
@@ -93,7 +93,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
                         Global.getCombatEngine().spawnEmpArc(fighter, fighter.getLocation(), fighter, new SimpleEntity(MathUtils.getRandomPointInCircle(fighter.getLocation(), 100f)),
                                 DamageType.FRAGMENTATION, //Damage type
                                 100f, //Damage
-                                100f, //Emp
+                                200f, //Emp
                                 100000f, //Max range
                                 null, //Impact sound
                                 10f, // thickness of the lightning bolt
@@ -104,14 +104,14 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
                 }
 
                 fighter.setJitterUnder(KEY_JITTER, JITTER_COLOR, effectLevel, 5, 0f, jitterRangeBonus);
-                fighter.setJitter(KEY_JITTER, JITTER_UNDER_COLOR, effectLevel, 2, 0f, 0 + jitterRangeBonus * 1f);
+                fighter.setJitter(KEY_JITTER, JITTER_UNDER_COLOR, effectLevel, 2, 0f, 0 + jitterRangeBonus * 1.2f);
                 Global.getSoundPlayer().playLoop("system_targeting_feed_loop", ship, 1f, 1f, fighter.getLocation(), fighter.getVelocity());
             }
         }
     }
 
     private List<ShipAPI> getFighters(ShipAPI carrier) {
-        List<ShipAPI> result = new ArrayList<ShipAPI>();
+        List<ShipAPI> result = new ArrayList<>();
 
         for (ShipAPI ship : Global.getCombatEngine().getShips()) {
             if (!ship.isFighter()) continue;
@@ -125,7 +125,7 @@ public class tahlan_EMPRelayStats extends BaseShipSystemScript {
     }
 
     public void unapply(MutableShipStatsAPI stats, String id) {
-        ShipAPI ship = null;
+        ShipAPI ship;
         if (stats.getEntity() instanceof ShipAPI) {
             ship = (ShipAPI) stats.getEntity();
         } else {

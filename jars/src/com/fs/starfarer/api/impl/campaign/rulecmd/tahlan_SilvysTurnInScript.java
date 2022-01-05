@@ -19,7 +19,7 @@ import com.fs.starfarer.api.impl.campaign.ids.Items;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.Misc.Token;
-import exerelin.utilities.StringHelper;
+//import exerelin.utilities.StringHelper;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -132,9 +132,9 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
 		final InteractionDialogAPI dialog = this.dialog;
 		final Map<String, MemoryAPI> memoryMap = this.memoryMap; 
 		
-		dialog.showCargoPickerDialog(StringHelper.getString("exerelin_misc", "blueprintSwapSelect"), 
-				Misc.ucFirst(StringHelper.getString("confirm")), 
-				Misc.ucFirst(StringHelper.getString("cancel")),
+		dialog.showCargoPickerDialog("Select blueprints to trade in", //StringHelper.getString("exerelin_misc", "blueprintSwapSelect"), 
+				Misc.ucFirst("confirm"),//Misc.ucFirst(StringHelper.getString("confirm")), 
+				Misc.ucFirst("cancel"),//Misc.ucFirst(StringHelper.getString("cancel")),
 						true, width, copy, new CargoPickerListener() {
 			public void pickedCargo(CargoAPI cargo) {
 				cargo.sort();
@@ -192,7 +192,7 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
                                 panel.addImage(faction.getLogo(), width, pad);
 						panel.addPara("If you turn in the selected blueprints, your standing with " + person.getName().getFullName() + " will improve by %s points.",
 								opad, Misc.getHighlightColor(),
-						"" + (int) points);
+						"" + points);
 			}
 		});
 	}
@@ -222,7 +222,7 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
 	{
 		SpecialItemSpecAPI spec = stack.getSpecialItemSpecIfSpecial();
 		SpecialItemData data = stack.getSpecialDataIfSpecial();
-		float points = 0, base = 0;
+		float points, base = 0;
 		
 		switch (spec.getId())
 		{
@@ -322,7 +322,7 @@ public class tahlan_SilvysTurnInScript extends PaginatedOptions {
 		}
 	}
 	
-	public static enum PurchaseType {
+	public enum PurchaseType {
 		SHIP, FIGHTER, WEAPON
 	}
         

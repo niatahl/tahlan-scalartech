@@ -15,6 +15,8 @@ public class tahlan_HeavyCycleBoost extends BaseHullMod {
 
 		stats.getEnergyRoFMult().modifyMult(id,ROF_BOOST);
 		stats.getBallisticRoFMult().modifyMult(id,ROF_BOOST);
+		stats.getEnergyAmmoRegenMult().modifyMult(id,ROF_BOOST);
+		stats.getBallisticAmmoRegenMult().modifyMult(id,ROF_BOOST);
 		stats.getBeamWeaponDamageMult().modifyMult(id,BEAM_BOOST);
 		stats.getBeamWeaponFluxCostMult().modifyMult(id,BEAM_BOOST);
 
@@ -29,23 +31,23 @@ public class tahlan_HeavyCycleBoost extends BaseHullMod {
 		if (index == 1) return "" + (int)((BEAM_BOOST-1f)*100f) + txt("%");
 		return null;
 	}
-
-	@Override
-	public void advanceInCombat(ShipAPI ship, float amount) {
-		CombatEngineAPI engine = Global.getCombatEngine();
-		if (engine.isPaused() || !ship.isAlive()) {
-			return;
-		}
-		for (WeaponAPI w : ship.getAllWeapons()) {
-			//only bother with ammo regenerators
-
-			float reloadRate = w.getSpec().getAmmoPerSecond();
-			float nuCharge = reloadRate * ROF_BOOST;
-			if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
-				w.getAmmoTracker().setAmmoPerSecond(nuCharge);
-			}
-		}
-	}
+//
+//	@Override
+//	public void advanceInCombat(ShipAPI ship, float amount) {
+//		CombatEngineAPI engine = Global.getCombatEngine();
+//		if (engine.isPaused() || !ship.isAlive()) {
+//			return;
+//		}
+//		for (WeaponAPI w : ship.getAllWeapons()) {
+//			//only bother with ammo regenerators
+//
+//			float reloadRate = w.getSpec().getAmmoPerSecond();
+//			float nuCharge = reloadRate * ROF_BOOST;
+//			if (w.getType() == WeaponAPI.WeaponType.ENERGY && w.usesAmmo() && reloadRate > 0) {
+//				w.getAmmoTracker().setAmmoPerSecond(nuCharge);
+//			}
+//		}
+//	}
 	
 
 }
