@@ -142,17 +142,15 @@ public class tahlan_EMSuppression extends BaseShipSystemScript {
 			float radSum = ship.getCollisionRadius() + target.getCollisionRadius();
 			if (dist > range + radSum) target = null;
 		} else {
-			if (target == null || target.getOwner() == ship.getOwner()) {
-				if (player) {
-					target = Misc.findClosestShipEnemyOf(ship, ship.getMouseTarget(), HullSize.FIGHTER, range, true);
-				} else {
-					Object test = ship.getAIFlags().getCustom(AIFlags.MANEUVER_TARGET);
-					if (test instanceof ShipAPI) {
-						target = (ShipAPI) test;
-						float dist = Misc.getDistance(ship.getLocation(), target.getLocation());
-						float radSum = ship.getCollisionRadius() + target.getCollisionRadius();
-						if (dist > range + radSum) target = null;
-					}
+			if (player) {
+				target = Misc.findClosestShipEnemyOf(ship, ship.getMouseTarget(), HullSize.FIGHTER, range, true);
+			} else {
+				Object test = ship.getAIFlags().getCustom(AIFlags.MANEUVER_TARGET);
+				if (test instanceof ShipAPI) {
+					target = (ShipAPI) test;
+					float dist = Misc.getDistance(ship.getLocation(), target.getLocation());
+					float radSum = ship.getCollisionRadius() + target.getCollisionRadius();
+					if (dist > range + radSum) target = null;
 				}
 			}
 			if (target == null) {

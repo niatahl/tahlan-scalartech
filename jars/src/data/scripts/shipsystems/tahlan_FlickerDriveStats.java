@@ -5,6 +5,8 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.util.IntervalUtil;
+import data.scripts.tahlan_ScalarModPlugin;
+import data.scripts.util.MagicLensFlare;
 import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
@@ -16,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.fs.starfarer.api.util.Misc.ZERO;
+import static data.scripts.utils.tahlan_graphicLibEffects.CustomRippleDistortion;
 
 
 public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
@@ -24,10 +27,10 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
     public static final float MAX_TIME_MULT = 3f;
     public static final float MAX_MOBILITY_MULT = 2f;
 
-    private static Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
-    private static Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
+    private static final Color LIGHTNING_CORE_COLOR = new Color(135, 255, 247, 150);
+    private static final Color LIGHTNING_FRINGE_COLOR = new Color(24, 136, 144, 200);
 
-    private IntervalUtil interval = new IntervalUtil(0.1f, 0.1f);
+    private final IntervalUtil interval = new IntervalUtil(0.1f, 0.1f);
     private boolean runOnce = true;
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
@@ -82,7 +85,7 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
                         }
 
                         //Checks for dissallowed targets, and ignores them
-                        if (!(potentialTarget instanceof ShipAPI) && !(potentialTarget instanceof MissileAPI) && !(potentialTarget instanceof DamagingProjectileAPI)) {
+                        if (!(potentialTarget instanceof ShipAPI) && !(potentialTarget instanceof DamagingProjectileAPI)) {
                             continue;
                         }
 
@@ -150,7 +153,7 @@ public class tahlan_FlickerDriveStats extends BaseShipSystemScript {
                                     0.0f,
                                     0.1f
                             );
-                            MagicLensFlare.createSharpFlare(engine,target,target.getLocation(),5f,100f,0f,BASIC_FLASH_COLOR,Color.white);
+                            MagicLensFlare.createSharpFlare(engine,ship,target.getLocation(),5f,100f,0f,LIGHTNING_CORE_COLOR,Color.white);
 
 
                             if (tahlan_ScalarModPlugin.isGraphicsLibAvailable()) {

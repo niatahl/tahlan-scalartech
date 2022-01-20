@@ -7,7 +7,9 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
+import com.fs.starfarer.api.util.Misc;
 import data.scripts.plugins.MagicTrailPlugin;
+import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 
@@ -21,6 +23,10 @@ public class tahlan_WingTrailScript implements EveryFrameWeaponEffectPlugin {
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
+
+        if (engine.isPaused()) {
+            return;
+        }
 
         ShipAPI ship = weapon.getShip();
         Float brightness = 0.3f+0.3f*ship.getSystem().getEffectLevel();

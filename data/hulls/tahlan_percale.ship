@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "tahlan_scalarspecs",
-	"phasefield"
+    "phasefield"
   ],
   "builtInWeapons": {
     "WS0006": "tahlan_percale_cover_l",
@@ -102,6 +102,60 @@
       "arc": 0,
       "angle": -143.5,
       "locations": [-7.5, -79]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [21, 40]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [21, -40]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-2, 43.5]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-2, -43.5]
+    },
+    {
+      "id": "WS0014",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [12, 62]
+    },
+    {
+      "id": "WS0015",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": -0,
+      "locations": [12, -62]
     }
   ],
   "engineSlots": [

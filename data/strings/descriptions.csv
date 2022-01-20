@@ -122,6 +122,7 @@ tahlan_emsuppression,SHIP_SYSTEM,"Suppresses the target's point defense systems 
 tahlan_flickerdrive,SHIP_SYSTEM,"Briefly become intangible, dissipating some flux and boosting mobility. Discharges EMP bolts on nearby targets and projectiles upon activation. Holds up to 3 charges.",Mobility,,
 tahlan_loaderjets,SHIP_SYSTEM,Provides a modest boost to speed and maneuverability.,Mobility,,
 tahlan_emprelay,SHIP_SYSTEM,Discharges EMP arcs from fighters at targets near them. Generates flux on use.,Fighters,,
+tahlan_coildischarge,SHIP_SYSTEM,"Discharges residual energy in phase coils as EMP arcs. Fires one bolt per phase coil, dealing 100 energy and emp damage, which is doubled during phase coil cooldown. Generates 400 flux on use.",,,
 ,,,,,
 #Campaign,,,,,
 tahlan_planet_jacquard,CUSTOM,"Having caught the remains of a planetary collision many millenia ago, Jacquard has formed an unusual ring of what could best be described as floating continents at the upper edge of its atmosphere. Rich in ores, they now supply the industries of ScalarTech and even house numerous industrial centers on their surfaces themselves.",,,

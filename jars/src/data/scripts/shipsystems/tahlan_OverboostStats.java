@@ -104,7 +104,6 @@ public class tahlan_OverboostStats extends BaseShipSystemScript {
 
                 CombatEntityAPI target = null;
 
-                //Finds a target, in case we are going to overkill our current one
                 List<CombatEntityAPI> targetList = CombatUtils.getEntitiesWithinRange(ship.getLocation(), 500f);
 
                 for (CombatEntityAPI potentialTarget : targetList) {
