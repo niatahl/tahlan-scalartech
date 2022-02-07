@@ -1,0 +1,45 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 8,
+    "fluxVents": 20,
+    "hullId": "tahlan_angora",
+    "hullMods": [
+        "missleracks",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "goalVariant": true;
+    "variantId": "tahlan_angora_strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "tahlan_crinkle",
+                "WS0005": "tahlan_crinkle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "typhoon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_lacette",
+                "WS0003": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ]
+}

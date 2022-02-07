@@ -1,12 +1,14 @@
 0.8.2
 - Added Angora-class Phase Destroyer
+- Added Camisette-class Freighter
 - Percale
-	- Ship System changed to Coil Discharge
 	- DP reduced from 30 to 28
 - EMP Relay system
 	- Increased range of emp arcs from 300 to 500
 	- Increased emp amount from 100 to 200
 - Updated some code for better compatibility	
+- Updated ScalarTech phase cloak to new mechanics
+	- ScalarTech phase cloak speed loss bottoms out at 50%
 	
 
 0.8.1

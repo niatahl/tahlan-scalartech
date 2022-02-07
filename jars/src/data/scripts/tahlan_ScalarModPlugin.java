@@ -161,6 +161,7 @@ public class tahlan_ScalarModPlugin extends BaseModPlugin {
             silvys.addTag(Tags.CONTACT_SCIENCE);
             silvys.addTag(Tags.CONTACT_MILITARY);
 
+
             silvys.getStats().setSkillLevel(Skills.HELMSMANSHIP, 3);
             silvys.getStats().setSkillLevel(Skills.IMPACT_MITIGATION, 3);
             silvys.getStats().setSkillLevel(Skills.SHIELD_MODULATION, 3);
