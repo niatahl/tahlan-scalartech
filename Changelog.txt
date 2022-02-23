@@ -1,7 +1,7 @@
 0.8.2
 - Added Angora-class Phase Destroyer
+- Added Camisette-class Freighter
 - Percale
-	- Ship System changed to Coil Discharge
 	- DP reduced from 30 to 28
 - EMP Relay system
 	- Increased range of emp arcs from 300 to 500

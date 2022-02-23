@@ -1,0 +1,174 @@
+{
+  "hullName": "Camisette",
+  "hullId": "tahlan_camisette",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/tahlan/ships/tahlan_camisette.png",
+  "style": "TAHLAN_FILAMENT_TECH",
+  "height": 290,
+  "width": 160,
+  "center": [80, 137.5],
+  "collisionRadius": 203,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 189,
+  "viewOffset": 0,
+  "builtInMods": [
+    "tahlan_scalarspecs",
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": 44,
+      "locations": [97.5, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 122,
+      "angle": -44,
+      "locations": [97.5, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [123, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [18.5, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 138.5,
+      "locations": [-86.5, 51]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -138.5,
+      "locations": [-86.5, -51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-118.5, -0],
+      "length": 76,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-122, 15],
+      "length": 45,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-122, -15],
+      "length": 45,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-137, 35],
+      "length": 40,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-137, -35],
+      "length": 40,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-137, 42],
+      "length": 37,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-137, -42],
+      "length": 37,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-117.5, -0],
+      "length": 38,
+      "width": 44,
+      "angle": 180,
+      "contrailSize": 44,
+      "style": "TAHLAN_RED_ENGINE"
+    }
+  ],
+  "bounds": [
+    -117, -23.5,
+    -137, -34,
+    -134.5, -54.5,
+    -126.5, -55,
+    -118, -72.5,
+    -88.5, -72.5,
+    -91, -77.5,
+    -62.5, -77,
+    -68.5, -72,
+    -56, -70,
+    -46.5, -56,
+    -39.5, -63.5,
+    87.5, -64.5,
+    94.5, -56,
+    106.5, -55.5,
+    125, -22.5,
+    125, 22.5,
+    106.5, 55.5,
+    94.5, 56,
+    87.5, 64.5,
+    -39.5, 63.5,
+    -46.5, 56,
+    -56, 70,
+    -68.5, 72,
+    -62.5, 77,
+    -91, 77.5,
+    -88.5, 72.5,
+    -118, 72.5,
+    -126.5, 55,
+    -134.5, 54.5,
+    -137, 34,
+    -117, 23.5
+  ]
+}
