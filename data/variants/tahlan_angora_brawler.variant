@@ -1,0 +1,45 @@
+{
+    "displayName": "Brawler",
+    "fluxCapacitors": 9,
+    "fluxVents": 20,
+    "hullId": "tahlan_angora",
+    "hullMods": [
+        "magazines",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "goalVariant": true;
+    "variantId": "tahlan_angora_brawler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "tahlan_sew",
+                "WS0005": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "tahlan_baste"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_lacette",
+                "WS0003": "tahlan_lacette"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ]
+}

@@ -31,16 +31,6 @@ public class tahlan_CoilDischargeStats extends BaseShipSystemScript {
     }
 
     @Override
-    public float getRegenOverride(ShipAPI ship) {
-        switch (ship.getHullSize()) {
-            case CRUISER:   return 0.3f;
-            case DESTROYER: return 0.2f;
-            default:        return 0.1f;
-        }
-
-    }
-
-    @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         if (runOnce) {
             return;

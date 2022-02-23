@@ -26,6 +26,9 @@
 		"tahlan_belt_standard":4,
 		"tahlan_belt_support":3,
 		"tahlan_belt_strike":3,
+		"tahlan_angora_strike":4,
+		"tahlan_angora_brawler":3,
+		"tahlan_angora_blaster":3
 	},
 	"combatLarge":{
 		"tahlan_skye_hunter":4,
