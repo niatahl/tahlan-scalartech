@@ -1,3 +1,10 @@
+0.8.3
+- Fixed Camisette not spawning
+- Fixed Silvys Renham contact reputation check
+- Angora
+	- Flux capacity reduced from 5500 to 5000
+	
+
 0.8.2
 - Added Angora-class Phase Destroyer
 - Added Camisette-class Freighter

@@ -22,7 +22,7 @@ tahlan_turnInOptionSelectedSilvys,DialogOptionSelected,$option == tahlan_selectC
 tahlan_turnInOptionSelSilvys,DialogOptionSelected,$option == tahlan_startTurnInSilvys,FireAll tahlan_PopulateTurnInOptionsSilvys,"""Indeed. My department is always all too thankful for such contributions to our efforts.""",,,,,,,,,,
 ,,,,,,,,,,,,,,
 tahlan_addSilvysAsContact,DialogOptionSelected,"$option == tahlan_silvysContactOption
-RepGTE tahlan_scalartech FRIENDLY","AddPotentialContact
+RepGTE scalartech FRIENDLY","AddPotentialContact
 $scalar_SilvysContact = true
 FireAll PopulateOptions
 ","""You are correct. Due to the STDF's strictly defensive mission statement, I am forced to rely on independent contractors to get work done in the sector beyond this system. Plausible deniability and all that.
@@ -30,7 +30,7 @@ FireAll PopulateOptions
 According to what we have on record about you, you should fit right in. Feel free to inquire about open contracts at any time when in system.""
 ",,,,,,,,,,
 tahlan_denySilvysContact,DialogOptionSelected,"$option == tahlan_silvysContactOption
-!RepGTE tahlan_scalartech FRIENDLY",,"""While that is correct, these contracts serve our military interests and I can't just offer them to anyone, you know. I'd suggest making some more friends with the Protectorate authorities first.""",,,,,,,,,,
+RepLTE scalartech FRIENDLY",FireAll PopulateOptions,"""While that is correct, these contracts serve our military interests and I can't just offer them to anyone, you know. I'd suggest making some more friends with the Protectorate authorities first.""",,,,,,,,,,
 ,,,,,,,,,,,,,,
 tahlan_turnInResponseDefaultSilvys,tahlan_BPTurnedInSilvys,,FireAll PopulateOptions,"$personLastName moves the conversation on to other matters. ""Anything else you need?""",,,,,,,,,,
 #END Some Dialogue,,,,,,,,,,,,,,

@@ -1,0 +1,33 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 11,
+    "hullId": "tahlan_camisette",
+    "hullMods": ["expanded_cargo_holds"],
+    "permaMods": [],
+    "sMods": [],
+    "goalVariant": true,
+    "variantId": "tahlan_camisette_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "tahlan_lacette"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "swarmer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0002": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ]
+}

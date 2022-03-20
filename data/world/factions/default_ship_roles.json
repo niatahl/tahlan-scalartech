@@ -98,6 +98,7 @@
 	"freighterSmall":{
 	},
 	"freighterMedium":{
+		"tahlan_camisette_standard":10,
 	},
 	"freighterLarge":{
 		"tahlan_camise_standard":10,
