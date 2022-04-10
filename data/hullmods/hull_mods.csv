@@ -14,6 +14,12 @@ Centralized Targeting Core,tahlan_centraltargeting,,,,,,,,TRUE,,0,0,0,0,data.scr
 Precludes the installation of a Dedicated Targeting Core or an Integrated Targeting Unit.",Greatly extends non-missile weapon range.,graphics/hullmods/advanced_targeting_core.png
 Dual Capacitor Banks,tahlan_cycleboost,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CycleBoost,Doubled energy weapon capacitor banks allow all mounted energy weapons to fire and recharge %s faster. Does not affect sustained beam weapons.,Energy RoF boost.,graphics/tahlan/hullmods/tahlan_cycleboost.png
 Upscaled Capacitor Banks,tahlan_heavycycleboost,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_HeavyCycleBoost,"This ship's weapon mounts are linked to experimental upsized capacitor banks, allowing both energy and ballistic weapons to operate at faster cycle rates. Increases rate of fire and charge regeneration by %s and increases beam damage and flux cost by %s.",Weapon RoF boost.,graphics/tahlan/hullmods/tahlan_cycleboost.png
+Integrated Autoforge,tahlan_scalarautoforge,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_ScalarAutoforge,"This ship contains a large autoforge passively producing missile ammunition during combat. Restores %s of base ammo capacity %s.  
+
+Effect increased by %s if commanding officer has the %s skill. Unaffected by hullmods that increase maximum missile ammo.
+
+Precludes the installation of %s.",Regenerates Missiles,graphics/hullmods/missile_autofactory.png
+Targeting Coprocessor,tahlan_bansheemounts,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.tahlan_BansheeMounts,Increases range of non-PD weapons by %s.,Slightly increases weapon range.,graphics/hullmods/targeting_core.png
 ,,,,,,,,,,,,,,,,,,
 ScalarTech Logistics,tahlan_chmscalartech,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.tahlan_CHMScalartech,"ScalarTech Crews have not forgotten their corporation's roots in the logistics sector and know how to run a fleet efficiently. Capable of optimizing storage capacity, they can increase the fuel and cargo capacity of ships by %s and streamlined ship operations reduce monthly maintenance and fuel use by %s.
 

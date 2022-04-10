@@ -32,5 +32,10 @@
 		gownModule_03:"Core venting also triggers venting on modules",
 		gownModule_04:"Modules can't be equipped with shields",		
 		capOvercharge:"Energy weapon damage increased by ",
+		hmd_ScalarForge1: "20%",
+		hmd_ScalarForge2:"per minute",
+		hmd_ScalarForge3:"50%",
+		hmd_ScalarForge4:"Missile Specialization",
+		EMR:"Expanded Missile Racks"
 	}
 }

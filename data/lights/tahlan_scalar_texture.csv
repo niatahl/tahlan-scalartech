@@ -25,9 +25,11 @@ tahlan_gown,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_Norm
 tahlan_gown_ringleft,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_ringleft_Normal.png
 tahlan_gown_ringright,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_gown_ringright_Normal.png
 tahlan_percale,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_percale_Normal.png
+tahlan_silken_banshee,ship,,1.5,normal,graphics/tahlan/maps/ships_normals/tahlan_silken_banshee_Normal.png
 ,,,,,
 tahlan_percale_cover_r,hardpoint,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_percale_cover_r_Normal.png
 tahlan_percale_cover_l,hardpoint,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_percale_cover_l_Normal.png
-,,,,,
-,,,,,
+tahlan_banshee_cover_1,turret,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_banshee_cover_1_Normal.png
+tahlan_banshee_cover_2,turret,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_banshee_cover_2_Normal.png
+tahlan_banshee_cover_3,turret,,1.5,normal,graphics/tahlan/maps/weapons_normals/tahlan_banshee_cover_3_Normal.png
 ,,,,,

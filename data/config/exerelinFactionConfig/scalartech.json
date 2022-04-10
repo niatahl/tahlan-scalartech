@@ -8,7 +8,7 @@
     
     "marketSpawnWeight":0.75,
 	
-	"factionIdForHqResponse":"scalartech_elite",	
+	  "factionIdForHqResponse":"scalartech_elite",	
     "specialForcesNamerClass":"data.scripts.campaign.nexerelin.tahlan_ScalartechNamer",
      
     "startRelationships":{ 
