@@ -235,7 +235,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
 
             //Arcs can pierce shields of the main target
 
-            float bonusDamage = missile.getDamageAmount()/12;
+            float bonusDamage = missile.getDamageAmount()/NUM_ARCS;
             if (shieldHit && arcTarget == fuseTarget) {
                 float pierceChance = ((ShipAPI) target).getHardFluxLevel() - 0.5f;
                 pierceChance *= fuseTarget.getMutableStats().getDynamic().getValue(Stats.SHIELD_PIERCED_MULT);
@@ -246,8 +246,8 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                 if (piercedShield) {
                     Global.getCombatEngine().spawnEmpArcPierceShields(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                             DamageType.ENERGY, //Damage type
-                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
-                            MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
+                            bonusDamage, //Damage
+                            bonusDamage, //Emp
                             100000f, //Max range
                             "tachyon_lance_emp_impact", //Impact sound
                             10f, // thickness of the lightning bolt
@@ -257,8 +257,8 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                 } else {
                         Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                                 DamageType.ENERGY, //Damage type
-                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
-                                MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
+                                bonusDamage, //Damage
+                                bonusDamage, //Emp
                                 100000f, //Max range
                                 "tachyon_lance_emp_impact", //Impact sound
                                 10f, // thickness of the lightning bolt
@@ -270,8 +270,8 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
 
                 Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
                         DamageType.ENERGY, //Damage type
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
-                        MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp
+                        bonusDamage, //Damage
+                        bonusDamage, //Emp
                         100000f, //Max range
                         "tachyon_lance_emp_impact", //Impact sound
                         10f, // thickness of the lightning bolt

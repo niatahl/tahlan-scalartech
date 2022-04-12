@@ -1,27 +1,33 @@
 {
-  "id": "tahlan_tear_medium",
+  "id": "tahlan_tineola",
   "specClass": "projectile",
-  "projectileSpecId": "tahlan_tear_msl",
+  "projectileSpecId": "tahlan_tineola_msl",
   "type": "MISSILE",
-  "size": "MEDIUM",
-  "turretSprite": "graphics/tahlan/weapons/tahlan_tear_med_launcher_turret.png",
-  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tear_med_launcher_hp.png",
+  "size": "LARGE",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_tineola_lrg_launcher_turret.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tineola_lrg_launcher_hp.png",
   "renderAboveAllWeapons": 0,
   "renderHints": [
     RENDER_LOADED_MISSILES
   ],
   "turretOffsets": [
-    8,
-    0
+    4,
+    9,
+    4,
+    -9
   ],
   "turretAngleOffsets": [
+    0,
     0
   ],
   "hardpointOffsets": [
-    10,
-    0
+    5.5,
+    9,
+    5.5,
+    -9
   ],
   "hardpointAngleOffsets": [
+    0,
     0
   ],
   "barrelMode": "ALTERNATING",
@@ -37,10 +43,10 @@
     "blowbackLength": 20,
     "blowbackSpread": 10,
     "particleColor": [
-      205,
-      220,
-      235,
-      255
+      185,
+      170,
+      180,
+      170
     ]
   },
   "textureType": ROUGH,

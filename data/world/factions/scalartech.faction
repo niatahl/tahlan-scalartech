@@ -118,11 +118,13 @@
 			"ionpulser",
 			"ionbeam",
 			"tachyonlance",
+			"tahlan_tineola",
 		],
 	},
 	"priorityWeapons":{
 		"tags":[],
 		"weapons":[
+			"tahlan_tineola"
 		],
 	},
 	"knownHullMods":{

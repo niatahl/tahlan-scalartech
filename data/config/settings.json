@@ -18,6 +18,8 @@
 			"tahlan_scalarshieldIN":"graphics/tahlan/fx/tahlan_scalarshield.png",   
             "tahlan_scalarshieldOUT":"graphics/tahlan/fx/tahlan_scalarshield_ring.png", 
 			"tahlan_ruffle_blast":"graphics/tahlan/fx/tahlan_ruffle_blast.png",
+			"tahlan_tineola_blast1":"graphics/tahlan/fx/tahlan_pinshield.png",
+			"tahlan_tineola_blast2":"graphics/tahlan/fx/tahlan_cashmere_blastwave.png",
 		},
 		"blueprint_packages":{
 			"tahlan_scalartech_hull_package":"graphics/tahlan/icons/cargo/tahlan_scalartech_package.png",

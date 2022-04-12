@@ -1,6 +1,6 @@
 {
     "displayName": "Victorious",
-    "fluxCapacitors": 19,
+    "fluxCapacitors": 18,
     "fluxVents": 50,
     "hullId": "tahlan_gown",
     "hullMods": [
@@ -20,16 +20,16 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0040": "cyclone",
-                "WS0041": "cyclone"
+                "WS0040": "tahlan_tineola",
+                "WS0041": "tahlan_tineola"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0042": "typhoon",
-                "WS0043": "typhoon"
+                "WS0042": "tahlan_tear_medium",
+                "WS0043": "tahlan_tear_medium"
             }
         },
         {

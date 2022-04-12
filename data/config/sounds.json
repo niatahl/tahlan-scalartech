@@ -6,6 +6,13 @@
 		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.84,"volume":0.8},
 		{"file":"sounds/tahlan/weapons/tahlan_ruffle_fire.ogg","pitch":0.86,"volume":0.8},
 	],
+
+	"tahlan_tineola_blast":
+	[
+		{"file":"sounds/tahlan/weapons/tahlan_tineola_blast.ogg","pitch":1,"volume":1},
+		{"file":"sounds/tahlan/weapons/tahlan_tineola_blast.ogg","pitch":1.1,"volume":1},
+		{"file":"sounds/tahlan/weapons/tahlan_tineola_blast.ogg","pitch":1.2,"volume":1},
+	],
 	
 	"tahlan_crinkle_fire":
 	[

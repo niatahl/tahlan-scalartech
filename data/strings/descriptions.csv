@@ -76,6 +76,9 @@ tahlan_dessous,SHIP,"A bit of a prestige project of the STS fightercraft design 
 tahlan_angora,SHIP,"An agile phase destroyer as employed by the Spindle Protectorate, the Angora is one of the newest ships in the faction's roster. Designed to aggressively dive in and out of phased space, the ship shines when it can put its coil discharge system to frequent use.
 
 Technically developed before the Percale, the Angora was actually introduced into active service later, having initially been the testbed for the Percale's phase coils. With the larger ship seeing some success, the Angora's blueprints were put back on the drawing board and overhauled with the service experience of the Percale in mind, pushing the design into a state more suited for mass production.",,,
+tahlan_silken_banshee,SHIP,"Carrying heavy missile armament and decently agile, this Battlecruiser is only held back by its relative fragility and the fact that only one was ever built.
+
+Originally constructed based on licensed blueprints as an early testbed for the MilTec subdivision of ScalarTech Solutions, the Silken Banshee is a decently capable battlecruiser with a striking silhouette. While it carries a high efficiency shield and more armor than other ScalarTech ships, the low shield coverage and fragile structure leave the ship vulnerable to flanking attacks.",,,
 ,,,,,
 #Fighters,,,,,
 tahlan_thread,SHIP,"The Thread-class swarmer is a small and agile figher armed with a single high-velocity diffuse pulse laser that can pose a notable threat to most other fighter craft. While unsuitable for engaging larger targets by itself, it can effectively screen for bombers and distract enemy point-defense systems.",,,
@@ -104,12 +107,19 @@ tahlan_spiral2_r,WEAPON,"A retrofitted variant of the Spiral torpedo, adapted sp
 tahlan_seam,WEAPON,"An odd weapon design that came about more by accident than intent, the Seam fires a large salvo of unstable ion blasts similar to other ion weaponry, but a not fully understood fault in the weapon's emitters causes a small number of these projectiles to catastrophically destabilize on impact, causing devastating damage. While it is unclear why this happens, the effect is certainly of benefit to the weapon's combat effectiveness.",,,
 tahlan_crinkle,WEAPON,"The result of attempting to put as heavy an ion weapon as possible into a small weapon mount, this weapon is exceedingly devastating to the systems of ships of all sizes and only held back by requiring a replacement of its discharge coils after too many uses.",,,
 tahlan_tear_small,WEAPON,"Carrying a large hyperpulse blast core with proximity fuze, the Tear is an exceptional strike weapon, capable of crippling even large ships.",,,
-tahlan_tear_medium,WEAPON,"Carrying a large hyperpulse blast core with proximity fuze, the Tear is an exceptional strike weapon, capable of crippling even large ships.",,,
+tahlan_tear_medium,WEAPON,"Carrying a large hyperpulse blast core with proximity fuze, the Tear is an exceptional strike weapon, capable of crippling even large ships. The Starlight launcher system is capable of carrying additional ammunition.",,,
+tahlan_tear_lrg,WEAPON,"Carrying a large hyperpulse blast core with proximity fuze, the Tear is an exceptional strike weapon, capable of crippling even large ships. While the relatively limited range of the torpedo often makes it less ideal to field on capital ships, the Hyperlight launcher's vast ammo storage can make up for this shortcoming.",,,
 tahlan_fold,WEAPON,"Unique to the Skirt-class frigate, the Fold is an integrated variant of the Crinkle-type Disruptor. While individual shot power has been halved compared to the regular variant of the weapon, the Fold can be fired more rapidly and recharge its capacitors mid-combat from the Skirt's main reactor.",,,
 tahlan_pin,WEAPON,A lightweight swarmer missile for use against fightercraft. Highly reliable due to excellent flight characteristics and a proximity-fused warhead.,,,
 tahlan_magmine,WEAPON,A standard magpulse bomb as used by STS bombers.,,,
 tahlan_strass,WEAPON,"The Strass is a low-energy blaster variant that was trimmed for efficiency. While its overall output falls below even pulse laser weaponry, it can still boast decent armor penetration characteristics at a low overhead.",,,
 tahlan_strassette,WEAPON,"The Strassette is a low-energy blaster variant that was trimmed for efficiency. While its overall output falls below even pulse laser weaponry, it can still boast decent armor penetration for its size at a low overhead.",,,
+tahlan_banshee_pd,WEAPON,A small diffuse particle pulse gun designed for point defense. Quite effective as long as the capacitors last. ,,,
+tahlan_tineola,WEAPON,"Housed in a truly massive missile, the Tineola's Distortion warhead is the perhaps most destructive device ever cooked up by ScalarTech's engineers. Capable of ripping apart anything caught in its massive blast, this guided torpedo rivals even the notorious Reaper.
+
+Distortion warheads are a terrifying piece of technology indeed, but are heavier than most alternatives and require a significant amount of energy to arm on launch, putting some strain on the firing vessel's flux grid. The result is a large and lumbering torpedo that struggles to catch faster targets without, but can weather a surprising amount of damage from point-defense weapons.
+
+The exact reason for the development of this devastating weapons is subject of frequent debate in certain circles with a leading theory being its use as a planetary bombardment weapon to be deployed as a deterrent. While it has never been deployed in such a manner, the sheer yield of the weapon and its heavy plating, easily capable of surviving planetary reentry, have given the theory a fair bit of credibility.",,,
 ,,,,,
 #Ship Systems,,,,,
 tahlan_cycleaccel,SHIP_SYSTEM,Briefly triples cycle rate of energy weapons and reduces flux generation accordingly. Does not affect beam dps.,Weapons,,

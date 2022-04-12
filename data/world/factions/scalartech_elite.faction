@@ -108,11 +108,13 @@
 			"ionpulser",
 			"ionbeam",
 			"tachyonlance",
+			"tahlan_tineola",
 		],
 	},
 	"priorityWeapons":{
 		"tags":["scalartech_wep_bp"],
 		"weapons":[
+			"tahlan_tineola"
 		],
 	},
 	"knownHullMods":{

@@ -1,30 +1,33 @@
 {
-  "id": "tahlan_tear_medium",
+  "id": "tahlan_tear_lrg",
   "specClass": "projectile",
-  "projectileSpecId": "tahlan_tear_msl",
   "type": "MISSILE",
-  "size": "MEDIUM",
-  "turretSprite": "graphics/tahlan/weapons/tahlan_tear_med_launcher_turret.png",
-  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tear_med_launcher_hp.png",
-  "renderAboveAllWeapons": 0,
-  "renderHints": [
-    RENDER_LOADED_MISSILES
-  ],
+  "size": "LARGE",
+  "turretSprite": "graphics/tahlan/weapons/tahlan_tear_lrg_launcher_turret.png",
+  "hardpointSprite": "graphics/tahlan/weapons/tahlan_tear_lrg_launcher_hp.png",
   "turretOffsets": [
-    8,
-    0
+    15.5,
+    7.5,
+    15.5,
+    -7.5
   ],
   "turretAngleOffsets": [
+    0,
     0
   ],
   "hardpointOffsets": [
-    10,
-    0
+    17,
+    7.5,
+    17,
+    -7.5
   ],
   "hardpointAngleOffsets": [
+    0,
     0
   ],
   "barrelMode": "ALTERNATING",
+  "projectileSpecId": "tahlan_tear_msl",
+  "renderAboveAllWeapons": 0,
   "animationType": "SMOKE",
   "smokeSpec": {
     "particleSizeMin": 20,

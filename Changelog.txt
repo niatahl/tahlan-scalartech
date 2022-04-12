@@ -1,3 +1,13 @@
+0.8.4
+- Added Silken Banshee bounty ship
+- Added large mount Tear torpedo variants
+- Renamed medium Tear launcher
+- Tear torpedo (all variants)
+	- Range increased from 1200 to 1500
+	- Damage increased from 1200 to 1400
+	- Arc count reduced from 12 to 10
+	- HP reduced from 400 to 300
+
 0.8.3
 - Fixed Camisette not spawning
 - Fixed Silvys Renham contact reputation check

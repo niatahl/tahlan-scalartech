@@ -21,8 +21,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0040": "hurricane",
-                "WS0041": "hurricane"
+                "WS0040": "tahlan_tear_lrg",
+                "WS0041": "tahlan_tear_lrg"
             }
         },
         {
