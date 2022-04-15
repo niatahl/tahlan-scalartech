@@ -1,0 +1,25 @@
+{
+    "displayName": "Torn",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "hullId": "tahlan_hem",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_hem_torn",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "tahlan_sew",
+                "WS0003": "tahlan_sew"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tahlan_tear_medium"}
+        }
+    ]
+}

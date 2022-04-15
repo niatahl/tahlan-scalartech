@@ -1,0 +1,36 @@
+{
+    "displayName": "Torn",
+    "fluxCapacitors": 0,
+    "fluxVents": 15,
+    "hullId": "tahlan_strand",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_strand_torn",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_sew",
+                "WS0004": "tahlan_sew",
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "tahlan_tear_medium",
+                "WS0002": "tahlan_tear_medium"
+            }
+        }
+    ],
+    "wings": [
+        "tahlan_garter_bomber_wing",
+        "tahlan_garter_bomber_wing",
+        "tahlan_garter_bomber_wing"
+    ]
+}

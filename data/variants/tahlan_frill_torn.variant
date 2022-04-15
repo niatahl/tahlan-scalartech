@@ -1,0 +1,36 @@
+{
+    "displayName": "Torn",
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
+    "hullId": "tahlan_frill",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_frill_torn",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_baste",
+                "WS0002": "tahlan_baste"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "tahlan_tear_medium",
+                "WS0004": "tahlan_tear_medium"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "tahlan_string",
+                "WS0006": "tahlan_string"
+            }
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "displayName": "Torn",
+    "fluxCapacitors": 20,
+    "fluxVents": 6,
+    "hullId": "tahlan_angora",
+    "hullMods": [
+        "missleracks",
+        "eccm"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_angora_torn",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "tahlan_crinkle",
+                "WS0005": "tahlan_crinkle"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "tahlan_tear_medium"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "tahlan_string",
+                "WS0003": "tahlan_string",
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string"
+            }
+        }
+    ]
+}

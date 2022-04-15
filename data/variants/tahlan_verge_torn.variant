@@ -1,0 +1,48 @@
+{
+    "displayName": "Torn",
+    "fluxCapacitors": 0,
+    "fluxVents": 29,
+    "hullId": "tahlan_verge",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "tahlan_verge_torn",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "tahlan_stitch"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "tahlan_tear_medium",
+                "WS0002": "tahlan_tear_medium"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "tahlan_tousle",
+                "WS0004": "tahlan_tousle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "tahlan_string",
+                "WS0007": "tahlan_string",
+                "WS0008": "tahlan_string",
+                "WS0009": "tahlan_string",
+                "WS0010": "tahlan_string",
+                "WS0011": "tahlan_string"
+            }
+        }
+    ]
+}

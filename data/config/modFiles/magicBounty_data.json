@@ -1,0 +1,77 @@
+{
+    "bountyID":{
+    
+        "required_mods_id": [],
+
+        #TRIGGERS (ALL OPTIONAL)
+        
+        "trigger_marketFaction_any": ["scalartech"],
+        "trigger_marketFaction_alliedWith": true,
+        "trigger_marketFaction_enemyWith": false,
+        "trigger_player_minLevel": 5,
+        "trigger_min_fleet_size": 50,
+        "trigger_playerRelationship_atLeast": {"scalartech":0.20,},
+        
+        #BOUNTY DESCRIPTION
+        
+        "job_name": "The howling phantom",
+        "job_description": "The STDF \"lost\" a battlecruiser recently, a one of design from their early MilTec days, and they want it made sure the person responsible is put to the sword. They are ready to write off the loss of the ship and offer the salvage rights for it in addition to credit payment.",
+        "job_comm_reply": "So the admiralty is sending bloodhounds after me now? Well have at it, then.",
+        "job_intel_success": "The Banshee has been silenced. You can't help but feel there's something deeply nostalgic about that ship.",
+        "job_intel_expired": "It seems the STDF was no longer willing to wait and has decided to take the matter of the missing battlecruiser into their own hands.",
+        "job_forFaction": "scalartech",
+        "job_deadline": 180,
+        "job_credit_reward": 400000,
+        "job_reward_scaling": 0,
+        "job_reputation_reward":10,
+        "job_type":"assassination",
+        "job_show_type": true,
+        "job_show_captain": false,
+        "job_show_fleet": "presetText",
+        "job_show_distance": "vague",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+
+        #TARGET COMMANDER (OPTIONAL)
+        
+        "target_gender":"UNDEFINED",
+        "target_rank": "spaceCaptain",
+        "target_post": "fleetCommander",
+        "target_personality": "aggressive",
+        "target_aiCoreId": null,
+        "target_level": 7,
+        "target_elite_skills":5,
+        "target_skill_preference": "YES_ENERGY_NO_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+    
+        #TARGET FLEET
+        
+        "fleet_name":"Heinous Traitors and Thieves",
+        "fleet_faction": "pirates",
+        "fleet_flagship_variant":"tahlan_silken_banshee_standard",
+        "fleet_flagship_name":"The Howling Phantom",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_ships": {
+            "tahlan_verge_torn":4,
+            "tahlan_strand_torn":4,
+            "tahlan_tress_torn":6,
+            "tahlan_frill_torn":6,
+            "tahlan_angora_torn":4,
+            "tahlan_hem_torn":10
+        },
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier": 1.1,
+        "fleet_min_FP": 200,
+        "fleet_composition_faction": "scalartech",
+        "fleet_composition_quality": 1,
+        "fleet_transponder": false,
+		"fleet_no_retreat": false,
+        "fleet_behavior": "PASSIVE",
+        
+        #LOCATION
+        
+        "location_distance": "CLOSE",
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+    },
+}
