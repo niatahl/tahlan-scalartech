@@ -240,6 +240,7 @@ public class tahlan_Spindle {
                 510);
 
         spindle_5.setCustomDescriptionId("tahlan_planet_ardor");
+        spindle_5.setInteractionImage("illustrations","tahlan_ardor_illus");
 
         MarketAPI spindle_5_market = addMarketplace(Factions.PIRATES, spindle_5, null,
                 "Ardor",
