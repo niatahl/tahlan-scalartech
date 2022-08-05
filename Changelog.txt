@@ -1,8 +1,3 @@
-0.8.6
-- Corset
-	- Armor increased from 1100 to 1400
-
-
 0.8.5
 - Gown
 	- Minimum Crew increased from 650 to 800
@@ -10,6 +5,8 @@
 	- Increased dissipation from 150 to 200
 	- Increased flux capacits from 2200 to 2300
 	- Increased chain skimmer range from 100su to 150su
+- Corset
+	- Armor increased from 1100 to 1400
 - Fixed Silken Banshee bounty id
 	
 

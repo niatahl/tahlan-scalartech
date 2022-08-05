@@ -31,9 +31,9 @@
 			"tahlan_aurica":"graphics/tahlan/portraits/aurica.png"
 		},
 		"illustrations":{
-			"tahlan_charkha_illus":"graphics/tahlan/illustrations/tahlan_charkha_illus.png",
-			"tahlan_jacquard_illus":"graphics/tahlan/illustrations/tahlan_jacquard_illus.png",
-			"tahlan_ardor_illus":"graphics/tahlan/illustrations/tahlan_ardor_illus.png"
+			"tahlan_charkha_illus":"graphics/tahlan/illustrations/tahlan_charkha_illus.jpg",
+			"tahlan_jacquard_illus":"graphics/tahlan/illustrations/tahlan_jacquard_illus.jpg",
+			"tahlan_ardor_illus":"graphics/tahlan/illustrations/tahlan_ardor_illus.jpg"
 		},
 	}
 }
