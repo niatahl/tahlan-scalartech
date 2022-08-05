@@ -1,3 +1,18 @@
+0.8.6
+- Corset
+	- Armor increased from 1100 to 1400
+
+
+0.8.5
+- Gown
+	- Minimum Crew increased from 650 to 800
+- Hem
+	- Increased dissipation from 150 to 200
+	- Increased flux capacits from 2200 to 2300
+	- Increased chain skimmer range from 100su to 150su
+- Fixed Silken Banshee bounty id
+	
+
 0.8.4
 - Added Silken Banshee bounty ship
 - Added large mount Tear torpedo variants
@@ -7,6 +22,7 @@
 	- Damage increased from 1200 to 1400
 	- Arc count reduced from 12 to 10
 	- HP reduced from 400 to 300
+
 
 0.8.3
 - Fixed Camisette not spawning

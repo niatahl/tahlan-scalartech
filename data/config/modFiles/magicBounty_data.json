@@ -1,5 +1,5 @@
 {
-    "bountyID":{
+    "tahlan_SilkenBansheeBty":{
     
         "required_mods_id": [],
 
@@ -22,7 +22,6 @@
         "job_forFaction": "scalartech",
         "job_deadline": 180,
         "job_credit_reward": 400000,
-        "job_reward_scaling": 0,
         "job_reputation_reward":10,
         "job_type":"assassination",
         "job_show_type": true,

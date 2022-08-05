@@ -2,7 +2,7 @@
 	"id":"tahlan_scalartech", # internal id
 	"name":"ScalarTech Solutions", # displayed to the player
 	"author":"Nia Tahl",
-	"version":"0.8.4",
+	"version":"0.8.5",
 	"description":"A small faction at the edge of the core worlds with an iron will to defend their people.",
 	"gameVersion":"0.95.1a-RC6",
 	"jars":["jars/tahlan-scalartech.jar"],

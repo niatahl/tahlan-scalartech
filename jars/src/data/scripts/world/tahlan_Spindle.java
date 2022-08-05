@@ -88,6 +88,7 @@ public class tahlan_Spindle {
                 300);
 
         spindle_3.setCustomDescriptionId("tahlan_planet_charkha");
+        spindle_3.setInteractionImage("illustrations","tahlan_charkha_illus");
 
         JumpPointAPI jumpPointCharkha = Global.getFactory().createJumpPoint("tahlan_spindle_charkha_jump", "Spinner's Road");
         jumpPointCharkha.setCircularOrbit(spindle_star, charkhaAngle+30, 8000, 300);
@@ -184,6 +185,7 @@ public class tahlan_Spindle {
                 420);
 
         spindle_4.setCustomDescriptionId("tahlan_planet_jacquard");
+        spindle_4.setInteractionImage("illustrations","tahlan_jacquard_illus");
 
         MarketAPI spindle_4_market = addMarketplace("scalartech", spindle_4, null,
                 "Jacquard",

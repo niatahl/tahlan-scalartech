@@ -253,6 +253,7 @@
 		"AICoreRepMult":1,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,
+		"caresAboutAtrocities":false,
 		"punitiveExpeditionData":{
 			"vsCompetitors":true,
 			"vsFreePort":false,

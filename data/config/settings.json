@@ -29,6 +29,10 @@
 			"tahlan_yurika":"graphics/tahlan/portraits/yurika.png",
 			"tahlan_silvys":"graphics/tahlan/portraits/silvys.png",
 			"tahlan_aurica":"graphics/tahlan/portraits/aurica.png",
-		}
+		},
+		"illustrations":{
+			"tahlan_charkha_illus":"graphics/tahlan/illustrations/tahlan_charkha_illus.png",
+			"tahlan_jacquard_illus":"graphics/tahlan/illustrations/tahlan_jacquard_illus.png",
+		},
 	}
 }

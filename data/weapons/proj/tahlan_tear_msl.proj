@@ -6,7 +6,7 @@
 	"size":[18,32],	
 	"center":[9,16],
 	"collisionRadius":15,
-	"collisionClass":"MISSILE_FF",
+	"collisionClass":"MISSILE_NO_FF",
 	"explosionColor":[255,0,20,255],  # purely visual, will get a white additively blended core on top of this color
 	"explosionRadius":150, # purely visual
 	"armingTime":0.5,				 
