@@ -5,6 +5,8 @@
 	- Increased dissipation from 150 to 200
 	- Increased flux capacits from 2200 to 2300
 	- Increased chain skimmer range from 100su to 150su
+- Curl
+	- Reduced DP from 4 to 3
 - Corset
 	- Armor increased from 1100 to 1400
 - Fixed Silken Banshee bounty id

@@ -34,8 +34,8 @@
       "size": "LARGE",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 115,
-      "angle": -35,
+      "arc": 249,
+      "angle": -10.5,
       "locations": [-28, -28]
     },
     {
@@ -43,8 +43,8 @@
       "size": "LARGE",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 139,
-      "angle": -90,
+      "arc": 180,
+      "angle": -65,
       "locations": [-71, -28]
     },
     {

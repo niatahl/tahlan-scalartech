@@ -5,7 +5,7 @@ Tress,tahlan_tress,Light Carrier,ScalarTech Solutions,tahlan_emsuppression,11,40
 Brim,tahlan_brim,Destroyer,ScalarTech Solutions,tahlan_cycleaccel,11,3500,400,7000,,400,80,,120,90,60,35,100,300,FRONT,,270,0.3,0.8,,,35,50,50,40,2,20,9,50000,5,18,300,0.25,11,11,,scalartech_bp,,0.7,2,3,309
 Hem,tahlan_hem,Frigate,ScalarTech Solutions,tahlan_chainskimmer,5,1500,200,2300,,200,40,,150,130,100,60,120,200,FRONT,,270,0.4,0.8,,,15,30,50,20,1,20,10,30000,6,20,180,0.25,5,5,,scalartech_bp,,0.5,2,2,200
 Margin,tahlan_margin,Frigate,ScalarTech Solutions,tahlan_cycleaccel,5,1300,150,2500,,225,40,,170,140,110,65,120,180,OMNI,,120,0.4,0.8,,,12,25,40,20,1,20,10,15000,6,20,180,0.25,4,4,,scalartech_bp,,0.5,2,2,200
-Curl,tahlan_curl,Frigate,ScalarTech Solutions,tahlan_pulsedrive,5,1400,200,2400,,200,45,,160,130,100,60,100,180,FRONT,,270,0.3,0.7,,,14,30,45,20,1,20,10,22000,6,20,180,0.25,4,4,,scalartech_bp,,0.5,2,2,200
+Curl,tahlan_curl,Frigate,ScalarTech Solutions,tahlan_pulsedrive,5,1400,200,2400,,200,45,,160,130,100,60,100,180,FRONT,,270,0.3,0.7,,,14,30,45,20,1,20,10,22000,6,20,180,0.25,3,3,,scalartech_bp,,0.5,2,2,200
 Frill,tahlan_frill,Destroyer,ScalarTech Solutions,tahlan_pulsedrive,11,4200,500,6500,,300,90,,100,80,80,30,90,300,OMNI,,180,0.3,0.7,,,40,60,60,40,2,20,9,40000,5,18,360,0.25,12,12,,scalartech_bp,,0.7,2,3,309
 Verge,tahlan_verge,Cruiser,ScalarTech Solutions,tahlan_cycleaccel,17,8500,1000,11000,,700,165,,60,45,22,22,22,1800,FRONT,,270,0.3,0.7,,,80,180,160,90,3,30,8,140000,4,20,480,0.25,26,26,,scalartech_bp,,0.6,2,3,405
 Skye,tahlan_skye,Cruiser,ScalarTech Solutions,tahlan_limitrelease,16,8000,700,12000,,650,150,,80,80,60,28,30,1600,FRONT,,270,0.4,0.8,,,70,160,150,90,3,30,8,220000,4,20,480,0.25,28,28,,"rare_bp, hist2t",,0.6,2,3,405
