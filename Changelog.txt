@@ -10,6 +10,8 @@
 - Corset
 	- Armor increased from 1100 to 1400
 - Fixed Silken Banshee bounty id
+- Added new illustrations
+- Added new flavour text
 	
 
 0.8.4
