@@ -86,7 +86,7 @@ public class tahlan_CrinkleOnHitEffect implements OnHitEffectPlugin {
 
                 //And finally, fire at a random valid target
                 CombatEntityAPI arcTarget = validTargets.get(MathUtils.getRandomNumberInRange(0, validTargets.size() - 1));
-                Global.getCombatEngine().spawnEmpArc(projectile.getSource(), point, projectile.getSource(), arcTarget,
+                Global.getCombatEngine().spawnEmpArc(projectile.getSource(), point, projectile, arcTarget,
                         DamageType.ENERGY, //Damage type
                         MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Damage
                         MathUtils.getRandomNumberInRange(0.8f, 1.2f) * bonusDamage, //Emp

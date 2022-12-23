@@ -1,3 +1,26 @@
+0.8.6
+- Tear
+	- Base damage 1400 -> 1000
+	- EMP damage 1400 -> 1000
+	- Launcher ammo 1/5/20 -> 2/8/30
+	- Cooldown of medium and large version 9s -> 6s
+- Garter
+	- Top speed 160 -> 200
+- Tineola
+	- HP 900 -> 800
+	- Halved turn rate
+- Midi
+	- Halved Overcharge Beam cooldown
+- Dessous
+	- Refit 20s -> 25s
+	- Hull 800 -> 700
+	- Shields 800 -> 700
+- Twine
+	- HP 600 -> 500
+- Stocking
+	- Top speed 260 -> 300
+
+
 0.8.5
 - Gown
 	- Minimum Crew increased from 650 to 800

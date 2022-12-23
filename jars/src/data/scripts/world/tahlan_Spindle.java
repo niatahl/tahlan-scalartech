@@ -29,6 +29,7 @@ public class tahlan_Spindle {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Spindle");
+        system.addTag(Tags.THEME_CORE_POPULATED);
 
         // Tart-style fake start location for procgen
         system.getLocation().set(5000,-5000);

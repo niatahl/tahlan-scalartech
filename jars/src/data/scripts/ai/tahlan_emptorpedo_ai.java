@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.loading.DamagingExplosionSpec;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.util.C;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.FastTrig;
 import org.lazywizard.lazylib.MathUtils;
@@ -225,6 +226,16 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
         }
 
         for (int x = 0; x < NUM_ARCS; x++) {
+            Global.getCombatEngine().addNebulaParticle(
+                    missile.getLocation(),
+                    ZERO,
+                    MathUtils.getRandomNumberInRange(100f,200f),
+                    1.2f,
+                    0.1f,
+                    0.4f,
+                    MathUtils.getRandomNumberInRange(3f,5f),
+                    new Color(255,255,255,30)
+            );
             //If we have no valid targets, zap a random point near us
             if (validTargets.isEmpty()) {
                 validTargets.add(new SimpleEntity(MathUtils.getRandomPointInCircle(missile.getLocation(), 250)));
@@ -244,7 +255,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
 
 
                 if (piercedShield) {
-                    Global.getCombatEngine().spawnEmpArcPierceShields(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
+                    Global.getCombatEngine().spawnEmpArcPierceShields(missile.getSource(), missile.getLocation(), missile, arcTarget,
                             DamageType.ENERGY, //Damage type
                             bonusDamage, //Damage
                             bonusDamage, //Emp
@@ -255,7 +266,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                             ARC_FRINGE_COLOR //Fringe Color
                     );
                 } else {
-                        Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
+                        Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile, arcTarget,
                                 DamageType.ENERGY, //Damage type
                                 bonusDamage, //Damage
                                 bonusDamage, //Emp
@@ -268,7 +279,7 @@ public class tahlan_emptorpedo_ai extends tahlan_BaseMissileAI {
                 }
             } else {
 
-                Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile.getSource(), arcTarget,
+                Global.getCombatEngine().spawnEmpArc(missile.getSource(), missile.getLocation(), missile, arcTarget,
                         DamageType.ENERGY, //Damage type
                         bonusDamage, //Damage
                         bonusDamage, //Emp

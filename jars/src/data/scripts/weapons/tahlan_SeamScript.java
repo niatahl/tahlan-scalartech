@@ -54,10 +54,8 @@ public class tahlan_SeamScript implements EveryFrameWeaponEffectPlugin {
             hasFiredThisCharge = true;
 
             Global.getCombatEngine().spawnExplosion(point, new Vector2f(0f, 0f), PARTICLE_COLOR, 80f, 0.2f);
-            //Global.getCombatEngine().spawnExplosion(point, new Vector2f(0f, 0f), FLASH_COLOR, 50f, 0.2f);
             engine.addSmoothParticle(point, ZERO, 100f, 0.7f, 0.05f, PARTICLE_COLOR);
             engine.addSmoothParticle(point, ZERO, 120f, 0.7f, 0.1f, GLOW_COLOR);
-            //engine.addHitParticle(point, ZERO, 300f, 1f, 0.05f, FLASH_COLOR);
         }
 
 

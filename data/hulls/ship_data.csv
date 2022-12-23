@@ -31,9 +31,9 @@ Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrik
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Cord,tahlan_cord,Heavy Fighter,ScalarTech Solutions,tahlan_cycleaccel,,500,20,400,,100,0,,200,300,250,90,120,30,OMNI,,120,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,100
 Fiber,tahlan_fiber,Bomber,ScalarTech Solutions,,,200,20,300,,50,0,,180,170,125,50,90,50,OMNI,,180,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,106
-Stocking,tahlan_stocking,Bomber,ScalarTech Solutions,,,300,20,300,,50,0,,260,280,220,90,130,50,OMNI,,180,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,106
+Stocking,tahlan_stocking,Bomber,ScalarTech Solutions,,,300,20,300,,50,0,,300,280,220,90,130,50,OMNI,,180,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,106
 Thread,tahlan_thread,Swarmer,ScalarTech Solutions,,,300,20,100,,50,0,,250,300,250,140,200,25,NONE,,120,0,1,,,1,1,,,,,,,,,,,,,,,,0,,,106
 Plaid,tahlan_plaid,Drone,ScalarTech Solutions,,,200,20,100,,50,0,,400,300,250,120,200,25,OMNI,,120,0,1,,,1,1,,,,,,,,,,,,,,,,0,,,106
-Garter,tahlan_garter,Heavy Bomber,ScalarTech Solutions,,,300,20,300,,50,0,,160,150,125,50,90,50,OMNI,,180,0,1,,,3,3,,,,,,,,,,,,,,,,0,,,106
-Dessous,tahlan_dessous,Assault Fighter,ScalarTech Solutions,tahlan_chainskimmer,,800,50,800,2500,100,0,,200,300,220,110,160,100,OMNI,,360,0,1,,,4,4,,,,,,,,,,,,,,,,0,,,107
-Twine,tahlan_twine,Interceptor,ScalarTech Solutions,,,600,30,500,,100,0,,280,300,250,90,120,30,NONE,,180,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,100
+Garter,tahlan_garter,Heavy Bomber,ScalarTech Solutions,,,300,20,300,,50,0,,200,150,125,50,90,50,OMNI,,180,0,1,,,3,3,,,,,,,,,,,,,,,,0,,,106
+Dessous,tahlan_dessous,Assault Fighter,ScalarTech Solutions,tahlan_chainskimmer,,700,50,700,2500,100,0,,200,300,220,110,160,100,OMNI,,360,0,1,,,4,4,,,,,,,,,,,,,,,,0,,,107
+Twine,tahlan_twine,Interceptor,ScalarTech Solutions,,,500,30,500,,100,0,,280,300,250,90,120,30,NONE,,180,0,1,,,2,2,,,,,,,,,,,,,,,,0,,,100

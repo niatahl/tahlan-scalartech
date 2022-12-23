@@ -29,7 +29,13 @@ public class tahlan_WingTrailScript implements EveryFrameWeaponEffectPlugin {
         }
 
         ShipAPI ship = weapon.getShip();
-        Float brightness = 0.3f+0.3f*ship.getSystem().getEffectLevel();
+
+        if (ship.isHulk() || !ship.isAlive() || ship.isPiece()) {
+            weapon.getAnimation().setFrame(0);
+            return;
+        }
+
+        float brightness = 0.3f+0.3f*ship.getSystem().getEffectLevel();
 
         effectInterval.advance(engine.getElapsedInLastFrame());
         float angle = Misc.getAngleInDegrees(new Vector2f(ship.getVelocity()));
