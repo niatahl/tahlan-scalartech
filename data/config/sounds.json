@@ -150,5 +150,14 @@
 			"tahlan_scalar_hostile":[
 				{"file":"tahlan_spindle_hostile.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
 			],
+			"tahlan_scalar_fleet_neutral":[
+				{"file":"Scalar_Fleet_Neutral.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
+			"tahlan_scalar_fleet_friendly":[
+				{"file":"Scalar_Fleet_Friendly.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
+			"tahlan_scalar_fleet_hostile":[
+				{"file":"Scalar_Fleet_Hostile.ogg","source":"sounds/tahlan/music/","volume":0.5,"randomStart":false},
+			],
         }
 }

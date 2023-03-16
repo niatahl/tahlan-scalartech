@@ -54,7 +54,8 @@
 			"tahlan_corset",
 			"tahlan_culotte",
 			"tahlan_sateen",
-			"tahlan_percale"
+			"tahlan_percale",
+			"tahlan_frock"
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -71,7 +72,8 @@
 			"tahlan_culotte",
 			"tahlan_corset",
 			"tahlan_sateen",
-			"tahlan_percale"
+			"tahlan_percale",
+			"tahlan_frock"
 		],
 	},
 	"knownFighters":{

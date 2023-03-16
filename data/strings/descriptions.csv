@@ -79,6 +79,9 @@ Technically developed before the Percale, the Angora was actually introduced int
 tahlan_silken_banshee,SHIP,"Carrying heavy missile armament and decently agile, this Battlecruiser is only held back by its relative fragility and the fact that only one was ever built.
 
 Originally constructed based on licensed blueprints as an early testbed for the MilTec subdivision of ScalarTech Solutions, the Silken Banshee is a decently capable battlecruiser with a striking silhouette. While it carries a high efficiency shield and more armor than other ScalarTech ships, the low shield coverage and fragile structure leave the ship vulnerable to flanking attacks.",,,
+tahlan_frock,SHIP,"The definitive missile platform produced by ScalarTech Solutions is a decently agile cruiser with a flexible missile armament. While design concerns limited its ability to use unguided munitions due to mount placement, this was the price it had to pay for being outfitted with an autoforge to keep its armaments fed even in long engagements.
+
+The Frock's design goes back to the experimental Silken Banshee, but reduced to a more sensible scale for mass production. Originally developed shortly after the collapse, the class didn't see actual production till c142 as its capabilities were deemed less important than what ScalarTech's more conventional designs offered.",,,
 ,,,,,
 #Fighters,,,,,
 tahlan_thread,SHIP,"The Thread-class swarmer is a small and agile figher armed with a single high-velocity diffuse pulse laser that can pose a notable threat to most other fighter craft. While unsuitable for engaging larger targets by itself, it can effectively screen for bombers and distract enemy point-defense systems.",,,

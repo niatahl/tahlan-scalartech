@@ -40,6 +40,9 @@
 		"tahlan_midi_standard":4,
 		"tahlan_midi_elite":3,
 		"tahlan_midi_support":3,
+		"tahlan_frock_standard":4,
+		"tahlan_frock_support":3,
+		"tahlan_frock_tearful":3
 	},
 	"combatCapital":{
 		"tahlan_gown_standard":4,
