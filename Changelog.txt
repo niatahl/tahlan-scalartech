@@ -1,3 +1,7 @@
+0.8.7
+- Frock
+	- System changed to magmine strike
+
 0.8.6
 - Added Frock-class Missile Cruiser
 - Tear
