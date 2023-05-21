@@ -78,7 +78,7 @@
       "width": 35,
       "angle": 180,
       "contrailSize": 35,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-129.5, 15],
@@ -86,7 +86,7 @@
       "width": 9,
       "angle": 180,
       "contrailSize": 9,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-129.5, -15],
@@ -94,7 +94,7 @@
       "width": 9,
       "angle": -180,
       "contrailSize": 9,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-144.5, 35],
@@ -102,7 +102,7 @@
       "width": 8,
       "angle": 180,
       "contrailSize": 8,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-144.5, -35],
@@ -110,7 +110,7 @@
       "width": 8,
       "angle": -180,
       "contrailSize": 8,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-144.5, 42],
@@ -118,7 +118,7 @@
       "width": 8,
       "angle": 180,
       "contrailSize": 8,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-144.5, -42],
@@ -126,7 +126,7 @@
       "width": 8,
       "angle": -180,
       "contrailSize": 8,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-125, 0],

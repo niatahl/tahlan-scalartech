@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"WEAPON_BOOST",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_CoilDischargeStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.CoilDischargeStats",
 
 	#"effectColor1":[150,150,255,200],
 	#"effectColor2":[175,175,255,255],

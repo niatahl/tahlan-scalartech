@@ -145,7 +145,7 @@
       "width": 16.720409,
       "angle": 157,
       "contrailSize": 16.720409,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [20, -69.5],
@@ -153,7 +153,7 @@
       "width": 16.720409,
       "angle": -157,
       "contrailSize": 16.720409,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [-78.5, -0],
@@ -161,7 +161,7 @@
       "width": 23,
       "angle": 180,
       "contrailSize": 23,
-      "style": "HIGH_TECH"
+      "style": "TAHLAN_SCALAR_ENGINE"
     },
     {
       "location": [21, 69],

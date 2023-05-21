@@ -3,7 +3,7 @@
 	"specClass":"missile",	
 	"missileType":"MISSILE",
 	"sprite":"graphics/tahlan/missiles/tahlan_tineola_msl.png",
-	"onHitEffect":"data.scripts.weapons.tahlan_TineolaOnHitEffect",
+	"onHitEffect":"org.niatahl.scalartech.weapons.TineolaOnHitEffect",
 	"size":[18,34],	
 	"center":[9,17],
 	"collisionRadius":16,

@@ -1,7 +1,7 @@
 {
   "animationType": "NONE",
   "barrelMode": "ALTERNATING",
-  "everyFrameEffect":"data.scripts.weapons.tahlan_WingTrailScript",
+  "everyFrameEffect":"org.niatahl.scalartech.weapons.WingTrailScript",
   "hardpointAngleOffsets": [
     0
   ],

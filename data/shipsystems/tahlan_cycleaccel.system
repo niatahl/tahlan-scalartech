@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"WEAPON_BOOST",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_CycleAccelStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.CycleAccelStats",
 	
 	"weaponGlowColor":[0,255,255,155],
 	"weaponTypes":[ENERGY],

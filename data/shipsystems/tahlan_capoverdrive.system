@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"WEAPON_BOOST",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_CapacitorOverchargeStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.CapacitorOverchargeStats",
 	
 	"canUseWhileRightClickSystemOn":true,
 	

@@ -4,7 +4,7 @@
   "projectileSpecId": "tahlan_crinkle_shot",
   "type": "ENERGY",
   "size": "SMALL",
-  #"everyFrameEffect": "data.scripts.weapons.tahlan_SeamScript",
+  #"everyFrameEffect": "org.niatahl.scalartech.weapons.SeamScript",
   "turretSprite": "graphics/tahlan/weapons/tahlan_crinkle_turret_base.png",
   "turretGlowSprite": "graphics/tahlan/weapons/tahlan_crinkle_turret_glow.png",
   "hardpointSprite": "",

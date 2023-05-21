@@ -1,11 +1,9 @@
 {
 	"id":"tahlan_berserk",
 	"type":"STAT_MOD",
-	#"aiType":"WEAPON_BOOST",
-	"aiType":"CUSTOM",
-	"aiScript":"data.scripts.shipsystems.ai.tahlan_BerserkAI",
+	"aiType":"WEAPON_BOOST",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_BerserkStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.BerserkStats",
 	
 	"useSound":"tahlan_berserk_start",
 	"loopSound":"tahlan_berserk_loop",

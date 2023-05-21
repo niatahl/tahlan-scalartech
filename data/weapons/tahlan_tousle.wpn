@@ -6,7 +6,7 @@
   "size": "MEDIUM",
   "turretSprite": "graphics/tahlan/weapons/tahlan_tousle_turret_base.png",
   "hardpointSprite": "graphics/tahlan/weapons/tahlan_tousle_hp_base.png",  
-  "everyFrameEffect": "data.scripts.weapons.tahlan_TousleScript",
+  "everyFrameEffect": "org.niatahl.scalartech.weapons.TousleScript",
   "renderAboveAllWeapons": 0,
   "turretOffsets": [
     4,

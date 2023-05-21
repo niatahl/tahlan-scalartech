@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"WEAPON_BOOST",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_LimitReleaseStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.LimitReleaseStats",
 	
 	"useSound":"tahlan_limit_release_start",
 	"loopSound":"tahlan_limit_release_loop",

@@ -1,6 +1,6 @@
 {
-  "beamEffect": "data.scripts.weapons.tahlan_OverchargeBeamEffect",
-  "everyFrameEffect": "data.scripts.weapons.tahlan_OverchargeBeamScript",
+  "beamEffect": "org.niatahl.scalartech.weapons.OverchargeBeamEffect",
+  "everyFrameEffect": "org.niatahl.scalartech.weapons.OverchargeBeamScript",
   "beamFireOnlyOnFullCharge": true,
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",

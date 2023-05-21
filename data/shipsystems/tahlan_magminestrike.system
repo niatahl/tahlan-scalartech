@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"MINE_STRIKE",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_MagMinesStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.MagMinesStats",
 
 	"canUseWhileRightClickSystemOn":false,
 

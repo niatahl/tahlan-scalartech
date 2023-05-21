@@ -4,7 +4,7 @@
   "projectileSpecId": "tahlan_ruffle_shot",
   "type": "ENERGY",
   "size": "LARGE",
-  "everyFrameEffect": "data.scripts.weapons.tahlan_RuffleScript",
+  "everyFrameEffect": "org.niatahl.scalartech.weapons.RuffleScript",
   "turretSprite": "graphics/tahlan/weapons/tahlan_ruffle_turret_base.png",
   "turretGlowSprite": "graphics/tahlan/weapons/tahlan_ruffle_turret_glow.png",
   "hardpointSprite": "graphics/tahlan/weapons/tahlan_ruffle_hp_base.png",

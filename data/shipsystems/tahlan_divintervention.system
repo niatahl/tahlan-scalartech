@@ -3,7 +3,7 @@
 	"type":"PHASE_CLOAK",
 	"aiType":"PHASE_CLOAK",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_DivineInterventionStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.DivineInterventionStats",
 	
 	"phaseHighlight":"_glow1",
 	"phaseDiffuse":"_glow2",

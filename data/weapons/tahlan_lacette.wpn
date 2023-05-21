@@ -4,7 +4,7 @@
   "projectileSpecId": "tahlan_lacette_shot",
   "type": "ENERGY",
   "size": "SMALL",
-  "everyFrameEffect": "data.scripts.weapons.tahlan_LacetteScript",
+  "everyFrameEffect": "org.niatahl.scalartech.weapons.LacetteScript",
   "turretSprite": "graphics/tahlan/weapons/tahlan_lacette_turret_base.png",
   "hardpointSprite": "graphics/tahlan/weapons/tahlan_lacette_hp_base.png",
   "renderAboveAllWeapons": 0,

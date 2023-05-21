@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"ENTROPY_AMPLIFIER",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_SwarmerStrikeStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.SwarmerStrikeStats",
 
 	#"runScriptWhilePaused":true, # only for the player's ship
 	"runScriptWhileIdle":true, # unapply() never gets called

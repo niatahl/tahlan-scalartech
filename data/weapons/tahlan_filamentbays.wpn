@@ -1,7 +1,7 @@
 {
   "animationType": "NONE",
   "barrelMode": "ALTERNATING",
-  "everyFrameEffect":"data.scripts.weapons.tahlan_FilamentPortalBays",
+  "everyFrameEffect":"org.niatahl.scalartech.weapons.FilamentPortalBays",
   "hardpointAngleOffsets": [
     0
   ],

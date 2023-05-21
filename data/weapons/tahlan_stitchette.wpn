@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "MEDIUM",
-  "beamEffect": "data.scripts.weapons.tahlan_StitchBeamEffect",
+  "beamEffect": "org.niatahl.scalartech.weapons.StitchBeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/tahlan/weapons/tahlan_stitchette_turret_base.png",

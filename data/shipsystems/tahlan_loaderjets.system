@@ -3,7 +3,7 @@
 	"type":"ENGINE_MOD",
 	"aiType":"MANEUVERING_JETS",
 	
-	"statsScript":"data.scripts.shipsystems.tahlan_LoaderJetsStats",
+	"statsScript":"org.niatahl.scalartech.shipsystems.LoaderJetsStats",
 	
 	"engineGlowLengthMult":1,
 	"engineGlowWidthMult":1,
