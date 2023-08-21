@@ -26,7 +26,7 @@ Vestige,tahlan_vestige,Heavy Cruiser,ScalarTech Solutions,tahlan_berserk,20,8500
 Kimono,tahlan_sateen_kim,Battlecruiser,ScalarTech Solutions,tahlan_flickerdrive,25,10000,1200,12000,,1000,220,,70,90,60,15,20,2200,OMNI,,100,0.3,1,,,300,500,250,400,12,33,8,400000,3,15,720,0.25,40,40,HIDE_IN_CODEX,no_autofit,,0.5,2,5,11311
 Silken Banshee,tahlan_silken_banshee,Battlecruiser,ScalarTech Solutions,tahlan_emsuppression,25,9000,1400,10500,,900,280,1,60,40,30,10,10,2400,OMNI,,60,0.4,0.6,,,160,250,250,300,10,,8,350000,3,15,600,0.125,40,40,"WEAPONS_FRONT_TO_BACK, HIDE_IN_CODEX",no_autofit,,0.5,2,4,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,45,30000,1200,25000,31250,1200,400,1,30,20,15,5,5,3000,OMNI,,180,0.4,0.8,,,800,1500,400,400,20,20,7,1500000,3,30,780,0.25,100,100,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
+Gown,tahlan_gown,Battlestar,ScalarTech Solutions,tahlan_supercruise,45,30000,1200,25000,31250,1200,400,1,30,20,15,5,5,3000,OMNI,,180,0.4,0.8,,,800,1500,400,400,20,20,7,1500000,3,30,780,0.25,80,80,SHIP_WITH_MODULES,"no_bp_drop, no_autofit",,0.8,2,4,504
 Left Wing,tahlan_gown_ringleft,Module,ScalarTech Solutions,tahlan_magminestrike,15,8000,1200,9000,,400,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
 Right Wing,tahlan_gown_ringright,Module,ScalarTech Solutions,tahlan_magminestrike,15,8000,1200,9000,,400,120,2,0,0,0,10,10,750,NONE,,0,0,0,,,0,0,0,0,0,0,0,0,,1,780,0.25,0,0,"UNBOARDABLE, HIDE_IN_CODEX",,,0.6,2,3,405
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

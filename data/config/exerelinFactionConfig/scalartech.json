@@ -9,7 +9,7 @@
     "marketSpawnWeight":0.75,
 	
 	  "factionIdForHqResponse":"scalartech_elite",	
-    "specialForcesNamerClass":"data.scripts.campaign.nexerelin.tahlan_ScalartechNamer",
+    "specialForcesNamerClass":"org.niatahl.scalartech.campaign.nexerelin.ScalartechNamer",
      
     "startRelationships":{ 
 		"hegemony": -0.3, 

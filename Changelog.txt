@@ -1,3 +1,6 @@
+0.9.1
+- Maps, so many maps
+
 0.9
 - Updated to 0.96a
 - Updated to MagicLib 1.0.0

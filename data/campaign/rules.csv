@@ -1,10 +1,10 @@
 id,trigger,conditions,script,text,options,notes
-"#RULESET_NAME ScalarTech",,,,,,
+#RULESET_NAME ScalarTech,,,,,,
 ,,,,,,
 # Silvy Contact,,,,,,
-tahlan_defaultSilvysGreeting,PickGreeting,"$id == scalar_Silvys score: 0","ShowPersonVisual
+tahlan_defaultSilvysGreeting,PickGreeting,$id == scalar_Silvys score: 0,"ShowPersonVisual
 FireAll PopulateOptions
-SetShortcut cutCommLinkPolite ""ESCAPE""","""Why hello there. I'm a busy women so I do hope you are contacting me for a good reason""","0:cutCommLink:Cut the comm link",
+SetShortcut cutCommLinkPolite ""ESCAPE""","""Why hello there. I'm a busy women so I do hope you are contacting me for a good reason""",0:cutCommLink:Cut the comm link,
 ,,,,,,
 tahlan_disableTurnInOptionSilvys,tahlan_DisableTurnInOptionIfNeeded,"$id == scalar_Silvys
 !tahlan_SilvysTurnInScript check","SetTooltip tahlan_startTurnInSilvys ""You do not have any blueprints in your possession.""
@@ -12,16 +12,16 @@ SetEnabled tahlan_startTurnInSilvys false",,,
 ,,,,,,
 tahlan_receiveContactSilvys,PopulateOptions,"$id == scalar_Silvys
 !$scalar_SilvysContact",,,"1:tahlan_silvysContactOption:""I was told your department offers lucrative work.""",
-tahlan_turnInOptionSilvys,PopulateOptions,"$id == scalar_Silvys","FireBest tahlan_DisableTurnInOptionIfNeeded",,"15:tahlan_startTurnInSilvys:""I heard you might be interested in recovered blueprints.""",
+tahlan_turnInOptionSilvys,PopulateOptions,$id == scalar_Silvys,FireBest tahlan_DisableTurnInOptionIfNeeded,,"15:tahlan_startTurnInSilvys:""I heard you might be interested in recovered blueprints.""",
 tahlan_turnInOptionCoresSilvys,PopulateOptions,"$id == scalar_Silvys
-!$scalar_SilvysContact","FireBest DisableTurnInCoresOptionIfNeeded",,"10:tahlan_startTurnInCoresSilvys:""I'd like to turn in these AI cores that I've acquired...""",
+!$scalar_SilvysContact",FireBest DisableTurnInCoresOptionIfNeeded,,"10:tahlan_startTurnInCoresSilvys:""I'd like to turn in these AI cores that I've acquired...""",
 ,,,,,,
-tahlan_playerHasOptionSilvys,tahlan_PopulateTurnInOptionsSilvys,,,,"0:tahlan_selectCoresSilvys:Select blueprints to turn in",
+tahlan_playerHasOptionSilvys,tahlan_PopulateTurnInOptionsSilvys,,,,0:tahlan_selectCoresSilvys:Select blueprints to turn in,
 tahlan_neverMindOptionSilvys,tahlan_PopulateTurnInOptionsSilvys,,,,"100:tahlan_neverMindSilvys:""Oh I'm sorry, I don't actually have any.""",
 ,,,,,,
-tahlan_neverMindOptionSelectedSilvys,DialogOptionSelected,"$option == tahlan_neverMindSilvys","FireAll PopulateOptions","""Memory getting hazy already? Do take care with that.""",,
-tahlan_turnInOptionSelectedSilvys,DialogOptionSelected,"$option == tahlan_selectCoresSilvys","tahlan_SilvysTurnInScript sell",,,
-tahlan_turnInOptionSelSilvys,DialogOptionSelected,"$option == tahlan_startTurnInSilvys","FireAll tahlan_PopulateTurnInOptionsSilvys","""Indeed. My department is always all too thankful for such contributions to our efforts.""",,
+tahlan_neverMindOptionSelectedSilvys,DialogOptionSelected,$option == tahlan_neverMindSilvys,FireAll PopulateOptions,"""Memory getting hazy already? Do take care with that.""",,
+tahlan_turnInOptionSelectedSilvys,DialogOptionSelected,$option == tahlan_selectCoresSilvys,tahlan_SilvysTurnInScript sell,,,
+tahlan_turnInOptionSelSilvys,DialogOptionSelected,$option == tahlan_startTurnInSilvys,FireAll tahlan_PopulateTurnInOptionsSilvys,"""Indeed. My department is always all too thankful for such contributions to our efforts.""",,
 ,,,,,,
 tahlan_addSilvysAsContact,DialogOptionSelected,"$option == tahlan_silvysContactOption
 RepGTE scalartech FRIENDLY","AddPotentialContact
@@ -32,37 +32,37 @@ FireAll PopulateOptions
 According to what we have on record about you, you should fit right in. Feel free to inquire about open contracts at any time when in system.""
 ",,
 tahlan_denySilvysContact,DialogOptionSelected,"$option == tahlan_silvysContactOption
-RepLTE scalartech FRIENDLY","FireAll PopulateOptions","""While that is correct, these contracts serve our military interests and I can't just offer them to anyone, you know. I'd suggest making some more friends with the Protectorate authorities first.""",,
+RepLTE scalartech FRIENDLY",FireAll PopulateOptions,"""While that is correct, these contracts serve our military interests and I can't just offer them to anyone, you know. I'd suggest making some more friends with the Protectorate authorities first.""",,
 ,,,,,,
-tahlan_turnInResponseDefaultSilvys,tahlan_BPTurnedInSilvys,,"FireAll PopulateOptions","$personLastName moves the conversation on to other matters. ""Anything else you need?""",,
+tahlan_turnInResponseDefaultSilvys,tahlan_BPTurnedInSilvys,,FireAll PopulateOptions,"$personLastName moves the conversation on to other matters. ""Anything else you need?""",,
 ,,,,,,
 aiCores_turnInOptionSelSpindle,DialogOptionSelected,"$option == aiCores_startTurnIn
-$faction.id == tahlan_Scalartech","FireAll PopulateCoresTurnInOptions","""A dangerous commoditiy you have on your hands there, but we can take these off your hands discretely for an adequate compensation. The Protectorate thanks you, Captain.""",,
-aiCores_turnInOptionSelSilvys,DialogOptionSelected,"$option == tahlan_startTurnInCoresSilvys","FireAll PopulateCoresTurnInOptions","""Well, well, well, what do we have here. I'd have quite a few applications for these things, not that I would ever go against the ban on AI Core use, of course. No, never, but shall we talk about prices?""",,
-aiCores_turnInResponseSpindle,AICoresTurnedIn,"$faction.id == tahlan_Scalartech","FireAll PopulateOptions","$PersonRank $personLastName thanks you ever so politely and the conversation moves on to other matters.",,
+$faction.id == tahlan_Scalartech",FireAll PopulateCoresTurnInOptions,"""A dangerous commoditiy you have on your hands there, but we can take these off your hands discretely for an adequate compensation. The Protectorate thanks you, Captain.""",,
+aiCores_turnInOptionSelSilvys,DialogOptionSelected,$option == tahlan_startTurnInCoresSilvys,FireAll PopulateCoresTurnInOptions,"""Well, well, well, what do we have here. I'd have quite a few applications for these things, not that I would ever go against the ban on AI Core use, of course. No, never, but shall we talk about prices?""",,
+aiCores_turnInResponseSpindle,AICoresTurnedIn,$faction.id == tahlan_Scalartech,FireAll PopulateOptions,$PersonRank $personLastName thanks you ever so politely and the conversation moves on to other matters.,,
 aiCores_turnInResponseSilvys,AICoresTurnedIn,"$id == scalar_Silvys
-!$scalar_SilvysContact","FireAll PopulateOptions","$PersonRank $personLastName has some of her assistants collect the cores and swiflty moves the conversation along on to other topics.",,
-"#END Silvy Contact",,,,,,
+!$scalar_SilvysContact",FireAll PopulateOptions,$PersonRank $personLastName has some of her assistants collect the cores and swiflty moves the conversation along on to other topics.,,
+#END Silvy Contact,,,,,,
 ,,,,,,
 # Spindle commission,,,,,,
-CMSNTextRejectHostile_spindle,CMSNTextRejectHostile,"$faction.id == tahlan_Scalartech",,"""Is this some kind of joke, citizen? If you are who you are claiming to be, you'd be on several top-level Ministry wanted lists. In fact, I'm going to have to report this entire conversation to Hegemony COMSEC.""",,
-CMSNTextHasOther_spindle,CMSNTextHasOther,"$faction.id == tahlan_Scalartech",,"""You're already commissioned by $theOtherCommissionFaction. I don't know if loyalty means anything to you, citizen, but it is a core pillar of our values. You would have to resign that commission before you'd even be considered for commission as an auxiliary by the Hegemony.""",,
-CMSNTextUnsuited_spindle,CMSNTextUnsuited,"$faction.id == tahlan_Scalartech",,"""You do not meet the criteria for receiving a commission, citizen.""",,
-CMSNTextSuitedPart1_spindle,CMSNTextSuitedPart1,"$faction.id == tahlan_Scalartech",,"""Hmm, Fleet Intelligence has been watching you for some time it seems, and it says here that you clear the checks.
+CMSNTextRejectHostile_spindle,CMSNTextRejectHostile,$faction.id == tahlan_Scalartech,,"""Is this some kind of joke, citizen? If you are who you are claiming to be, you'd be on several top-level Ministry wanted lists. In fact, I'm going to have to report this entire conversation to Hegemony COMSEC.""",,
+CMSNTextHasOther_spindle,CMSNTextHasOther,$faction.id == tahlan_Scalartech,,"""You're already commissioned by $theOtherCommissionFaction. I don't know if loyalty means anything to you, citizen, but it is a core pillar of our values. You would have to resign that commission before you'd even be considered for commission as an auxiliary by the Hegemony.""",,
+CMSNTextUnsuited_spindle,CMSNTextUnsuited,$faction.id == tahlan_Scalartech,,"""You do not meet the criteria for receiving a commission, citizen.""",,
+CMSNTextSuitedPart1_spindle,CMSNTextSuitedPart1,$faction.id == tahlan_Scalartech,,"""Hmm, Fleet Intelligence has been watching you for some time it seems, and it says here that you clear the checks.
 
 Accepting a commission with the Hegemony is a serious matter, citizen. You will be required to fight enemies of the Hegemony and assist in upholding law and order where the official apparatus cannot reach. Above all, you will dedicate yourself to fighting for the restoration of the Domain over human space.
 
 I must inform you that you have the right to resign your commission at any time. And while there have been honorable circumstances for resignation in the past, between us, let me add that doing so would be considered highly suspicious by Fleet Intelligence, to say nothing of what the loyal Hegemony officer corps would think.",,
-CMSNTextSuitedPart2_spindle,CMSNTextSuitedPart2,"$faction.id == tahlan_Scalartech",,"""By the power invested in me by the office of the High Hegemon, I offer you commission as auxiliary to the Hegemony Navy. Do you wish to sign on?""",,
-CMSNTextWelcomePart1_spindle,CMSNTextWelcomePart1,"$faction.id == tahlan_Scalartech",,"""Excellent! Welcome to the service.""",,
-CMSNTextWelcomePart2_spindle,CMSNTextWelcomePart2,"$faction.id == tahlan_Scalartech",,"""Is there anything else I can do for you, citizen?""",,
-CMSNTextChangeMind_spindle,CMSNTextChangeMind,"$faction.id == tahlan_Scalartech",,"""Yes, not everyone has the strength of character to uphold the values of the Hegemony to the standards that are required. The Sector has need of merchants and shuttle pilots, after all. Those are also honorable careers in their own small way.
+CMSNTextSuitedPart2_spindle,CMSNTextSuitedPart2,$faction.id == tahlan_Scalartech,,"""By the power invested in me by the office of the High Hegemon, I offer you commission as auxiliary to the Hegemony Navy. Do you wish to sign on?""",,
+CMSNTextWelcomePart1_spindle,CMSNTextWelcomePart1,$faction.id == tahlan_Scalartech,,"""Excellent! Welcome to the service.""",,
+CMSNTextWelcomePart2_spindle,CMSNTextWelcomePart2,$faction.id == tahlan_Scalartech,,"""Is there anything else I can do for you, citizen?""",,
+CMSNTextChangeMind_spindle,CMSNTextChangeMind,$faction.id == tahlan_Scalartech,,"""Yes, not everyone has the strength of character to uphold the values of the Hegemony to the standards that are required. The Sector has need of merchants and shuttle pilots, after all. Those are also honorable careers in their own small way.
 
 Anything else I can do for you?""",,
-CMSNResignAskToConfirm_spindle,CMSNResignAskToConfirm,"$faction.id == tahlan_Scalartech",,"""Do you affirm to that, citizen, and agree that your recorded affirmation stand as record of your commitment? The Hegemony needs people it can rely on, and if you were to let us down it would not soon be forgotten.""",,
-CMSNResignConfirmed_spindle,CMSNResignConfirmed,"$faction.id == tahlan_Scalartech",,"""I see. At least you were brave enough to tender your resignation in person.""",,
-CMSNResignCancelled_spindle,CMSNResignCancelled,"$faction.id == tahlan_Scalartech",,"""A good decision. Despite what dissident agitprop may claim, the Hegemony does not ask blind obedience. It takes courage to first question then choose to re-affirm a commitment. We can use people like you in this troubled age.""",,
-"#END Spindle commission",,,,,,
+CMSNResignAskToConfirm_spindle,CMSNResignAskToConfirm,$faction.id == tahlan_Scalartech,,"""Do you affirm to that, citizen, and agree that your recorded affirmation stand as record of your commitment? The Hegemony needs people it can rely on, and if you were to let us down it would not soon be forgotten.""",,
+CMSNResignConfirmed_spindle,CMSNResignConfirmed,$faction.id == tahlan_Scalartech,,"""I see. At least you were brave enough to tender your resignation in person.""",,
+CMSNResignCancelled_spindle,CMSNResignCancelled,$faction.id == tahlan_Scalartech,,"""A good decision. Despite what dissident agitprop may claim, the Hegemony does not ask blind obedience. It takes courage to first question then choose to re-affirm a commitment. We can use people like you in this troubled age.""",,
+#END Spindle commission,,,,,,
 ,,,,,,
 # Silvy Dialogue,,,,,,
 tahlan_silvysFirstMeeting,PickGreeting,"$id == scalar_Silvys
@@ -73,6 +73,6 @@ AddText ""You wait for a moment as your comms-link is being redirected to the Sc
 AddTextSmall ""The daughter of the mind behind the failed gate experiment, Silvys Renham has lead the ScalarTech Research Division for many decades now, a feet made possible by her ageless artificial form, an unwanted result of the gate experiment's disastrous meltdown. Seemingly more machine than person, some even question whether the one going by the name of Silvys Renham is even still human or has since been replaced by an AI simulacrum, but none would ever dare openly questioning this."" highlight
 AddText ""\""I had been wondering when I might run into you. The people over at Galatia have been mentioning your name quite a bit lately.\""""
 SetShortcut cutCommLinkPolite ""ESCAPE""
-",,"0:cutCommLinkPolite:Cut the comm link",
-"#END Silvy Dialogue",,,,,,
-
+",,0:cutCommLinkPolite:Cut the comm link,
+#END Silvy Dialogue,,,,,,
+,,,,,,
