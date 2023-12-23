@@ -1,5 +1,6 @@
 0.9.1
 - Maps, so many maps
+- Fixed Sateen not using built-in missiles under AI control
 
 0.9
 - Updated to 0.96a

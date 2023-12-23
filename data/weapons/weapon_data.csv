@@ -22,8 +22,8 @@ Strassette LE Blaster,tahlan_strassette,1,,300,500,,100,,0,50,5,,,,ENERGY,70,,0.
 Crinkle Disruptor,tahlan_crinkle_fighter,3,0.7,900,400,,800,800,0,30,69,1,,,ENERGY,1040,,0,1,,,0,0,0,0,,800,,,100,"STRIKE, USE_VS_FRIGATES, SYSTEM",,,ScalarTech Solutions,,Strike,,,,,"Detonates on impact, discharging %s arcs at nearby targets, dealing about %s energy and emp damage each.",5 | 150,,,
 Magbomb,tahlan_magmine,2,,1500,1000,,500,500,50,30,69,3,,,ENERGY,0,,0,1.5,3,0.1,3,3,3,3,,200,50,20,400,"SYSTEM,STRIKE",,,ScalarTech Solutions,,Strike,Very Slow,None,,,,,,,TRUE
 Spiral Torpedo Tube,tahlan_spiral,0,0.2,600,1200,,800,800,30,15,69,3,0.08,1,ENERGY,0,,0,2,1,,0,0,0,0,,800,800,2.5,200,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
-Helix Torpedo Launcher,tahlan_spiral2_l,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
-Helix Torpedo Launcher,tahlan_spiral2_r,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
+Helix Torpedo Launcher,tahlan_spiral2_l,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM, DO_NOT_AIM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
+Helix Torpedo Launcher,tahlan_spiral2_r,0,0.2,600,1200,,800,800,30,15,69,9,0.06,3,ENERGY,0,,0,8,3,0.3,0,0,0,0,,400,400,6,150,"STRIKE, SYSTEM, DO_NOT_AIM",,,ScalarTech Solutions,,Torpedo,Fast,None,,,,,,,TRUE
 Fold Disruptor,tahlan_fold,3,0.7,1200,600,,400,400,0,30,69,5,0.1,,ENERGY,200,,0.1,1.9,,,0,0,0,0,,1000,,,100,"STRIKE, USE_VS_FRIGATES, SYSTEM",,,ScalarTech Solutions,,Strike,,,,,"Detonates on impact, discharging %s arcs at nearby targets, dealing about %s energy and emp damage each.",5 | 75,,,
 Pin Swarmers,tahlan_pin,1,1,1,700,,200,,5,0,69,,,,FRAGMENTATION,,,,5,6,0.05,,,,,,300,100,3,100,"SYSTEM,ANTI_FTR",,,ScalarTech Solutions,,Anti Fighter,,,,,,,,,
 String Pulser,tahlan_banshee_pd,1,,250,300,,50,25,0,50,5,30,3,10,FRAGMENTATION,15,,0,0.1,,,0,6,1,6,,1000,,,,"PD, SYSTEM",,,ScalarTech Solutions,,Point Defense,,,,,,,,,
