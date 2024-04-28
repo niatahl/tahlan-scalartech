@@ -48,7 +48,7 @@ public class FilamentRingScript implements EveryFrameWeaponEffectPlugin {
 
         //Sets our current maximum brightness
         float currentMaxBrightness = 0.2f;
-        if (system != null) {
+        if (system != null && ship.getTravelDrive() != null) {
             if (system.isActive() || ship.getFluxTracker().isEngineBoostActive() || ship.getTravelDrive().isActive()) {
                 currentMaxBrightness += 0.1f;
             }
