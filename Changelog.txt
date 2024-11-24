@@ -1,3 +1,8 @@
+0.9.2
+- uuuuuh, updated to new game version? Kinda forgot about that
+- think I also fixed some linux stuff
+- there may be other changes but I forgor
+
 0.9.1
 - Maps, so many maps
 - Fixed Sateen not using built-in missiles under AI control
