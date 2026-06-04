@@ -284,6 +284,8 @@ public class Spindle {
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);
 
+        Misc.setAllPlanetsSurveyed(system, true);
+
         //Finally cleans up hyperspace - Now done after moving the system
         //cleanup(system);
     }

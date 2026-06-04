@@ -103,6 +103,21 @@ public class ScalarModPlugin extends BaseModPlugin {
 
     @Override
     public void onNewGameAfterEconomyLoad() {
+
+
+    }
+
+    @Override
+    public PluginPick<MissileAIPlugin> pickMissileAI(MissileAPI missile, ShipAPI launchingShip) {
+        switch (missile.getProjectileSpecId()) {
+            case EMPMISSILE_ID:
+                return new PluginPick<MissileAIPlugin>(new EMPtorpedoAI(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
+            default:
+        }
+        return null;
+    }
+
+    private void finishSpindle() {
         MarketAPI market = Global.getSector().getEconomy().getMarket("tahlan_spindle_charkha_market");
         ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
         if (market != null) {
@@ -163,23 +178,18 @@ public class ScalarModPlugin extends BaseModPlugin {
             market.getStarSystem().getLocation().set(22000,-14000);
             cleanup(market.getStarSystem());
         }
-
-    }
-
-    @Override
-    public PluginPick<MissileAIPlugin> pickMissileAI(MissileAPI missile, ShipAPI launchingShip) {
-        switch (missile.getProjectileSpecId()) {
-            case EMPMISSILE_ID:
-                return new PluginPick<MissileAIPlugin>(new EMPtorpedoAI(missile, launchingShip), CampaignPlugin.PickPriority.MOD_SPECIFIC);
-            default:
-        }
-        return null;
     }
 
     @Override
     public void onGameLoad(boolean newGame) {
         if (!SharedData.getData().getPersonBountyEventData().isParticipating("scalartech")) {
             SharedData.getData().getPersonBountyEventData().addParticipatingFaction("scalartech");
+        }
+
+        // Create Spindle if it's missing
+        if (Global.getSector().getStarSystem("Spindle") == null) {
+            new Spindle().generate(Global.getSector());
+            finishSpindle();
         }
     }
 
