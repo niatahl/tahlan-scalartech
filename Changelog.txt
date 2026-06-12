@@ -219,7 +219,7 @@
 - Strand
 	- Lowered DP from 24 to 18
 - Fiber
-	- Increased wing size from 3 to 5
+qu	- Increased wing size from 3 to 5
 	- Lowered bomb damage from 1500 to 1200
 	- Lowered shield hp from 600 to 300
 	- Lowered hp from 400 to 200

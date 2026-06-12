@@ -103,8 +103,7 @@ public class ScalarModPlugin extends BaseModPlugin {
 
     @Override
     public void onNewGameAfterEconomyLoad() {
-
-
+        finishSpindle();
     }
 
     @Override
@@ -186,9 +185,15 @@ public class ScalarModPlugin extends BaseModPlugin {
             SharedData.getData().getPersonBountyEventData().addParticipatingFaction("scalartech");
         }
 
-        // Create Spindle if it's missing
-        if (Global.getSector().getStarSystem("Spindle") == null) {
+        StarSystemAPI spindle = Global.getSector().getStarSystem("Spindle");
+        if (spindle == null) {
+            // Create Spindle if it's missing
             new Spindle().generate(Global.getSector());
+            finishSpindle();
+        } else if (spindle.getLocation().x == 5000f && spindle.getLocation().y == -5000f) {
+            // Repair saves where the finish step never ran (0.9.3 regression): the system is
+            // stuck at its temporary procgen location and Yurika/Silvys were never created.
+            log.info("Repairing unfinished Spindle system");
             finishSpindle();
         }
     }

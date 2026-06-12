@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 16,
+    "fluxCapacitors": 18,
     "fluxVents": 50,
     "hullId": "tahlan_filament",
     "hullMods": [
